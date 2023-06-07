@@ -1,0 +1,18 @@
+---
+title: "Advanced Features"
+format: html
+duration: 2.5 hours
+---
+
+- investing in HTML/CSS
+    - customisation
+- Personal Websites:
+    - multi-format CV: https://www.cynthiahqy.com/cv
+    - custom domains
+- teaching with Quarto:
+    - https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/
+- Presentation slides (extension from session 1)
+    - avoid quarto for heavily styled presentations (keynote)
+    - usually focus on executable and updating scripts
+    - easy to get started with html styles
+    - nice to have

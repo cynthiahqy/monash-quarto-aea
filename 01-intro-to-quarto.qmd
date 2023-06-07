@@ -1,0 +1,11 @@
+---
+title: "Intro to Quarto"
+format: html
+duration: 2.5 hours
+---
+
+- Hello Quarto // 10mins showcase, showoff! --- stop installation
+    - give extra time to first exercise; we will help you!
+- Single Documents
+- Articles (with journal templates)
+- my-first-document.qmd

@@ -1,0 +1,23 @@
+---
+title: "Replication Packages in Quarto"
+format: html
+duration: 2.5 hours
+---
+
+AEA Replication Package in Quarto:
+- https://aeadataeditor.github.io/aea-de-guidance/
+- https://datacodestandard.org
+- https://social-science-data-editors.github.io/template_README/
+- [ ] qmd version of the template
+- [ ] example with a folder of stata scripts -- what's a good example from Laura?
+
+Show off different types of includes:
+- python, R, STATA code
+- child documents
+
+Academic features
+- citations
+
+Background:
+- https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.112.813
+- https://www.vilhuber.com/lars/
