@@ -1,0 +1,44 @@
+### Authoring Scientific Documents with Quarto (2.5 Hours)
+
+| Time        | Module        |
+|-------------|---------------|
+| 09:00-09:30 | Hello Quarto! |
+|             |               |
+|             | Documents     |
+|             |               |
+|             | Articles      |
+|             | Wrap-Up       |
+
+### AEA Replication Package using Quarto (2.5 Hours)
+
+| Time | Module                                |
+|------|---------------------------------------|
+|      | Data and Code Availability Guidelines |
+|      |                                       |
+|      | Annotating Data                       |
+|      |                                       |
+|      | Annotating Scripts                    |
+|      |                                       |
+|      | Rendering a Replication Package       |
+|      | Wrap-Up                               |
+
+### Publishing Quarto Websites online (2.5 Hours)
+
+| Time | Module            |
+|------|-------------------|
+|      | Websites          |
+|      |                   |
+|      | Publishing Online |
+|      |                   |
+|      | Wrap-Up           |
+
+### More Quarto for Academics (2.5 Hours)
+
+| Time | Module                                 |
+|------|----------------------------------------|
+|      | Personal Websites and Blogs            |
+|      |                                        |
+|      | Presentations and Teaching with Quarto |
+|      |                                        |
+|      | Miscellaneous                          |
+|      | Wrap-Up                                |

@@ -1,73 +1,41 @@
-# quarto-econ-2023
-Materials for Open and Reproducible Research Websites workshop presented Jul 18-20 for the Department of Economics, Monash University
+# Meeting AEA Replication standards using Quarto and GitHub
+
+Materials for **Meeting AEA Replication standards using Quarto and GitHub** workshop presented Jul 18-20 for the Department of Economics, Monash University
 
 ## Workshop Abstract
 
-This workshop is an introduction to self-publishing research and profile websites using Quarto markdown and GitHub Pages. Quarto is an open source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word and more. GitHub Pages is a free, lightweight solution for publishing websites online. In this workshop, participants will:
+This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards and other similar data and code availability guidelines. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis into an AEA standard Replication Package, and how to publish a companion website via GitHub Pages.
 
-Understand the basics of the Quarto publishing framework and related tools including pandoc, knitr, jupyter, LaTex and markdown
-Set up and render a Quarto website with multiple webpages, navigation bar and search
-Host a rendered website online using GitHub Pages
-Publish a Quarto website for a research project with:
-STATA, R and/or Python code and outputs
-Scientific content such as tables, figures, references, mathematical equations etc.
-Learn about more advanced Quarto website features and possibilities
+In this workshop, participants will:
 
-By the end of the workshop every participant will have at least one Quarto website published online.
+-   improve their understanding of AEA replication standards
 
-## Schedule
-Date: Tues-Thurs 18-20 Jul
-Location: Caulfield (Room TBC)
+-   learn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents
 
-Day 1 – Basics, First Quarto Website, Hosting on GitHub
-9am-11.30am 	Introductions, Basics of Quarto and Web Publishing,
-Setup and Installations
-11.30am-12.30pm 	Lunch
-12.30pm-3pm 	AEA Replication Package in Quarto
-			Hands on demo and walkthrough
+-   produce a replication package and website using a provided Quarto template
 
-Day 2 – Publishing your first Quarto Website on GitHub Pages
-9am-10.30am		How to include code, code output and scientific content
-10.30-11am		Break
-11am-12.30pm	Hands on demo and troubleshooting
+-   learn how to publish a replication website online using GitHub Pages
 
-Day 3 – Other Quarto Features (Personal Profile Websites and more)
-9am-10.30am		Advanced Quarto Features, Resources, Example Websites
-10.30-11am		Break
-11am-12.30pm	Hands on assistance to publish your workshop project
+-   *(optional)* learn about additional Quarto features such as presentation slides and custom document styling
 
-## Preparation
+Quarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more. GitHub Pages is a free, lightweight solution for publishing websites online.
 
-- Prework: https://mine.quarto.pub/quarto-sdss/pre-work.html // I will be there early to help you!
-- IDE: VSCode or RStudio?
-- visual mode
-- try to avoid troubleshooting for the first half hour
-- webhosting -- GitHub Pages
-- bring a project with scripts folder! -- i.e. something like: https://aeadataeditor.github.io/aea-de-guidance/preparing-for-data-deposit.html
-    - exclude: STATA scripts?
-- quarto template / github --- GUI git clone; git template repository!
-- keep them out of terminal as much as possible!
-    - [`quarto publish`](https://quarto.org/docs/publishing/github-pages.html)
-- pieces of the end goal -- explain each piece; adding extra pages etc.,
-- highlight:
-    - HTML options; metadata fields
-    - source mode debugging
-    - accessibility features
-    - theming
+## Workshop Schedule
 
-doing a multi-day workshop:
-- allocate WRAP-UP
-- post materials day by day
-- leave the room during breaks
+| Day           | Time        | Activity                                               |
+|----------------|----------------|-----------------------------------------|
+| Tues, Jul 18  | 09:00-11:30 | Session 01: Authoring Scientific Documents with Quarto |
+|               | 11:30-12:30 | Lunch (BYO)                                            |
+|               | 12:30-15:00 | Session 02: AEA Replication Package using Quarto       |
+| Weds, Jul 19  | 09:00-12:30 | Session 03: Publishing Quarto Websites Online          |
+|               | 13:30-15:00 | Office Hours                                           |
+| Thurs, Jul 20 | 09:00-12:30 | Session 04: More Quarto for Academics *(optional)*     |
+|               | 13:30-15:00 | Office Hours                                           |
 
-- Engagement
-    - show a timer during YOUR TURN breaks
-    - keep the talks short
-    - stretch goals!
-    - sticky on the back of laptops
-    - now show to the person next to you!
 
-- normally -- what to teach but not this time!
-    - executable: code chunks
-    - journal articles
+## Pre-Workshop Tasks
 
+TBC
+## Session Modules
+
+TBC

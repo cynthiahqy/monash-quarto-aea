@@ -9,6 +9,7 @@ duration: 2.5 hours
 - Personal Websites:
     - multi-format CV: https://www.cynthiahqy.com/cv
     - custom domains
+    - HTML/CSS customisation
 - teaching with Quarto:
     - https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/
 - Presentation slides (extension from session 1)
