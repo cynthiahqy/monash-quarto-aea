@@ -1,0 +1,8 @@
+---
+title: AEA Replication Packages using Quarto & Github Pages
+---
+
+- [ ] ADD updated program // session titles
+- [ ] rewrite blurb to be less Quarto/technically focused -- more on replication AEA
+- [ ] replicable research, data and code for econ journals
+

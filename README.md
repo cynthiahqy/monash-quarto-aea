@@ -20,14 +20,13 @@ Date: Tues-Thurs 18-20 Jul
 Location: Caulfield (Room TBC)
 
 Day 1 – Basics, First Quarto Website, Hosting on GitHub
-9am-11.30am 	Introductions,
-Basics of Quarto and Web Publishing,
+9am-11.30am 	Introductions, Basics of Quarto and Web Publishing,
 Setup and Installations
 11.30am-12.30pm 	Lunch
-12.30pm-3pm 	Publishing your first Quarto Website on GitHub Pages
+12.30pm-3pm 	AEA Replication Package in Quarto
 			Hands on demo and walkthrough
 
-Day 2 – Open and Reproducible Research in Quarto (Showcase Website)
+Day 2 – Publishing your first Quarto Website on GitHub Pages
 9am-10.30am		How to include code, code output and scientific content
 10.30-11am		Break
 11am-12.30pm	Hands on demo and troubleshooting

@@ -2,3 +2,8 @@
 title: "Pre-Workshop"
 ---
 
+- Install VSCode
+- Install Quarto
+- Get files from template repository
+- Review the AEA guidelines, 
+    - Pick a existing project to bring to the workshop
