@@ -41,15 +41,15 @@ online.
 
 **Session Schedule:**
 
-| Day           | Time        | Activity                                               |
-|---------------|-------------|--------------------------------------------------------|
-| Tues, Jul 18  | 09:00-11:30 | Session 01: Authoring Scientific Documents with Quarto |
-|               | 11:30-12:30 | Lunch (BYO)                                            |
-|               | 12:30-15:00 | Session 02: AEA Replication Package using Quarto       |
-| Weds, Jul 19  | 09:00-12:30 | Session 03: Publishing Quarto Websites Online          |
-|               | 13:30-15:00 | Support Hours *(optional)*                             |
-| Thurs, Jul 20 | 09:00-12:30 | Session 04: More Quarto for Academics *(optional)*     |
-|               | 13:30-15:00 | Support Hours *(optional)*                             |
+| Day           | Time        | Activity                                                   |
+|---------------|-------------|------------------------------------------------------------|
+| Tues, Jul 18  | 09:00-11:30 | **Session 01: Authoring Scientific Documents with Quarto** |
+|               | 11:30-12:30 | Lunch (BYO)                                                |
+|               | 12:30-15:00 | **Session 02: AEA Replication Package using Quarto**       |
+| Weds, Jul 19  | 09:00-12:30 | **Session 03: Publishing Quarto Websites Online**          |
+|               | 13:30-15:00 | Support Hours *(optional)*                                 |
+| Thurs, Jul 20 | 09:00-12:30 | **Session 04: More Quarto for Academics** *(optional)*     |
+|               | 13:30-15:00 | Support Hours *(optional)*                                 |
 
 ## Instructor: Cynthia Huang, PhD student
 
