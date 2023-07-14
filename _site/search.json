@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "00-pre-workshop.html",
+    "href": "00-pre-workshop.html",
+    "title": "Pre-Work",
+    "section": "",
+    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload day01-exercises.zip"
+  },
+  {
+    "objectID": "00-pre-workshop.html#day-1",
+    "href": "00-pre-workshop.html#day-1",
+    "title": "Pre-Work",
+    "section": "",
+    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload day01-exercises.zip"
+  },
+  {
+    "objectID": "00-pre-workshop.html#day-2-tbc",
+    "href": "00-pre-workshop.html#day-2-tbc",
+    "title": "Pre-Work",
+    "section": "Day 2 [TBC]",
+    "text": "Day 2 [TBC]\n\nDownload day02-exercises.zip"
+  },
+  {
+    "objectID": "00-pre-workshop.html#footnotes",
+    "href": "00-pre-workshop.html#footnotes",
+    "title": "Pre-Work",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSee this video tutorial for step-by-step instructions↩︎\nFor more detailed instructions see this guide↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Meeting AEA Replication Standards using Quarto and GitHub",
+    "section": "",
+    "text": "See Pre-work for tasks to complete before the workshop."
+  },
+  {
+    "objectID": "index.html#pre-workshop-tasks",
+    "href": "index.html#pre-workshop-tasks",
+    "title": "Meeting AEA Replication Standards using Quarto and GitHub",
+    "section": "",
+    "text": "See Pre-work for tasks to complete before the workshop."
+  },
+  {
+    "objectID": "index.html#workshop-details",
+    "href": "index.html#workshop-details",
+    "title": "Meeting AEA Replication Standards using Quarto and GitHub",
+    "section": "Workshop Details",
+    "text": "Workshop Details\nLocation: Caulfield Campus, Building H, room H4.87\nSession Schedule:\n\n\n\n\n\n\n\n\nDay\nTime\nActivity\n\n\n\n\nTues, Jul 18\n09:00-11:30\nSession 01: Getting to Know Quarto\n\n\n\n11:30-12:30\nLunch (BYO)\n\n\n\n12:30-15:00\nSession 02: AEA Replication Packages\n\n\n\n15:00-16:00\nSupport Hours (optional)\n\n\nWeds, Jul 19\n09:00-12:30\nSession 03: Producing and Publishing Websites\n\n\nThurs, Jul 20\n09:00-12:30\nSession 04: More Quarto for Academics (optional)\n\n\n\n13:30-15:30\nSupport Hours (optional)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] [@koren2022], and how to publish a companion website via GitHub Pages.\nIn this workshop, participants will:\n\nimprove their understanding of AEA replication standards\nlearn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents\nproduce a replication package and website using a provided Quarto template\nlearn how to publish a replication website online using GitHub Pages\n(optional) learn about additional Quarto features such as presentation slides and custom document styling\n\nQuarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more. GitHub Pages is a free, lightweight solution for publishing websites online."
+  },
+  {
+    "objectID": "about.html#workshop-abstract",
+    "href": "about.html#workshop-abstract",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] [@koren2022], and how to publish a companion website via GitHub Pages.\nIn this workshop, participants will:\n\nimprove their understanding of AEA replication standards\nlearn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents\nproduce a replication package and website using a provided Quarto template\nlearn how to publish a replication website online using GitHub Pages\n(optional) learn about additional Quarto features such as presentation slides and custom document styling\n\nQuarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more. GitHub Pages is a free, lightweight solution for publishing websites online."
+  },
+  {
+    "objectID": "about.html#instructor-cynthia-huang-phd-student",
+    "href": "about.html#instructor-cynthia-huang-phd-student",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Instructor: Cynthia Huang, PhD student",
+    "text": "Instructor: Cynthia Huang, PhD student\nCynthia is a second year PhD student in Econometrics and Business Statistics at Monash University working on principles and methods for data preparation. She completed honours in Economics at the University of Melboure and has extensive experience preparing data for empirical economics research. She uses Quarto and GitHub to document R and python code, write papers and presentation slides, and to publish her personal website. Her CV can be viewed here: https://www.cynthiahqy.com/cv."
+  },
+  {
+    "objectID": "00-pre-workshop.html#day-3-tbc",
+    "href": "00-pre-workshop.html#day-3-tbc",
+    "title": "Pre-Work",
+    "section": "Day 3 [TBC]",
+    "text": "Day 3 [TBC]"
+  }
+]

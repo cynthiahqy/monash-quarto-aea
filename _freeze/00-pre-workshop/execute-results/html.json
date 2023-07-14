@@ -1,0 +1,14 @@
+{
+  "hash": "a73cbdc5c1f85bc1c321feb1d1886bcd",
+  "result": {
+    "markdown": "---\ntitle: \"Pre-Work\"\n---\n\n\n## Day 1\n\n-   Download or update the latest versions of R, RStudio, Quarto and git:\n\n    -   R `4.3` (or 4.2 or above): <https://cran.r-project.org>\n\n    -   RStudio `2023.06.0+421` or above: <https://posit.co/download/rstudio-desktop>\n\n    -   Quarto `1.3.433` or above: <https://quarto.org/docs/get-started>\n\n    -   Git `2.37.1` or above: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>\n\n-   Install the following R packages by opening RStudio and typing the following in the Console [^1]\n\n\n::: {.cell}\n\n```{.r .cell-code}\npkg_list <- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n```\n:::\n\n\n[^1]: See this [video tutorial](https://www.youtube.com/watch?v=u1r5XTqrCTQ) for step-by-step instructions\n\n-   Register an account with GitHub[^2]: <https://github.com/>\n\n[^2]: For more detailed instructions see this [guide](https://happygitwithr.com/github-acct.html)\n\n-   Download [`day01-exercises.zip`](day01-exercises.zip)\n\n## Day 2 \\[TBC\\]\n\n-   Download `day02-exercises.zip`\n\n## Day 3 \\[TBC\\]\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
