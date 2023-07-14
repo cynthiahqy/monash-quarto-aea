@@ -1,0 +1,94 @@
+project:
+  type: website
+  render:
+    - "index.qmd"
+    - "00-pre-workshop.qmd"
+    - "!day01-exercises"
+
+website:
+  page-navigation: true
+  title: "Meeting AEA Replication standards using Quarto and GitHub"
+  description: "Jul 18-20 Workshop on Quarto for Department of Economics, Monash University"
+
+  repo-url: https://github.com/cynthiahqy/monash-quarto-aea
+  repo-actions: [edit, issue]
+
+  open-graph: true
+  twitter-card:
+    creator: "@cynthiahqy"
+
+  sidebar:
+    pinned: true
+    align: center
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: 00-pre-workshop.qmd
+        text: Pre-work
+      - text: "---"
+      - section: "Getting to Know Quarto"
+        contents:
+          - href: 01a-hello-quarto/index.qmd
+            text: Hello Quarto
+          - href: 01b-html/index.qmd
+            text: HTML Documents
+          - href: 01c-pdf/index.qmd
+            text: PDF and LaTex Documents
+          - href: 01d-other/index.qmd
+            text: Other Document Formats
+          - href: 01d-wrap-up/index.qmd
+            text: Wrap Up
+      - text: "---"
+      - section: "AEA Replication using Quarto"
+        contents:
+          - href: 02a-replication/index.qmd
+            text: Replication Packages and READMEs
+          - href: 02c-includes/index.qmd
+            text: Includes
+          - href: 02d-references/index.qmd
+            text: References and Citations
+          - href: 02e-wrap-up/index.qmd
+            text: Wrap Up
+      - text: "---"
+      - section: "Producing and Publishing Websites"
+        contents:
+          - href: 03a-websites/index.qmd
+            text: Websites in Quarto
+          - href: 02b-listings/index.qmd
+            text: Listings
+          - href: 03b-publish/index.qmd
+            text: Publishing
+          - href: 03c-customise/index.qmd
+            text: Customisation
+          - href: 03d-wrap-up/index.qmd
+            text: Wrap Up
+      - text: "---"
+      - section: "More Quarto for Academics"
+        contents:
+          - href: 04a-presentations/index.qmd
+            text: Presentations
+          - href: 04b-personal/index.qmd
+            text: Personal Websites
+          - href: 04c-misc/index.qmd
+            text: Miscellaneous
+          - href: 04d-wrap-up/index.qmd
+            text: Wrap Up
+
+  page-footer:
+    right: "This page is built with 💚 and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, Cynthia Huang"
+
+format:
+  html:
+    theme: simplex
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  freeze: auto
+
+editor: visual
