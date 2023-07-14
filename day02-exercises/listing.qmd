@@ -1,0 +1,16 @@
+---
+listing:
+  id: example-listing
+  contents:
+    - inputs/items.yaml
+  type: table
+---
+
+## Listings
+
+Listings allow you to automatically generate content from folders or YAML files.
+
+::: {#example-listing}
+:::
+
+They are only available for Quarto Websites

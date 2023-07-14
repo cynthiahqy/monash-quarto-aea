@@ -23,3 +23,10 @@ Background:
 - https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.112.813
 - https://www.vilhuber.com/lars/
 
+Quarto docs:
+- https://quarto.org/docs/output-formats/html-code.html#overview
+- https://quarto.org/docs/websites/website-listings.html#overview
+** listings only work for websites! **
+- render using `quarto::quarto_render(output_format = "pdf", input = "day01-exercises/my_first_article.qmd")`
+
+- https://lukestein.github.io/stata-latex-workflows/

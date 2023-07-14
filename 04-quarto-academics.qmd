@@ -17,3 +17,4 @@ duration: 2.5 hours
     - usually focus on executable and updating scripts
     - easy to get started with html styles
     - nice to have
+- Journal Templates
