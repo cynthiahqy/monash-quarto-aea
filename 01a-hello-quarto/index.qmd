@@ -1,49 +1,27 @@
 ---
-title: "Hello Quarto"
-author: "Cynthia Huang"
-date: 2023-07-19
-footer: "[🔗 cynthiahqy.github.io/monash-quarto-aea](https://cynthiahqy.github.io/monash-quarto-aea)"
-format:
-  revealjs:
-    theme: default
-    transition: fade
-    slide-number: true
-    chalkboard: true
+title: Hello Quarto!
 ---
 
-# Pre-workshop instructions
+## Slides
 
-## While you wait for the workshop to begin... {.smaller}
+[View slides in full screen](slides.html)
 
--   Download or update the latest versions of R, RStudio, Quarto and git:
-
-    -   R `4.3` (or 4.2 or above): <https://cran.r-project.org>
-    -   RStudio `2023.06.0+421` or above: <https://posit.co/download/rstudio-desktop>
-    -   Quarto `1.3.433` or above: <https://quarto.org/docs/get-started>
-    -   Git `2.37.1` or above: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-
--   Install the following packages:
-```{r}
-#| eval: false
-pkg_list <- c(
-  "tinytex", "quarto", "knitr", "here", "yaml"
-)
-install.packages(pkg_list)
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
 
--   Download and unzip [`day01-exercises.zip`](https://cynthiahqy.github.io/monash-quarto-aea/day01-exercises.zip)
+## Exercises
 
-# Welcome
+- `my_first_doc.qmd`
 
-## About Me
+## Resources
 
-**Cynthia Huang**
+Official Quarto Documentation:
 
-- Currently: PhD candidate in EBS
-- Previously: Economics at Unimelb, SoDa Labs
-- passionate about research communication and software
+- [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html)
+- [Visual Editing in Rstudio Guide](https://quarto.org/docs/visual-editor/)
+- [Rendering in Rstudio](https://quarto.org/docs/tools/rstudio.html#render-and-preview)
 
-## Workshop Schedule
+More:
 
-
-
+- [Chapter 29: Quarto, R for Data Science](https://r4ds.hadley.nz/quarto.html)
