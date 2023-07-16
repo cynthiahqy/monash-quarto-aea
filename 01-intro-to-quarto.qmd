@@ -7,24 +7,7 @@ duration: 2.5 hours
 
 ## About Me
 
-## Workshop Goals
 
-This workshop will be a little bit different to your standard Intro to Quarto workshop.
-
-We will focus on:
-
-- features of Quarto that can help you document research code and data:
-    - incorporate existing text files (scripts, table outputs etc.) <!-- includes -->
-    - reference management -- e.g. in-line citations, cross-references, figure and table numbers <!--- citations -->
-    - generate summary tables and overviews from listing files <!--- listings --->
-- how to publish and share Quarto projects online
-- giving you enough skills in Quarto, git, GitHub and R to incorporate some of these learnings in your existing workflows
-
-I will assume:
-
-- you regularly write scripts in at least one computational language (e.g. STATA, R, python)
-- you know at least basic LaTex
-- you work with small-to-medium sized datasets which can be compressed into reasonable sized downloads.
 
 ---
 
