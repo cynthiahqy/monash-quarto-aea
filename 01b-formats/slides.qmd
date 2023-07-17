@@ -2,7 +2,7 @@
 title: "Document Formats"
 subtitle: "Session 1: Getting to know Quarto"
 author: "Cynthia Huang"
-date: 2023-07-19
+date: 2023-07-18
 format: revealjs
 metadata-files: 
   - ../_slides.yml
