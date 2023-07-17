@@ -1,5 +1,432 @@
 [
   {
+    "objectID": "01d-wrap-up/slides.html#quarto-cli",
+    "href": "01d-wrap-up/slides.html#quarto-cli",
+    "title": "Wrap-Up",
+    "section": "Quarto CLI…",
+    "text": "Quarto CLI…\norchestrates each step of rendering\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#learn-more",
+    "href": "01d-wrap-up/slides.html#learn-more",
+    "title": "Wrap-Up",
+    "section": "Learn more",
+    "text": "Learn more\n\nhttps://quarto.org"
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#follow-up-with",
+    "href": "01d-wrap-up/slides.html#follow-up-with",
+    "title": "Wrap-Up",
+    "section": "Follow up with…",
+    "text": "Follow up with…\n\nquarto.org/docs/blog"
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#quarto-offers",
+    "href": "01d-wrap-up/slides.html#quarto-offers",
+    "title": "Wrap-Up",
+    "section": "Quarto offers…",
+    "text": "Quarto offers…\nsingle-source publishing to pdf, html, docx and more!\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#learn-more-1",
+    "href": "01d-wrap-up/slides.html#learn-more-1",
+    "title": "Wrap-Up",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/get-started/authoring/rstudio.html#output-formats"
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#quarto-articles",
+    "href": "01d-wrap-up/slides.html#quarto-articles",
+    "title": "Wrap-Up",
+    "section": "Quarto Articles…",
+    "text": "Quarto Articles…\ncombines scientific markdown with LaTex templates\n\nImage source: xkcd.com"
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#learn-more-2",
+    "href": "01d-wrap-up/slides.html#learn-more-2",
+    "title": "Wrap-Up",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/journals/index.html"
+  },
+  {
+    "objectID": "01d-wrap-up/slides.html#questions",
+    "href": "01d-wrap-up/slides.html#questions",
+    "title": "Wrap-Up",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review or learn before we wrap up the workshop?\n\n\nSuggestions / requests for things to cover in Thursday’s session?\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#article-features",
+    "href": "01c-scholarly/slides.html#article-features",
+    "title": "Articles",
+    "section": "Article Features",
+    "text": "Article Features\nQuarto supports\n\n\na standardized schema for key details like authors and affiliations that can be expressed once in the source document,\ncross-referencing of figures, tables, equations etc., and\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies,\noutputting to pdf, html, and docx with custom formatting,"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#components-of-an-article",
+    "href": "01c-scholarly/slides.html#components-of-an-article",
+    "title": "Articles",
+    "section": "Components of an Article",
+    "text": "Components of an Article\n\n\n\n\n---\ntitle: \"Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory\"\ndate: 2008-02-29\nauthor:\n  - name: Josiah Carberry\n    id: jc\n    orcid: 0000-0002-1825-0097\n    email: josiah@psychoceramics.org\n    affiliation: \n      - name: Brown University\n        city: Providence\n        state: RI\n        url: www.brown.edu\nabstract: &gt; \n  The characteristic theme of the works of Stone is \n  the bridge between culture and society. ...\nkeywords:\n  - Metaphysics\n  - String Theory\nlicense: \"CC BY\"\ncopyright: \n  holder: Josiah Carberry\n  year: 2008\ncitation: \n  container-title: Journal of Psychoceramics\n  volume: 1\n  issue: 1\n  doi: 10.5555/12345678\nfunding: \"The author received no specific funding for this work.\"\n---\n\n\n\n\nMetadata: Extended YAML front matter fields\nContent: markdown text, tables, figures, raw LaTex, citations\nCode: executed by knitr (R) or jupyter (python)"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#front-matter",
+    "href": "01c-scholarly/slides.html#front-matter",
+    "title": "Articles",
+    "section": "Front Matter",
+    "text": "Front Matter\n\nwe will focus on generating scholarly content, but as a brief overview of other features\n\n\nQuarto pre-defines useful metadata keys for scholarly writing:\n\nauthors, affiliations, roles\narticle abstract and keywords\nacknowledgements and thanks\ncitation, license, copyright, funding\n\n\n\n\nbut not all formats use every metadata field."
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#file-includes",
+    "href": "01c-scholarly/slides.html#file-includes",
+    "title": "Articles",
+    "section": "File Includes",
+    "text": "File Includes\n\nThere are a few ways to include content from other files, but a useful option for PDF or HTML snippets is the include-in-* options.\n\nThe following include-in-* options allow you to include contents of a file (e.g. file.tex) verbatim at certain positions:\n\n\n\n\n\n\n\n\nOption\nPosition\nUse Cases\n\n\n\n\ninclude-in-header\nend of the header\nbefore \\begin{document} or &lt;body&gt;\nInject commands into the LaTeX preamble\n\n\ninclude-before-body\nbeginning of the document body\nafter \\begin{document} or &lt;body&gt;\nInclude navigation bars or banners in HTML\n\n\ninclude-after-body\nend of the document body\nbefore \\end{document} or &lt;/body&gt;"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#latex-output",
+    "href": "01c-scholarly/slides.html#latex-output",
+    "title": "Articles",
+    "section": "LaTex Output",
+    "text": "LaTex Output\nThere are two ways to produce a LaTex file (.tex) using options specificed in the YAML header:\n\nOption 1: Use the latex format instead of pdf\n\nformat:\n  latex:\n    documentclass: report\n    classoption: [twocolumn, landscape]\n    lof: true\n    lot: true\n\n\nOption 2: Use the keep-tex option in the pdf format\n\nformat:\n  pdf:\n    documentclass: report\n    keep-tex: true"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#equations",
+    "href": "01c-scholarly/slides.html#equations",
+    "title": "Articles",
+    "section": "Equations",
+    "text": "Equations\n\n\nor just use Visual Mode!"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#figures",
+    "href": "01c-scholarly/slides.html#figures",
+    "title": "Articles",
+    "section": "Figures",
+    "text": "Figures\nMarkdown:\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"left\" height=\"200px\"}\nOutput (HTML):\n\n\n\nPenguins playing with a Quarto ball"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#figures-1",
+    "href": "01c-scholarly/slides.html#figures-1",
+    "title": "Articles",
+    "section": "Figures",
+    "text": "Figures\nMarkdown:\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"right\" height=\"200px\"}\nOutput (HTML):\n\n\n\nPenguins playing with a Quarto ball"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#subfigures",
+    "href": "01c-scholarly/slides.html#subfigures",
+    "title": "Articles",
+    "section": "Subfigures",
+    "text": "Subfigures\nMarkdown:\n::: {#fig-penguins layout-ncol=2}\n\n![Blue penguin](images/blue-penguin.png){#fig-blue width=\"250px\"}\n\n![Orange penguin](images/orange-penguin.png){#fig-orange width=\"250px\"}\n\nTwo penguins\n\n:::"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#subfigures-1",
+    "href": "01c-scholarly/slides.html#subfigures-1",
+    "title": "Articles",
+    "section": "Subfigures",
+    "text": "Subfigures\nOutput (LaTex):\n\\begin{figure}\n\n\\begin{minipage}[t]{0.50\\linewidth}\n\n{\\centering \n\n\\raisebox{-\\height}{\n\n\\includegraphics[width=2.60417in,height=\\textheight]{images/blue-penguin.png}\n\n}\n\n}\n\n\\subcaption{\\label{fig-blue}Blue penguin}\n\\end{minipage}%\n%\n\\begin{minipage}[t]{0.50\\linewidth}\n\n{\\centering \n\n\\raisebox{-\\height}{\n\n\\includegraphics[width=2.60417in,height=\\textheight]{images/orange-penguin.png}\n\n}\n\n}\n\n\\subcaption{\\label{fig-sleep}Orange penguin}\n\\end{minipage}%\n\n\\caption{\\label{fig-penguins}Two penguins}\n\n\\end{figure}"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#subfigures-2",
+    "href": "01c-scholarly/slides.html#subfigures-2",
+    "title": "Articles",
+    "section": "Subfigures",
+    "text": "Subfigures\nOutput (PDF):"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#latex-figure-options",
+    "href": "01c-scholarly/slides.html#latex-figure-options",
+    "title": "Articles",
+    "section": "LaTex Figure Options",
+    "text": "LaTex Figure Options\nQuarto can some options specific to LaTex output such as figure position and environments\n---\ntitle: \"Sidenotes\"\nformat:\n  pdf:\n    fig-pos: 'h'\n    include-in-header: \n      text: |\n        \\usepackage{mdframed}\n---\n\n![Elephant](elephant.png){fig-env=\"mdframed\"}\nSee PDF Reference &gt; Figures for available options"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#raw-latex-commands",
+    "href": "01c-scholarly/slides.html#raw-latex-commands",
+    "title": "Articles",
+    "section": "Raw LaTex Commands",
+    "text": "Raw LaTex Commands\nPandoc (and thus Quarto) allows for mixing raw LaTex with markdown when creating PDF documents. For example:\n\\begin{tabular}{|l|l|}\\hline\nAge & Frequency \\\\ \\hline\n18--25  & 15 \\\\\n26--35  & 33 \\\\\n36--45  & 22 \\\\ \\hline\n\\end{tabular}\n\n\n\n\n\n\n\nWarning\n\n\nNote that raw LaTex will not be rendered in HTML format. However, if you have existing LaTex content (e.g. from STATA) that can’t be re-exported or re-written in markdown this is a useful option."
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#your-turn-my_first_article.qmd",
+    "href": "01c-scholarly/slides.html#your-turn-my_first_article.qmd",
+    "title": "Articles",
+    "section": "Your Turn: my_first_article.qmd",
+    "text": "Your Turn: my_first_article.qmd\n\n\nOpen my_first_article.qmd inside your last Rproject.\nFollow the PDF exercise instructions\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#submit-straight-from-quarto",
+    "href": "01c-scholarly/slides.html#submit-straight-from-quarto",
+    "title": "Articles",
+    "section": "Submit straight from Quarto",
+    "text": "Submit straight from Quarto\n\nQuarto supports the creation of custom formats for single-source publishng to pdf, html, docx.\n\nJournal Article extensions offer templates to adapt an existing .qmd document\n\n\naccording to the styles required for various journals,\n\n\n\n\nand create the LaTeX required for submission to multiple journals."
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#journal-formats",
+    "href": "01c-scholarly/slides.html#journal-formats",
+    "title": "Articles",
+    "section": "Journal formats",
+    "text": "Journal formats\n\ngithub.com/quarto-journals\n\n\n\n\nJournal / Publisher\nName\n\n\n\n\nAssociation of Computing Machinery\nacm\n\n\nAmerican Chemical Society\nacs\n\n\nAmerican Geophysical Union\nagu\n\n\nBiophysical journal\nbiophysical-journal\n\n\nElsevier Journals*\nelsevier\n\n\nAmerican Statistical Association Journals\njasa\n\n\nJournal of Statistical Software\njss\n\n\nPublic Library of Science\nplos"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#getting-started-with-a-journal-article",
+    "href": "01c-scholarly/slides.html#getting-started-with-a-journal-article",
+    "title": "Articles",
+    "section": "Getting started with a journal article",
+    "text": "Getting started with a journal article\nThe quarto use template command can be used to create an article from one these formats, e.g. for Elsevier:\n\n\nTerminal\n\nquarto use template quarto-journals/elsevier"
+  },
+  {
+    "objectID": "01c-scholarly/slides.html#our-turn-journal-article-templates",
+    "href": "01c-scholarly/slides.html#our-turn-journal-article-templates",
+    "title": "Articles",
+    "section": "Our Turn: Journal Article Templates",
+    "text": "Our Turn: Journal Article Templates\n\n\ngo to terminal, and make new folder called elsevier-article\nrender it!\nedit author details\nadd citation in visual mode\n\n\n\nLet’s write an article together for Elsevier and showcase the following features of Quarto journal articles:\n\nPDF output\nExtended YAML front matter\nReference management\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+  },
+  {
+    "objectID": "01b-formats/slides.html#basic-components",
+    "href": "01b-formats/slides.html#basic-components",
+    "title": "Document Formats",
+    "section": "Basic Components",
+    "text": "Basic Components\n\n\n\n\n---\ntitle: \"Anatomy of a Quarto Document\"\n---\n\n## R\n\n```{r}\nhead(mtcars)\n```\n\n## STATA\n\n```stata\nversion 13\nuse censas\ntabulate region\nsummarize marriage_rate divorce_rate median_age if state!=\"Nevada\"\n```\n\nThe script above is from the [Section 16.1](https://www.stata.com/manuals13/u16.pdf) of the *Stata 13 Manual*\n\n\n\n\nMetadata: an (optional) YAML header\nContent: markdown syntax\nCode: executed by knitr (R) or jupyter (python)"
+  },
+  {
+    "objectID": "01b-formats/slides.html#yaml-metadata",
+    "href": "01b-formats/slides.html#yaml-metadata",
+    "title": "Document Formats",
+    "section": "YAML Metadata",
+    "text": "YAML Metadata\n\n“Yet Another Markup Language” or “YAML Ain’t Markup Language”\n\nkey: value\n\n\nControl whole document or project options and metadata\nIf YAML header is missing, Quarto defaults apply.\nAvailable options differ by format: HTML, PDF, Websites"
+  },
+  {
+    "objectID": "01b-formats/slides.html#markdown-content",
+    "href": "01b-formats/slides.html#markdown-content",
+    "title": "Document Formats",
+    "section": "Markdown Content",
+    "text": "Markdown Content\n\nnot covered in detail, but we will briefly look at some features\n\n\nSimple text formatting:\n\n# Heading\n_italics_, **bold**, `code`\n[linked phrase](http://example.com)\n\nContent features:\n\nFigures\nTables\nReferences"
+  },
+  {
+    "objectID": "01b-formats/slides.html#code-blocks",
+    "href": "01b-formats/slides.html#code-blocks",
+    "title": "Document Formats",
+    "section": "Code Blocks",
+    "text": "Code Blocks\n\nnot covered beyond displaying code\n\n\nChunks of code between ```s.\nSyntax highlighting for ~140 Languages: ```stata\nExecutable R/python/Julia code starts with: ```{r}"
+  },
+  {
+    "objectID": "01b-formats/slides.html#many-quarto-formats-features",
+    "href": "01b-formats/slides.html#many-quarto-formats-features",
+    "title": "Document Formats",
+    "section": "Many Quarto formats & features",
+    "text": "Many Quarto formats & features\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites\nQuarto Blogs\n\n\nJournal Articles\nJournal Articles\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nDashboards\nComing soon!"
+  },
+  {
+    "objectID": "01b-formats/slides.html#our-turn-quarto-formats",
+    "href": "01b-formats/slides.html#our-turn-quarto-formats",
+    "title": "Document Formats",
+    "section": "Our Turn: Quarto Formats",
+    "text": "Our Turn: Quarto Formats\n\n~10 mins show my_first_doc.qmd - what format, where to, whole doc features - render options (YAML) - html then pdf - YAML features - title - keep tex - render HTML again – show multi-format\n\n\n\nOpen my_first_doc.qmd again in RStudio.\nWhat is the default rendering format?\nAdd PDF format options and keep the intermediate .tex file:\n\n---\nformat:\n  pdf:\n    keep-tex: true\n  html: default\n---\n\nRender the document as a PDF.\nExtension: Can you preview the HTML again?\n\n[HINT: Use quarto preview in the Terminal]"
+  },
+  {
+    "objectID": "01b-formats/slides.html#yaml-options",
+    "href": "01b-formats/slides.html#yaml-options",
+    "title": "Document Formats",
+    "section": "YAML options",
+    "text": "YAML options\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---\n\nA sneak preview of YAML for websites:\n\n\n_quarto.yml\n\n---\nproject:\n  type: website\n  output-dir: _site\n---"
+  },
+  {
+    "objectID": "01b-formats/slides.html#why-yaml",
+    "href": "01b-formats/slides.html#why-yaml",
+    "title": "Document Formats",
+    "section": "Why YAML?",
+    "text": "Why YAML?\nTo avoid manually typing out all the options, every time when rendering via the CLI:\n\nquarto render document.qmd --to html\n\n\n\nquarto render document.qmd --to html -M code-fold:true\n\n\n\nquarto render document.qmd --to html -M code-fold:true -P alpha:0.2 -P ratio:0.3"
+  },
+  {
+    "objectID": "01b-formats/slides.html#yaml-validation",
+    "href": "01b-formats/slides.html#yaml-validation",
+    "title": "Document Formats",
+    "section": "YAML validation",
+    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---\n\nValid, but needs next object\n\n---\nformat: \n  html:\n---"
+  },
+  {
+    "objectID": "01b-formats/slides.html#yaml-validation-1",
+    "href": "01b-formats/slides.html#yaml-validation-1",
+    "title": "Document Formats",
+    "section": "YAML validation",
+    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: There are 2 spaces a new line and no trailing :\n\nformat:\n  html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "01b-formats/slides.html#quarto-linting",
+    "href": "01b-formats/slides.html#quarto-linting",
+    "title": "Document Formats",
+    "section": "Quarto linting",
+    "text": "Quarto linting\n\nhow to validate all these options?\n\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "01b-formats/slides.html#quarto-yaml-intelligence",
+    "href": "01b-formats/slides.html#quarto-yaml-intelligence",
+    "title": "Document Formats",
+    "section": "Quarto YAML Intelligence",
+    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
+  },
+  {
+    "objectID": "01b-formats/slides.html#your-turn-quarto-yaml-intelligence",
+    "href": "01b-formats/slides.html#your-turn-quarto-yaml-intelligence",
+    "title": "Document Formats",
+    "section": "Your turn: Quarto YAML Intelligence",
+    "text": "Your turn: Quarto YAML Intelligence\n\n\nOpen my_first_doc.qmd again in RStudio.\nTry Ctrl + space in the YAML header to see the available YAML options.\nTry out the tab-completion to add:\n\na table of contents and,\nnumber the sections.\n\n\nSee PDF Format Guide if needed.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "01b-formats/slides.html#more-yaml-more-features",
+    "href": "01b-formats/slides.html#more-yaml-more-features",
+    "title": "Document Formats",
+    "section": "More YAML? More Features!",
+    "text": "More YAML? More Features!\n\n\n\nHTML Guide\n\n\n\nHTML Full Reference"
+  },
+  {
+    "objectID": "01b-formats/slides.html#more-yaml-more-features-1",
+    "href": "01b-formats/slides.html#more-yaml-more-features-1",
+    "title": "Document Formats",
+    "section": "More YAML? More Features!",
+    "text": "More YAML? More Features!\n\n\n\nPDF Guide\n\n\n\nPDF Full Reference\n\n\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#while-you-wait-for-the-workshop-to-begin",
+    "href": "01a-hello-quarto/slides.html#while-you-wait-for-the-workshop-to-begin",
+    "title": "Hello Quarto",
+    "section": "While you wait for the workshop to begin…",
+    "text": "While you wait for the workshop to begin…\n\nDownload or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following packages:\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project in there and open it."
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#about-me",
+    "href": "01a-hello-quarto/slides.html#about-me",
+    "title": "Hello Quarto",
+    "section": "About Me",
+    "text": "About Me\n\n\n\n\n\n\n\nCurrently: PhD candidate in EBS\nPreviously: Economics at Unimelb, SoDa Labs\nPassionate about research communication and transparency"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#about-you",
+    "href": "01a-hello-quarto/slides.html#about-you",
+    "title": "Hello Quarto",
+    "section": "About You",
+    "text": "About You\n\nWrite on a sticky-note:\n\nname of the person next to you\n1-3 keywords describing their research\n\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#about-the-tools",
+    "href": "01a-hello-quarto/slides.html#about-the-tools",
+    "title": "Hello Quarto",
+    "section": "About the Tools",
+    "text": "About the Tools\n\nThese are the tools we will use without diving too much into how they work. I’m happy to answer questions\n\n\nQuarto for collating scientific and technical research inputs into polished\nR and RStudio for editing and rendering Quarto documents and websites\ngit and GitHub for publishing your Quarto website\n\nWe will not cover any of these tools in depth, but I have included links for more details."
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#workshop-goals",
+    "href": "01a-hello-quarto/slides.html#workshop-goals",
+    "title": "Hello Quarto",
+    "section": "Workshop Goals",
+    "text": "Workshop Goals\n\nThis workshop will be a little bit different to your standard Intro to Quarto workshop. We will not cover computation in Quarto\n\nWe will focus on:\n\nfeatures of Quarto that can help you document research code and data:\n\nincorporate existing text files (scripts, table outputs etc.) \nreference management – e.g. in-line citations, cross-references, figure and table numbers \ngenerate summary tables and overviews from listing files \n\nhow to publish and share Quarto projects online"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#workshop-sessions-day-1",
+    "href": "01a-hello-quarto/slides.html#workshop-sessions-day-1",
+    "title": "Hello Quarto",
+    "section": "Workshop Sessions: Day 1",
+    "text": "Workshop Sessions: Day 1\n\n\n\n\n\n\n\nSession\nObjectives\n\n\n\n\nGetting to Know Quarto\n\nWhat is Quarto?\nbasic Quarto markdown and yaml syntax\nproduce standalone HTML and PDF documents from the same .qmd file\nproduce a single document from multiple existing files\n\n\n\nAEA Replication Packages\n\nWhat goes in a replication package?\nmore Quarto document features and syntax\nproduce a Quarto website from a collection of template files"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#workshop-sessions-day-2",
+    "href": "01a-hello-quarto/slides.html#workshop-sessions-day-2",
+    "title": "Hello Quarto",
+    "section": "Workshop Sessions: Day 2",
+    "text": "Workshop Sessions: Day 2\n\n\n\n\n\n\n\nSession\nObjectives\n\n\nProducing and Publishing Websites\n\nWhat are Quarto websites?\nQuarto website features and syntax\npublish the website using git and GitHub Pages\n\n\n\nMore Quarto for Academics\n\nWhat else can you do with Quarto?\nCan I know more about …?"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#workshop-expectations",
+    "href": "01a-hello-quarto/slides.html#workshop-expectations",
+    "title": "Hello Quarto",
+    "section": "Workshop Expectations",
+    "text": "Workshop Expectations\n\n\n\nI’ll assume you\n\nwork with small-medium data\nregularly write and debug code\nknow some basic LaTex and have heard of markdown\ncan use and edit a template even if you don’t fully understand what it is doing\n\n\n\n\nI’ll teach you\n\nQuarto syntax and formats\nrequirements for an AEA replication package\njust enough git and GitHub to publish a website"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#workshop-format",
+    "href": "01a-hello-quarto/slides.html#workshop-format",
+    "title": "Hello Quarto",
+    "section": "Workshop format",
+    "text": "Workshop format\nIn class:\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#getting-help",
+    "href": "01a-hello-quarto/slides.html#getting-help",
+    "title": "Hello Quarto",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nRaise your hand at any time during My Turn and Our Turn segments\nUse sticky notes during Your turn\n\nPink: I’d like some help / I’m stuck / I’m lost\nBlue: I’m done \n\n\nSlides, exercises and useful links are all available at:\n🔗 cynthiahqy.github.io/monash-quarto-aea\n\nshow how to see full-screen and toc"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#before-we-dive-in",
+    "href": "01a-hello-quarto/slides.html#before-we-dive-in",
+    "title": "Hello Quarto",
+    "section": "Before we dive in…",
+    "text": "Before we dive in…\n\nHave you completed the prework tasks?\n\nDownload or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following packages:\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project in there and open it."
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#quarto",
+    "href": "01a-hello-quarto/slides.html#quarto",
+    "title": "Hello Quarto",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system built on Pandoc\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#quarto-1",
+    "href": "01a-hello-quarto/slides.html#quarto-1",
+    "title": "Hello Quarto",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system built on Pandoc\n\n\n\nincludes a visual markdown editor for WYSISYG editing\nis a command line interface (CLI) that the renders plain text formats (.qmd, .rmd, .md) into static PDF/Word/HTML reports, books, websites, presentations and more."
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#aside-alternative-workspaces",
+    "href": "01a-hello-quarto/slides.html#aside-alternative-workspaces",
+    "title": "Hello Quarto",
+    "section": "Aside: Alternative Workspaces",
+    "text": "Aside: Alternative Workspaces"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#my-turn-a-tour-of-quarto-in-rstudio",
+    "href": "01a-hello-quarto/slides.html#my-turn-a-tour-of-quarto-in-rstudio",
+    "title": "Hello Quarto",
+    "section": "My Turn: A Tour of Quarto in RStudio",
+    "text": "My Turn: A Tour of Quarto in RStudio\n\n\nShow off features: - new project from day01-exercises - new file in Rstudio - remove CODE chunks & focus on Markdown Features - use Help &gt; Markdown Quick Reference - visual mode &lt;–&gt; source mode - formats - HTML, PDF - render options - preview in pane, or window - render on save - show terminal: quarto command line interface - quarto render my_first_doc.qmd - quarto preview my_first_doc.qmd"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#your-turn-my_first_doc.qmd",
+    "href": "01a-hello-quarto/slides.html#your-turn-my_first_doc.qmd",
+    "title": "Hello Quarto",
+    "section": "Your Turn: my_first_doc.qmd",
+    "text": "Your Turn: my_first_doc.qmd\n\nwe won’t go in-depth with markdown features, but explore and ask questions!\n\n\n\nCreate or Open the Rstudio Project day01-exercises\nGo to File &gt; New File &gt; Quarto Document to create a new document in Visual mode.\nReplace the Code section with your own content.\nRender the document then switch to Source mode. Save the file as my_first_doc.qmd\nUse Help &gt; Markdown Quick Reference to add more content.\nRe-render and compare changes with your neighbours.\nTake note of any features you would like to know more about.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#rendering-options-in-rstudio",
+    "href": "01a-hello-quarto/slides.html#rendering-options-in-rstudio",
+    "title": "Hello Quarto",
+    "section": "Rendering Options in Rstudio",
+    "text": "Rendering Options in Rstudio\n\nOption 1: In RStudio as a background job, and preview the output.\n\n\n\nOption 2: In the Terminal via quarto render:\n\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\n\n\n\nOption 3: In the R console, via the quarto R package:\n\n\nlibrary(quarto)\n\nquarto_render(\"document.qmd\") # defaults to html\nquarto_render(\"document.qmd\", output_format = \"pdf\")"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#your-turn-rendering-in-rstudio",
+    "href": "01a-hello-quarto/slides.html#your-turn-rendering-in-rstudio",
+    "title": "Hello Quarto",
+    "section": "Your turn: Rendering in Rstudio",
+    "text": "Your turn: Rendering in Rstudio\n\n\nOpen the last .qmd file you were working on in RStudio.\nCompare behavior of rendering with\n\nRStudio &gt; Render,\nusing the CLI in the Terminal: quarto render my_first_doc.qmd,\nusing quarto::quarto_render(\"my_first_doc.qmd\")\n\nTry different Render options in Rstudio:\n\nRstudio &gt; Render on Save Tickbox\nRstudio &gt; Cog Icon &gt; Preview in Pane\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#under-the-hood",
+    "href": "01a-hello-quarto/slides.html#under-the-hood",
+    "title": "Hello Quarto",
+    "section": "Under the Hood",
+    "text": "Under the Hood\n\n\n\nRstudio or the quarto package calls the Quarto command line interface (CLI) – quarto render my_doc.qmd\nany R/Python/Julia code or features are evaluated by knitr or jupyter which return a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "01a-hello-quarto/slides.html#aside-lua-filters",
+    "href": "01a-hello-quarto/slides.html#aside-lua-filters",
+    "title": "Hello Quarto",
+    "section": "Aside: Lua filters",
+    "text": "Aside: Lua filters\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html:\n\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!\n\n\n\n\nWe will use a Quarto extension Lua filter called include-code-files later in this workshop, but won’t go into details of how they work or how to write them.\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+  },
+  {
     "objectID": "00-pre-workshop.html",
     "href": "00-pre-workshop.html",
     "title": "Pre-Work",
@@ -75,5 +502,110 @@
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Instructor: Cynthia Huang, PhD student",
     "text": "Instructor: Cynthia Huang, PhD student\nCynthia is a second year PhD student in Econometrics and Business Statistics at Monash University working on principles and methods for data preparation. She completed honours in Economics at the University of Melboure and has extensive experience preparing data for empirical economics research. She uses Quarto and GitHub to document R and python code, write papers and presentation slides, and to publish her personal website. Her CV can be viewed here: https://www.cynthiahqy.com/cv."
+  },
+  {
+    "objectID": "01a-hello-quarto/index.html",
+    "href": "01a-hello-quarto/index.html",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01a-hello-quarto/index.html#slides",
+    "href": "01a-hello-quarto/index.html#slides",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01a-hello-quarto/index.html#exercises",
+    "href": "01a-hello-quarto/index.html#exercises",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Exercises",
+    "text": "Exercises\n\nmy_first_doc.qmd"
+  },
+  {
+    "objectID": "01a-hello-quarto/index.html#resources",
+    "href": "01a-hello-quarto/index.html#resources",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Resources",
+    "text": "Resources\nOfficial Quarto Documentation:\n\nMarkdown Basics\nVisual Editing in Rstudio Guide\nRendering in Rstudio\n\nMore:\n\nChapter 29: Quarto, R for Data Science"
+  },
+  {
+    "objectID": "01b-formats/index.html",
+    "href": "01b-formats/index.html",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01b-formats/index.html#slides",
+    "href": "01b-formats/index.html#slides",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01b-formats/index.html#exercises",
+    "href": "01b-formats/index.html#exercises",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Exercises",
+    "text": "Exercises\n\nmy_first_doc.qmd"
+  },
+  {
+    "objectID": "01b-formats/index.html#resources",
+    "href": "01b-formats/index.html#resources",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Resources",
+    "text": "Resources\nOfficial Quarto Documentation:\n\nHTML Format Guide\nHTML Full Reference\nPDF Format Guide\nPDF Full Reference"
+  },
+  {
+    "objectID": "01c-scholarly/index.html",
+    "href": "01c-scholarly/index.html",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01c-scholarly/index.html#slides",
+    "href": "01c-scholarly/index.html#slides",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01c-scholarly/index.html#exercises",
+    "href": "01c-scholarly/index.html#exercises",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Exercises",
+    "text": "Exercises\n\nmy_first_article.qmd\nelsevier-article/"
+  },
+  {
+    "objectID": "01c-scholarly/index.html#resources",
+    "href": "01c-scholarly/index.html#resources",
+    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "section": "Resources",
+    "text": "Resources\nOfficial Quarto Documentation:\n\nScholarly Writing Guide &gt; Front Matter\nPDF Reference &gt; Figures"
+  },
+  {
+    "objectID": "01d-wrap-up/index.html",
+    "href": "01d-wrap-up/index.html",
+    "title": "Wrap-Up",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01d-wrap-up/index.html#slides",
+    "href": "01d-wrap-up/index.html#slides",
+    "title": "Wrap-Up",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "01d-wrap-up/index.html#exercises",
+    "href": "01d-wrap-up/index.html#exercises",
+    "title": "Wrap-Up",
+    "section": "Exercises",
+    "text": "Exercises\n\nmy_first_doc.qmd\nmy_first_article.qmd\nelsivier-article/"
   }
 ]

@@ -1,0 +1,62 @@
+# 01b-formats
+
+## Your turn: Quarto YAML Intelligence
+
+::: task
+-   Open `my_first_article.qmd` in RStudio.
+-   Try <kbd>`Ctrl + space`</kbd> to see the available YAML options.
+-   Try out the tab-completion of any options you remember.
+-   You can use the [HTML reference](https://quarto.org/docs/reference/formats/html.html) as needed.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+# More Markdown
+
+## Markdown Figures
+
+-   
+
+## Markdown Tables
+
+::: {layout-ncol="2"}
+<div>
+
+``` markdown
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+```
+
+</div>
+
+<div>
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+
+</div>
+:::
+
+## Your Turn: Format Options {.smaller}
+
+
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```

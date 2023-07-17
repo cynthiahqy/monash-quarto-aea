@@ -4,6 +4,9 @@ format: html
 duration: 2.5 hours
 ---
 
+- multi-format publishing
+- journal templates
+
 - investing in HTML/CSS
     - customisation
 - Personal Websites:
