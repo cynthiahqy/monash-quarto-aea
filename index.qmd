@@ -17,7 +17,7 @@ See [Pre-work](00-pre-workshop.qmd) for tasks to complete before the workshop.
 |---------------|-------------|--------------------------------------------------------|
 | Tues, Jul 18  | 09:00-11:30 | **Session 01: Getting to Know Quarto**                 |
 |               | 11:30-12:30 | Lunch (BYO)                                            |
-|               | 12:30-15:00 | **Session 02: AEA Replication Packages**           |
+|               | 12:30-15:00 | **Session 02: AEA Replication Packages**               |
 |               | 15:00-16:00 | Support Hours *(optional)*                             |
 | Weds, Jul 19  | 09:00-12:30 | **Session 03: Producing and Publishing Websites**      |
 | Thurs, Jul 20 | 09:00-12:30 | **Session 04: More Quarto for Academics** *(optional)* |

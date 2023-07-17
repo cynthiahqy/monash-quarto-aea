@@ -1,0 +1,20 @@
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+- `my_first_article.qmd`
+- `elsevier-article/`
+
+## Resources
+
+Official Quarto Documentation:
+
+- [Scholarly Writing Guide \> Front Matter](https://quarto.org/docs/authoring/front-matter.html)
+- [PDF Reference \> Figures](https://quarto.org/docs/reference/formats/pdf.html#figures)
+

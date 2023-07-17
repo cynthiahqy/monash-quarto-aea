@@ -1,15 +1,46 @@
-### Authoring Scientific Documents with Quarto (2.5 Hours)
+### Getting to Know Quarto
 
-| Time        | Module        |
-|-------------|---------------|
-| 09:00-09:30 | Hello Quarto! |
-|             |               |
-|             | Documents     |
-|             |               |
-|             | Articles      |
-|             | Wrap-Up       |
+<!--- using quarto to produce different formats from the same file --->
+
++---------------+----------------+-----------------------------------------+
+| Time          | Module         | **Section & Activities**                |
++===============+================+=========================================+
+| 09:00-09:15   | Hello Quarto!  | Welcome                                 |
++---------------+----------------+-----------------------------------------+
+| 09:15-09:35   |                | What is Quarto?                         |
+|               |                |                                         |
+|               |                | -   My Turn: A Tour of Rstudio          |
++---------------+----------------+-----------------------------------------+
+| 09:35-09:50   |                | Your Turn: `my_first_doc.qmd`           |
+|               |                |                                         |
+|               |                | -   Source/Visual mode + basic Markdown |
++---------------+----------------+-----------------------------------------+
+| 09:50-10:00   |                | Your Turn: Rendering in Rstudio         |
+|               |                |                                         |
+|               |                | -   alternative methods, under the hood |
++---------------+----------------+-----------------------------------------+
+| 10:00-10:10   | PAUSE          |                                         |
++---------------+----------------+-----------------------------------------+
+| 10:10-10:25   | Quarto Formats | Anatomy of a Document                   |
+|               |                |                                         |
+|               |                | Quarto Formats                          |
+|               |                |                                         |
+|               |                | -   Our Turn: Rendering Other Formats   |
++---------------+----------------+-----------------------------------------+
+| 10:25-10:40   |                | YAML                                    |
+|               |                |                                         |
+|               |                | -   Your Turn: Quarto YAML Intelligence |
++---------------+----------------+-----------------------------------------+
+| 10:40-10:50   | PAUSE          |                                         |
++---------------+----------------+-----------------------------------------+
+| 10:50-11:20   | Articles       |                                         |
++---------------+----------------+-----------------------------------------+
+| 10:20-11:30   | WRAP-UP        |                                         |
++---------------+----------------+-----------------------------------------+
 
 ### AEA Replication Package using Quarto (2.5 Hours)
+
+<!--- using quarto to collect bits into documents ----->
 
 | Time | Module                                |
 |------|---------------------------------------|
@@ -23,6 +54,8 @@
 |      | Wrap-Up                               |
 
 ### Publishing Quarto Websites online (2.5 Hours)
+
+<!---- taking documents and turning them into a website --->
 
 | Time | Module            |
 |------|-------------------|

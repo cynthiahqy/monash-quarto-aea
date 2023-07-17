@@ -1,0 +1,20 @@
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+- `my_first_doc.qmd`
+
+## Resources
+
+Official Quarto Documentation:
+
+- [HTML Format Guide](https://quarto.org/docs/output-formats/html-basics.html)
+- [HTML Full Reference](https://quarto.org/docs/reference/formats/html.html)
+- [PDF Format Guide](https://quarto.org/docs/output-formats/pdf-basics.html)
+- [PDF Full Reference](https://quarto.org/docs/reference/formats/pdf.html)

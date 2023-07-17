@@ -5,7 +5,8 @@ project:
     - "index.qmd"
     - "about.qmd"
     - "00-pre-workshop.qmd"
-    - "!day01-exercises/*.qmd"
+    - "01*/*.qmd"
+    - "!exercises-upload/"
   resources:
     - "day01-exercises.zip"
 
@@ -34,10 +35,13 @@ website:
       - text: "---"
       - section: "Getting to Know Quarto"
         contents:
-          - text: Hello Quarto
-          - text: HTML Documents
-          - text: PDF and LaTex Documents
-          - text: Wrap Up
+          - href: 01a-hello-quarto/index.qmd
+            text: Hello Quarto!
+          - href: 01b-formats/index.qmd
+            text: Document Formats
+          - href: 01c-scholarly/index.qmd
+            text: Articles
+          - href: 01d-wrap-up/index.qmd
       - text: "---"
       - section: "AEA Replication Packages"
         contents:

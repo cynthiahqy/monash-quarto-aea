@@ -1,25 +1,16 @@
 ---
 title: "Hello Quarto"
-author: "Cynthia Huang"
-date: 2023-07-19
-footer: "[🔗 cynthiahqy.github.io/monash-quarto-aea](https://cynthiahqy.github.io/monash-quarto-aea)"
-format:
-  revealjs:
-    theme: [default, ../style/slides.scss]
-    transition: fade
-    slide-number: true
-    chalkboard: true
+subtitle: "Session 1: Getting to know Quarto"
+date: 2023-07-18
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
 ---
 
 ```{r}
 #| label: setup
 #| include: false
-
-# set width of code output
-options(width = 65)
-
-# load background packages
-library(countdown)
+#| file: ../_slides-setup.R
 ```
 
 # Pre-workshop instructions
@@ -131,6 +122,7 @@ We will focus on:
 |                                   | -   publish the website using git and GitHub Pages |
 +-----------------------------------+----------------------------------------------------+
 | More Quarto for Academics         | -   What else can you do with Quarto?              |
+|                                   | -   Can I know more about ...?                     |
 +-----------------------------------+----------------------------------------------------+
 
 ## Workshop Expectations {.smaller}
@@ -176,12 +168,15 @@ In class:
 -   Raise your hand at any time during My Turn and Our Turn segments
 -   Use sticky notes during Your turn
     -   Pink: I'd like some help / I'm stuck / I'm lost
-    -   Green: I'm done
-<!-- -   For longer questions post in the [Discussions board](https://github.com/cynthiahqy/monash-quarto-aea/discussions/categories/q-a) -->
+    -   Blue: I'm done <!-- -   For longer questions post in the [Discussions board](https://github.com/cynthiahqy/monash-quarto-aea/discussions/categories/q-a) -->
 
 Slides, exercises and useful links are all available at:
 
 [🔗 `cynthiahqy.github.io/monash-quarto-aea`](https://cynthiahqy.github.io/monash-quarto-aea)
+
+::: notes
+show how to see full-screen and toc
+:::
 
 ## Before we dive in... {.smaller}
 
@@ -241,30 +236,23 @@ install.packages(pkg_list)
 <!--- TODO: MY TURN --->
 
 ::: notes
-Show off features:
-- new project from day01-exercises
-- new file in Rstudio
-- remove CODE chunks & focus on Markdown Features
-  - use Help \> Markdown Quick Reference
-  - visual mode <--> source mode
-- render options
-  - preview in pane, or window
-  - render on save
-- show terminal: quarto command line interface
-  - `quarto render my_first_doc.qmd`
-  - `quarto preview my_first_doc.qmd`
+Show off features: - new project from day01-exercises - new file in Rstudio - remove CODE chunks & focus on Markdown Features - use Help \> Markdown Quick Reference - visual mode \<--\> source mode - formats - HTML, PDF - render options - preview in pane, or window - render on save - show terminal: quarto command line interface - `quarto render my_first_doc.qmd` - `quarto preview my_first_doc.qmd`
 :::
 
 ## Your Turn: my_first_doc.qmd {.smaller}
 
+::: notes
+we won't go in-depth with markdown features, but explore and ask questions!
+:::
+
 ::: task
-- Create or Open the Rstudio Project `day01-exercises`
-- Go to File \> New File \> Quarto document to createa a new document in **Visual** mode.
-- Replace the Code section with your own content.
-- Render the document then switch to **Source** mode.
-- Use `Help > Markdown Quick Reference` to add more content.
-- Re-render and compare changes with your neighbours.
-- Take note of any features you would like to know more about.
+-   Create or Open the Rstudio Project `day01-exercises`
+-   Go to File \> New File \> Quarto Document to create a new document in **Visual** mode.
+-   Replace the Code section with your own content.
+-   Render the document then switch to **Source** mode. Save the file as `my_first_doc.qmd`
+-   Use `Help > Markdown Quick Reference` to add more content.
+-   Re-render and compare changes with your neighbours.
+-   Take note of any features you would like to know more about.
 :::
 
 ```{r}
@@ -275,7 +263,7 @@ countdown(minutes = 15)
 
 ## Rendering Options in Rstudio
 
-1.  Option 1: In RStudio as a background job, and preview the output.
+1.  **Option 1:** In RStudio as a background job, and preview the output.
 
 . . .
 
@@ -304,14 +292,14 @@ quarto_render("document.qmd") # defaults to html
 quarto_render("document.qmd", output_format = "pdf")
 ```
 
-## Your turn: Rendering in Rstudio
+## Your turn: Rendering in Rstudio {.smaller}
 
 ::: task
 -   Open the last .qmd file you were working on in RStudio.
 -   Compare behavior of rendering with
     -   RStudio \> Render,
     -   using the CLI in the Terminal: `quarto render my_first_doc.qmd`,
-    -   using the CLI with `quarto preview`, and
+    -   using `quarto::quarto_render("my_first_doc.qmd")`
 -   Try different Render options in Rstudio:
     -   Rstudio \> Render on Save *Tickbox*
     -   Rstudio \> Cog *Icon* \> Preview in Pane
@@ -322,7 +310,6 @@ quarto_render("document.qmd", output_format = "pdf")
 
 countdown(minutes = 5)
 ```
-
 
 ## Under the Hood {.smaller}
 

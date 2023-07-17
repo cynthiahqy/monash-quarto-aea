@@ -1,0 +1,20 @@
+---
+title: "Anatomy of a Quarto Document"
+---
+
+## R
+
+```{r}
+head(mtcars)
+```
+
+## STATA
+
+```stata
+version 13
+use censas
+tabulate region
+summarize marriage_rate divorce_rate median_age if state!="Nevada"
+```
+
+The script above is from the [Section 16.1](https://www.stata.com/manuals13/u16.pdf) of the *Stata 13 Manual*

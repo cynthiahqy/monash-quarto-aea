@@ -1,0 +1,85 @@
+---
+title: "Wrap-Up"
+subtitle: "Session 1: Getting to know Quarto"
+date: 2023-07-19
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+# Hello Quarto
+
+## Quarto CLI...
+
+orchestrates each step of rendering
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst_qmd_render_schema.png){fig-alt="A schematic representing rendering of Quarto documents from .qmd, to knitr or jupyter, to plain text markdown, then converted by pandoc into any number of output types including html, PDF, or Word document."}
+
+## Learn more
+
+::: learn-more
+[https://quarto.org](https://quarto.org/)
+
+```{=html}
+<iframe src="https://quarto.org/" width="100%" height="550" title="Quarto Website"></iframe>
+```
+:::
+
+## Follow up with...
+
+::: learn-more
+[quarto.org/docs/blog](https://quarto.org/docs/blog)
+
+```{=html}
+<iframe src="https://quarto.org/docs/blog/" width="100%" height="550" title="Quarto Website"></iframe>
+```
+:::
+
+# Formats
+
+## Quarto offers...
+
+single-source publishing to `pdf`, `html`, `docx` and more!
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+## Learn more
+
+::: learn-more
+[quarto.org/docs/get-started/authoring/rstudio.html#output-formats](https://quarto.org/docs/get-started/authoring/rstudio.html#output-formats)
+
+```{=html}
+<iframe src="https://quarto.org/docs/get-started/authoring/rstudio.html#output-formats" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
+```
+:::
+
+# Articles
+
+## Quarto Articles...
+
+combines scientific markdown with LaTex templates
+
+![Image source: xkcd.com](https://imgs.xkcd.com/comics/file_extensions.png){fig-align="center"}
+
+## Learn more
+
+::: learn-more
+[quarto.org/docs/journals/index.html](https://quarto.org/docs/journals/index.html)
+
+
+```{=html}
+<iframe src="https://quarto.org/docs/journals/index.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
+```
+:::
+
+# Before lunch...
+
+## Questions
+
+::: task
+Any questions / anything you'd like to review or learn before we wrap up the workshop?
+:::
+
+::: task
+Suggestions / requests for things to cover in Thursday's session?
+:::

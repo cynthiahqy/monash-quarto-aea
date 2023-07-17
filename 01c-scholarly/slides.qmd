@@ -1,0 +1,336 @@
+---
+title: "Articles"
+subtitle: "Session 1: Getting to know Quarto"
+date: 2023-07-19
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+# Scholarly Writing
+
+## Article Features
+
+Quarto supports
+
+::: incremental
+-   a standardized schema for key details like authors and affiliations that can be expressed once in the source document,
+
+-   cross-referencing of figures, tables, equations etc., and
+
+-   the use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies,
+
+-   outputting to `pdf`, `html`, and `docx` with custom formatting,
+:::
+
+## Components of an Article
+
+::: {layout-ncol="2"}
+```{r echo = FALSE, comment = ""}
+cat(readr::read_file("_frontmatter.yml"))
+```
+
+-   **Metadata:** *Extended* YAML front matter fields
+-   **Content:** markdown text, tables, figures, *raw LaTex*, *citations*
+-   **Code:** executed by `knitr` (R) or `jupyter` (python)
+:::
+
+# Metadata
+
+## Front Matter
+
+::: notes
+we will focus on generating scholarly content, but as a brief overview of other features
+:::
+
+-   Quarto pre-defines useful metadata keys for scholarly writing:
+    -   authors, affiliations, roles
+    -   article abstract and keywords
+    -   acknowledgements and thanks
+    -   citation, license, copyright, funding
+
+. . .
+
+-   but not all formats use every metadata field.
+
+## File Includes {.smaller}
+
+::: notes
+There are a few ways to include content from other files, but a useful option for PDF or HTML snippets is the `include-in-*` options.
+:::
+
+The following `include-in-*` options allow you to include contents of a file (e.g. `file.tex`) verbatim at certain positions:
+
++-----------------------+--------------------------------------------+--------------------------------------------+
+| Option                | Position                                   | **Use Cases**                              |
++=======================+============================================+============================================+
+| `include-in-header`   | end of the header                          | Inject commands into the LaTeX preamble    |
+|                       |                                            |                                            |
+|                       | **before** `\begin{document}` or `<body>`  |                                            |
++-----------------------+--------------------------------------------+--------------------------------------------+
+| `include-before-body` | beginning of the document body             | Include navigation bars or banners in HTML |
+|                       |                                            |                                            |
+|                       | **after** `\begin{document}` or `<body>`   |                                            |
++-----------------------+--------------------------------------------+--------------------------------------------+
+| `include-after-body`  | end of the document body                   |                                            |
+|                       |                                            |                                            |
+|                       | **before** `\end{document}` or `</body>`   |                                            |
++-----------------------+--------------------------------------------+--------------------------------------------+
+
+## LaTex Output {.smaller}
+
+There are two ways to produce a LaTex file (`.tex`) using options specificed in the YAML header:
+
+1.  Option 1: Use the `latex` format instead of `pdf`
+
+``` yaml
+format:
+  latex:
+    documentclass: report
+    classoption: [twocolumn, landscape]
+    lof: true
+    lot: true
+```
+
+. . .
+
+2.  Option 2: Use the `keep-tex` option in the `pdf` format
+
+``` yaml
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+```
+
+# Content
+
+## Equations
+
+<iframe src="https://quarto.org/docs/authoring/markdown-basics.html#equations" height="400" width="600" style="border: 1px solid #123233;">
+
+</iframe>
+
+or just use Visual Mode!
+
+## Figures
+
+**Markdown:**
+
+```         
+![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align="left" height="200px"}
+```
+
+**Output (HTML):**
+
+![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align="left" height="200px"}
+
+## Figures
+
+**Markdown:**
+
+```         
+![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align="right" height="200px"}
+```
+
+**Output (HTML):**
+
+![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align="right" height="200px"}
+
+## Subfigures
+
+**Markdown:**
+
+```         
+::: {#fig-penguins layout-ncol=2}
+
+![Blue penguin](images/blue-penguin.png){#fig-blue width="250px"}
+
+![Orange penguin](images/orange-penguin.png){#fig-orange width="250px"}
+
+Two penguins
+
+:::
+```
+
+## Subfigures
+
+**Output (LaTex):**
+
+``` tex
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics[width=2.60417in,height=\textheight]{images/blue-penguin.png}
+
+}
+
+}
+
+\subcaption{\label{fig-blue}Blue penguin}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics[width=2.60417in,height=\textheight]{images/orange-penguin.png}
+
+}
+
+}
+
+\subcaption{\label{fig-sleep}Orange penguin}
+\end{minipage}%
+
+\caption{\label{fig-penguins}Two penguins}
+
+\end{figure}
+```
+
+## Subfigures
+
+**Output (PDF):**
+
+![](images/sub-figures-pdf.png){fig-align="center"}
+
+<!---https://quarto.org/docs/authoring/figures.html#latex-figures--->
+
+## LaTex Figure Options
+
+Quarto can some options specific to LaTex output such as figure position and environments
+
+``` {.md code-line-numbers="4-5|11|6-8"}
+---
+title: "Sidenotes"
+format:
+  pdf:
+    fig-pos: 'h'
+    include-in-header: 
+      text: |
+        \usepackage{mdframed}
+---
+
+![Elephant](elephant.png){fig-env="mdframed"}
+```
+
+See [PDF Reference \> Figures](https://quarto.org/docs/reference/formats/pdf.html#figures) for available options
+
+## Raw LaTex Commands
+
+Pandoc (and thus Quarto) allows for mixing raw LaTex with markdown when creating PDF documents. For example:
+
+``` latex
+\begin{tabular}{|l|l|}\hline
+Age & Frequency \\ \hline
+18--25  & 15 \\
+26--35  & 33 \\
+36--45  & 22 \\ \hline
+\end{tabular}
+```
+
+. . .
+
+::: callout-warning
+Note that raw LaTex will not be rendered in HTML format. However, if you have existing LaTex content (e.g. from STATA) that can't be re-exported or re-written in markdown this is a useful option.
+:::
+
+## Your Turn: my_first_article.qmd
+
+::: task
+-   Open `my_first_article.qmd` inside your last Rproject.
+-   Follow the PDF exercise instructions
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+# Journal Articles
+
+## Submit straight from Quarto
+
+::: notes
+Quarto supports the creation of custom formats for single-source publishng to `pdf`, `html`, `docx`.
+:::
+
+Journal Article extensions offer templates to adapt an existing `.qmd` document
+
+. . .
+
+-   according to the styles required for various journals,
+
+. . .
+
+-   and create the LaTeX required for submission to multiple journals.
+
+## Journal formats {.smaller}
+
+::: learn-more
+[github.com/quarto-journals](https://github.com/quarto-journals)
+:::
+
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Journal / Publisher                       | Name                                                                          |
++===========================================+===============================================================================+
+| Association of Computing Machinery        | [acm](https://github.com/quarto-journals/acm)                                 |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| American Chemical Society                 | [acs](https://github.com/quarto-journals/acs)                                 |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| American Geophysical Union                | [agu](https://github.com/quarto-journals/agu)                                 |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Biophysical journal                       | [biophysical-journal](https://github.com/quarto-journals/biophysical-journal) |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| *Elsevier Journals*\*                     | [elsevier](https://github.com/quarto-journals/elsevier)                       |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| American Statistical Association Journals | [jasa](https://github.com/quarto-journals/jasa)                               |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Journal of Statistical Software           | [jss](https://github.com/quarto-journals/jss)                                 |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Public Library of Science                 | [plos](https://github.com/quarto-journals/plos)                               |
++-------------------------------------------+-------------------------------------------------------------------------------+
+
+## Getting started with a journal article
+
+The `quarto use template` command can be used to create an article from one these formats, e.g. for Elsevier:
+
+``` {.bash filename="Terminal"}
+quarto use template quarto-journals/elsevier
+```
+
+## Our Turn: Journal Article Templates
+
+::: notes
+-   go to terminal, and make new folder called elsevier-article
+
+-   render it!
+
+-   edit author details
+
+-   add citation in visual mode
+:::
+
+::: follow
+Let's write an article together for Elsevier and showcase the following features of Quarto journal articles:
+
+-   PDF output
+
+-   Extended YAML front matter
+
+-   Reference management
+:::

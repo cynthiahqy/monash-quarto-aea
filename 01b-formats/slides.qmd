@@ -1,0 +1,330 @@
+---
+title: "Document Formats"
+subtitle: "Session 1: Getting to know Quarto"
+author: "Cynthia Huang"
+date: 2023-07-19
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+# Anatomy of a Quarto Document
+
+## Basic Components {.smaller}
+
+::: {layout-ncol="2"}
+```{r echo = FALSE}
+cat(readr::read_file("_anatomy.qmd"))
+```
+
+-   **Metadata:** an (optional) YAML header
+-   **Content:** markdown syntax
+-   **Code:** executed by `knitr` (R) or `jupyter` (python)
+:::
+
+## YAML Metadata
+
+-   "Yet Another Markup Language" or "YAML Ain't Markup Language"
+
+``` yaml
+key: value
+```
+
+::: incremental
+-   Control whole document or project options and metadata
+-   If **YAML header** is missing, Quarto defaults apply.
+-   Available options differ by format: HTML, PDF, Websites
+:::
+
+## Markdown Content
+
+::: notes
+not covered in detail, but we will briefly look at some features
+:::
+
+-   Simple text formatting:
+    -   `# Heading`
+    -   `_italics_`, `**bold**`, `` `code` ``
+    -   `[linked phrase](http://example.com)`
+-   Content features:
+    -   Figures
+    -   Tables
+    -   References
+
+## Code Blocks
+
+::: notes
+not covered beyond displaying code
+:::
+
+-   Chunks of code between ```` ``` ````s.
+-   Syntax highlighting for [\~140 Languages](https://github.com/jgm/skylighting/tree/master/skylighting-core/xml): ```` ```stata ````
+-   Executable R/python/Julia code starts with: ```` ```{r} ````
+
+# Quarto Formats
+
+::: notes
+One important thing that YAML metadata controls are format options. YAML will also be important for websites
+:::
+
+## Many Quarto formats & features {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Feature          | Quarto                                                                                                                                                                                      |
++==================+=============================================================================================================================================================================================+
+| Basic Formats    | [html](https://quarto.org/docs/output-formats/html-basics.html), [pdf](https://quarto.org/docs/output-formats/pdf-basics.html), [docx](https://quarto.org/docs/output-formats/ms-word.html) |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cross References | [Quarto Crossrefs](https://quarto.org/docs/authoring/cross-references.html)                                                                                                                 |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Websites & Blogs | [Quarto Websites](https://quarto.org/docs/websites/)                                                                                                                                        |
+|                  |                                                                                                                                                                                             |
+|                  | [Quarto Blogs](https://quarto.org/docs/websites/website-blog.html)                                                                                                                          |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Journal Articles | [Journal Articles](https://quarto.org/docs/journals/index.html)                                                                                                                             |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Advanced Layout  | [Quarto Article Layout](https://quarto.org/docs/authoring/article-layout.html)                                                                                                              |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+:::
+
+::: {.column width="50%"}
++---------------+----------------------------------------------------------------------------+
+| Feature       | Quarto                                                                     |
++===============+============================================================================+
+| Beamer        | [beamer](https://quarto.org/docs/presentations/beamer.html)                |
++---------------+----------------------------------------------------------------------------+
+| PowerPoint    | [pptx](https://quarto.org/docs/presentations/powerpoint.html)              |
++---------------+----------------------------------------------------------------------------+
+| HTML Slides   | [revealjs](https://quarto.org/docs/presentations/revealjs/)                |
++---------------+----------------------------------------------------------------------------+
+| Books         | [Quarto Books](https://quarto.org/docs/books/)                             |
++---------------+----------------------------------------------------------------------------+
+| Interactivity | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/) |
++---------------+----------------------------------------------------------------------------+
+| Dashboards    | Coming soon!                                                               |
++---------------+----------------------------------------------------------------------------+
+:::
+::::
+
+
+## Our Turn: Quarto Formats {.smaller}
+
+::: notes
+~10 mins
+show `my_first_doc.qmd`
+-   what format, where to, whole doc features
+-   render options (YAML)
+    -   html then pdf
+-   YAML features
+    -   title
+    -   keep tex
+-   render HTML again -- show multi-format
+:::
+
+::: follow
+-   Open `my_first_doc.qmd` again in RStudio.
+-   What is the default rendering format?
+-   Add PDF format options and keep the intermediate `.tex` file:
+
+``` yaml
+---
+format:
+  pdf:
+    keep-tex: true
+  html: default
+---
+```
+
+-   Render the document as a PDF.
+-   **Extension**: Can you preview the HTML again?
+
+_[HINT: Use `quarto preview` in the Terminal]_
+:::
+
+# YAML
+
+## YAML options
+
+Indentation matters!
+
+``` yaml
+---
+format: 
+  html:
+    toc: true
+    code-fold: true
+---
+```
+
+. . .
+
+A sneak preview of YAML for websites:
+```{.yaml filename="_quarto.yml"}
+---
+project:
+  type: website
+  output-dir: _site
+---
+```
+
+## Why YAML?
+
+To avoid manually typing out all the options, every time when rendering via the CLI:
+
+. . .
+
+``` bash
+quarto render document.qmd --to html
+```
+
+<br>
+
+. . .
+
+``` bash
+quarto render document.qmd --to html -M code-fold:true
+```
+
+<br>
+
+. . .
+
+``` bash
+quarto render document.qmd --to html -M code-fold:true -P alpha:0.2 -P ratio:0.3
+```
+
+## YAML validation {.smaller}
+
+-   Invalid: No space after `:`
+
+``` yaml
+---
+format:html
+---
+```
+
+-   Invalid: Read as missing
+
+``` yaml
+---
+format:
+html
+---
+```
+
+-   Valid, but needs next object
+
+``` yaml
+---
+format: 
+  html:
+---
+```
+
+## YAML validation {.smaller}
+
+There are multiple ways of formatting valid YAML:
+
+-   Valid: There's a space after `:`
+
+``` yaml
+format: html
+```
+
+-   Valid: There are 2 spaces a new line and no trailing `:`
+
+``` yaml
+format:
+  html
+```
+
+-   Valid: `format: html` with selections made with proper indentation
+
+``` yaml
+format: 
+  html:
+    toc: true
+```
+
+## Quarto linting
+
+::: notes
+how to validate all these options?
+:::
+
+Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.
+
+<br>
+
+![](images/lint-rstudio.png){fig-alt="Linter showing message for badly formatted YAML."}
+
+::: aside
+Source: <https://en.wikipedia.org/wiki/Lint_(software)>
+:::
+
+
+## Quarto YAML Intelligence
+
+RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd>`Ctrl + space`</kbd> to see all available options.
+
+<br>
+
+![](images/quarto-tab-complete.png){fig-align="center" width="600"}
+
+## Your turn: Quarto YAML Intelligence
+
+::: task
+-   Open `my_first_doc.qmd` again in RStudio.
+-   Try <kbd>`Ctrl + space`</kbd> in the YAML header to see the available YAML options.
+-   Try out the tab-completion to add:
+    - a table of contents and,
+    - number the sections. 
+
+See [PDF Format Guide](https://quarto.org/docs/reference/formats/pdf.html) if needed.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+## More YAML? More Features!
+
+:::{layout-ncol="2"}
+#### [HTML Guide](https://quarto.org/docs/output-formats/html-basics.html)
+```{=html}
+<iframe src="https://quarto.org/docs/output-formats/html-basics.html" height="500" width="600" style="border: 1px solid #123233;"></iframe>
+```
+
+#### [HTML Full Reference](https://quarto.org/docs/reference/formats/html.html) 
+
+```{=html}
+<iframe src="https://quarto.org/docs/reference/formats/html.html" height="500" width="600" style="border: 1px solid #123233;"></iframe>
+```
+
+:::
+
+## More YAML? More Features!
+
+:::{layout-ncol="2"}
+#### [PDF Guide](https://quarto.org/docs/output-formats/pdf-basics.html)
+```{=html}
+<iframe src="https://quarto.org/docs/output-formats/pdf-basics.html" height="500" width="600" style="border: 1px solid #123233;"></iframe>
+```
+
+#### [PDF Full Reference](https://quarto.org/docs/reference/formats/pdf.html) 
+
+```{=html}
+<iframe src="https://quarto.org/docs/reference/formats/pdf.html" height="500" width="600" style="border: 1px solid #123233;"></iframe>
+```
+
+:::
