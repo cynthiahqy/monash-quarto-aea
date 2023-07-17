@@ -56,127 +56,127 @@
     "text": "Questions\n\nAny questions / anything you’d like to review or learn before we wrap up the workshop?\n\n\nSuggestions / requests for things to cover in Thursday’s session?\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
   },
   {
-    "objectID": "01c-scholarly/slides.html#article-features",
-    "href": "01c-scholarly/slides.html#article-features",
+    "objectID": "01c-articles/slides.html#article-features",
+    "href": "01c-articles/slides.html#article-features",
     "title": "Articles",
     "section": "Article Features",
     "text": "Article Features\nQuarto supports\n\n\na standardized schema for key details like authors and affiliations that can be expressed once in the source document,\ncross-referencing of figures, tables, equations etc., and\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies,\noutputting to pdf, html, and docx with custom formatting,"
   },
   {
-    "objectID": "01c-scholarly/slides.html#components-of-an-article",
-    "href": "01c-scholarly/slides.html#components-of-an-article",
+    "objectID": "01c-articles/slides.html#components-of-an-article",
+    "href": "01c-articles/slides.html#components-of-an-article",
     "title": "Articles",
     "section": "Components of an Article",
     "text": "Components of an Article\n\n\n\n\n---\ntitle: \"Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory\"\ndate: 2008-02-29\nauthor:\n  - name: Josiah Carberry\n    id: jc\n    orcid: 0000-0002-1825-0097\n    email: josiah@psychoceramics.org\n    affiliation: \n      - name: Brown University\n        city: Providence\n        state: RI\n        url: www.brown.edu\nabstract: &gt; \n  The characteristic theme of the works of Stone is \n  the bridge between culture and society. ...\nkeywords:\n  - Metaphysics\n  - String Theory\nlicense: \"CC BY\"\ncopyright: \n  holder: Josiah Carberry\n  year: 2008\ncitation: \n  container-title: Journal of Psychoceramics\n  volume: 1\n  issue: 1\n  doi: 10.5555/12345678\nfunding: \"The author received no specific funding for this work.\"\n---\n\n\n\n\nMetadata: Extended YAML front matter fields\nContent: markdown text, tables, figures, raw LaTex, citations\nCode: executed by knitr (R) or jupyter (python)"
   },
   {
-    "objectID": "01c-scholarly/slides.html#front-matter",
-    "href": "01c-scholarly/slides.html#front-matter",
+    "objectID": "01c-articles/slides.html#front-matter",
+    "href": "01c-articles/slides.html#front-matter",
     "title": "Articles",
     "section": "Front Matter",
     "text": "Front Matter\n\nwe will focus on generating scholarly content, but as a brief overview of other features\n\n\nQuarto pre-defines useful metadata keys for scholarly writing:\n\nauthors, affiliations, roles\narticle abstract and keywords\nacknowledgements and thanks\ncitation, license, copyright, funding\n\n\n\n\nbut not all formats use every metadata field."
   },
   {
-    "objectID": "01c-scholarly/slides.html#file-includes",
-    "href": "01c-scholarly/slides.html#file-includes",
+    "objectID": "01c-articles/slides.html#file-includes",
+    "href": "01c-articles/slides.html#file-includes",
     "title": "Articles",
     "section": "File Includes",
     "text": "File Includes\n\nThere are a few ways to include content from other files, but a useful option for PDF or HTML snippets is the include-in-* options.\n\nThe following include-in-* options allow you to include contents of a file (e.g. file.tex) verbatim at certain positions:\n\n\n\n\n\n\n\n\nOption\nPosition\nUse Cases\n\n\n\n\ninclude-in-header\nend of the header\nbefore \\begin{document} or &lt;body&gt;\nInject commands into the LaTeX preamble\n\n\ninclude-before-body\nbeginning of the document body\nafter \\begin{document} or &lt;body&gt;\nInclude navigation bars or banners in HTML\n\n\ninclude-after-body\nend of the document body\nbefore \\end{document} or &lt;/body&gt;"
   },
   {
-    "objectID": "01c-scholarly/slides.html#latex-output",
-    "href": "01c-scholarly/slides.html#latex-output",
+    "objectID": "01c-articles/slides.html#latex-output",
+    "href": "01c-articles/slides.html#latex-output",
     "title": "Articles",
     "section": "LaTex Output",
     "text": "LaTex Output\nThere are two ways to produce a LaTex file (.tex) using options specificed in the YAML header:\n\nOption 1: Use the latex format instead of pdf\n\nformat:\n  latex:\n    documentclass: report\n    classoption: [twocolumn, landscape]\n    lof: true\n    lot: true\n\n\nOption 2: Use the keep-tex option in the pdf format\n\nformat:\n  pdf:\n    documentclass: report\n    keep-tex: true"
   },
   {
-    "objectID": "01c-scholarly/slides.html#equations",
-    "href": "01c-scholarly/slides.html#equations",
+    "objectID": "01c-articles/slides.html#equations",
+    "href": "01c-articles/slides.html#equations",
     "title": "Articles",
     "section": "Equations",
     "text": "Equations\n\n\nor just use Visual Mode!"
   },
   {
-    "objectID": "01c-scholarly/slides.html#figures",
-    "href": "01c-scholarly/slides.html#figures",
+    "objectID": "01c-articles/slides.html#figures",
+    "href": "01c-articles/slides.html#figures",
     "title": "Articles",
     "section": "Figures",
     "text": "Figures\nMarkdown:\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"left\" height=\"200px\"}\nOutput (HTML):\n\n\n\nPenguins playing with a Quarto ball"
   },
   {
-    "objectID": "01c-scholarly/slides.html#figures-1",
-    "href": "01c-scholarly/slides.html#figures-1",
+    "objectID": "01c-articles/slides.html#figures-1",
+    "href": "01c-articles/slides.html#figures-1",
     "title": "Articles",
     "section": "Figures",
     "text": "Figures\nMarkdown:\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"right\" height=\"200px\"}\nOutput (HTML):\n\n\n\nPenguins playing with a Quarto ball"
   },
   {
-    "objectID": "01c-scholarly/slides.html#subfigures",
-    "href": "01c-scholarly/slides.html#subfigures",
+    "objectID": "01c-articles/slides.html#subfigures",
+    "href": "01c-articles/slides.html#subfigures",
     "title": "Articles",
     "section": "Subfigures",
     "text": "Subfigures\nMarkdown:\n::: {#fig-penguins layout-ncol=2}\n\n![Blue penguin](images/blue-penguin.png){#fig-blue width=\"250px\"}\n\n![Orange penguin](images/orange-penguin.png){#fig-orange width=\"250px\"}\n\nTwo penguins\n\n:::"
   },
   {
-    "objectID": "01c-scholarly/slides.html#subfigures-1",
-    "href": "01c-scholarly/slides.html#subfigures-1",
+    "objectID": "01c-articles/slides.html#subfigures-1",
+    "href": "01c-articles/slides.html#subfigures-1",
     "title": "Articles",
     "section": "Subfigures",
     "text": "Subfigures\nOutput (LaTex):\n\\begin{figure}\n\n\\begin{minipage}[t]{0.50\\linewidth}\n\n{\\centering \n\n\\raisebox{-\\height}{\n\n\\includegraphics[width=2.60417in,height=\\textheight]{images/blue-penguin.png}\n\n}\n\n}\n\n\\subcaption{\\label{fig-blue}Blue penguin}\n\\end{minipage}%\n%\n\\begin{minipage}[t]{0.50\\linewidth}\n\n{\\centering \n\n\\raisebox{-\\height}{\n\n\\includegraphics[width=2.60417in,height=\\textheight]{images/orange-penguin.png}\n\n}\n\n}\n\n\\subcaption{\\label{fig-sleep}Orange penguin}\n\\end{minipage}%\n\n\\caption{\\label{fig-penguins}Two penguins}\n\n\\end{figure}"
   },
   {
-    "objectID": "01c-scholarly/slides.html#subfigures-2",
-    "href": "01c-scholarly/slides.html#subfigures-2",
+    "objectID": "01c-articles/slides.html#subfigures-2",
+    "href": "01c-articles/slides.html#subfigures-2",
     "title": "Articles",
     "section": "Subfigures",
     "text": "Subfigures\nOutput (PDF):"
   },
   {
-    "objectID": "01c-scholarly/slides.html#latex-figure-options",
-    "href": "01c-scholarly/slides.html#latex-figure-options",
+    "objectID": "01c-articles/slides.html#latex-figure-options",
+    "href": "01c-articles/slides.html#latex-figure-options",
     "title": "Articles",
     "section": "LaTex Figure Options",
     "text": "LaTex Figure Options\nQuarto can some options specific to LaTex output such as figure position and environments\n---\ntitle: \"Sidenotes\"\nformat:\n  pdf:\n    fig-pos: 'h'\n    include-in-header: \n      text: |\n        \\usepackage{mdframed}\n---\n\n![Elephant](elephant.png){fig-env=\"mdframed\"}\nSee PDF Reference &gt; Figures for available options"
   },
   {
-    "objectID": "01c-scholarly/slides.html#raw-latex-commands",
-    "href": "01c-scholarly/slides.html#raw-latex-commands",
+    "objectID": "01c-articles/slides.html#raw-latex-commands",
+    "href": "01c-articles/slides.html#raw-latex-commands",
     "title": "Articles",
     "section": "Raw LaTex Commands",
     "text": "Raw LaTex Commands\nPandoc (and thus Quarto) allows for mixing raw LaTex with markdown when creating PDF documents. For example:\n\\begin{tabular}{|l|l|}\\hline\nAge & Frequency \\\\ \\hline\n18--25  & 15 \\\\\n26--35  & 33 \\\\\n36--45  & 22 \\\\ \\hline\n\\end{tabular}\n\n\n\n\n\n\n\nWarning\n\n\nNote that raw LaTex will not be rendered in HTML format. However, if you have existing LaTex content (e.g. from STATA) that can’t be re-exported or re-written in markdown this is a useful option."
   },
   {
-    "objectID": "01c-scholarly/slides.html#your-turn-my_first_article.qmd",
-    "href": "01c-scholarly/slides.html#your-turn-my_first_article.qmd",
+    "objectID": "01c-articles/slides.html#your-turn-my_first_article.qmd",
+    "href": "01c-articles/slides.html#your-turn-my_first_article.qmd",
     "title": "Articles",
     "section": "Your Turn: my_first_article.qmd",
     "text": "Your Turn: my_first_article.qmd\n\n\nOpen my_first_article.qmd inside your last Rproject.\nFollow the PDF exercise instructions\n\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "01c-scholarly/slides.html#submit-straight-from-quarto",
-    "href": "01c-scholarly/slides.html#submit-straight-from-quarto",
+    "objectID": "01c-articles/slides.html#submit-straight-from-quarto",
+    "href": "01c-articles/slides.html#submit-straight-from-quarto",
     "title": "Articles",
     "section": "Submit straight from Quarto",
     "text": "Submit straight from Quarto\n\nQuarto supports the creation of custom formats for single-source publishng to pdf, html, docx.\n\nJournal Article extensions offer templates to adapt an existing .qmd document\n\n\naccording to the styles required for various journals,\n\n\n\n\nand create the LaTeX required for submission to multiple journals."
   },
   {
-    "objectID": "01c-scholarly/slides.html#journal-formats",
-    "href": "01c-scholarly/slides.html#journal-formats",
+    "objectID": "01c-articles/slides.html#journal-formats",
+    "href": "01c-articles/slides.html#journal-formats",
     "title": "Articles",
     "section": "Journal formats",
     "text": "Journal formats\n\ngithub.com/quarto-journals\n\n\n\n\nJournal / Publisher\nName\n\n\n\n\nAssociation of Computing Machinery\nacm\n\n\nAmerican Chemical Society\nacs\n\n\nAmerican Geophysical Union\nagu\n\n\nBiophysical journal\nbiophysical-journal\n\n\nElsevier Journals*\nelsevier\n\n\nAmerican Statistical Association Journals\njasa\n\n\nJournal of Statistical Software\njss\n\n\nPublic Library of Science\nplos"
   },
   {
-    "objectID": "01c-scholarly/slides.html#getting-started-with-a-journal-article",
-    "href": "01c-scholarly/slides.html#getting-started-with-a-journal-article",
+    "objectID": "01c-articles/slides.html#getting-started-with-a-journal-article",
+    "href": "01c-articles/slides.html#getting-started-with-a-journal-article",
     "title": "Articles",
     "section": "Getting started with a journal article",
     "text": "Getting started with a journal article\nThe quarto use template command can be used to create an article from one these formats, e.g. for Elsevier:\n\n\nTerminal\n\nquarto use template quarto-journals/elsevier"
   },
   {
-    "objectID": "01c-scholarly/slides.html#our-turn-journal-article-templates",
-    "href": "01c-scholarly/slides.html#our-turn-journal-article-templates",
+    "objectID": "01c-articles/slides.html#our-turn-journal-article-templates",
+    "href": "01c-articles/slides.html#our-turn-journal-article-templates",
     "title": "Articles",
     "section": "Our Turn: Journal Article Templates",
     "text": "Our Turn: Journal Article Templates\n\n\ngo to terminal, and make new folder called elsevier-article\nrender it!\nedit author details\nadd citation in visual mode\n\n\n\nLet’s write an article together for Elsevier and showcase the following features of Quarto journal articles:\n\nPDF output\nExtended YAML front matter\nReference management\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
@@ -560,29 +560,29 @@
     "text": "Resources\nOfficial Quarto Documentation:\n\nHTML Format Guide\nHTML Full Reference\nPDF Format Guide\nPDF Full Reference"
   },
   {
-    "objectID": "01c-scholarly/index.html",
-    "href": "01c-scholarly/index.html",
+    "objectID": "01c-articles/index.html",
+    "href": "01c-articles/index.html",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "",
     "text": "View slides in full screen"
   },
   {
-    "objectID": "01c-scholarly/index.html#slides",
-    "href": "01c-scholarly/index.html#slides",
+    "objectID": "01c-articles/index.html#slides",
+    "href": "01c-articles/index.html#slides",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "",
     "text": "View slides in full screen"
   },
   {
-    "objectID": "01c-scholarly/index.html#exercises",
-    "href": "01c-scholarly/index.html#exercises",
+    "objectID": "01c-articles/index.html#exercises",
+    "href": "01c-articles/index.html#exercises",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Exercises",
     "text": "Exercises\n\nmy_first_article.qmd\nelsevier-article/"
   },
   {
-    "objectID": "01c-scholarly/index.html#resources",
-    "href": "01c-scholarly/index.html#resources",
+    "objectID": "01c-articles/index.html#resources",
+    "href": "01c-articles/index.html#resources",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nScholarly Writing Guide &gt; Front Matter\nPDF Reference &gt; Figures"

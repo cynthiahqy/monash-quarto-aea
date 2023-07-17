@@ -48,7 +48,7 @@ website:
             text: Hello Quarto!
           - href: 01b-formats/index.qmd
             text: Document Formats
-          - href: 01c-scholarly/index.qmd
+          - href: 01c-articles/index.qmd
             text: Articles
           - href: 01d-wrap-up/index.qmd
       - text: "---"
