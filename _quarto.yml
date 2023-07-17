@@ -15,6 +15,8 @@ website:
   title: "Meeting AEA Replication standards using Quarto and GitHub"
   description: "Jul 18-20 Workshop on Quarto for Department of Economics, Monash University"
 
+  repo-url: https://github.com/cynthiahqy/monash-quarto-aea
+
   open-graph: true
   twitter-card:
     creator: "@cynthiahqy"
