@@ -18,6 +18,7 @@ title: "Pre-Work"
 
 ```{r}
 #| eval: false
+#| echo: true
 pkg_list <- c(
   "tinytex", "quarto", "knitr", "here", "yaml"
 )
@@ -30,10 +31,19 @@ install.packages(pkg_list)
 
 [^2]: For more detailed instructions see this [guide](https://happygitwithr.com/github-acct.html)
 
--   Download and unzip [`day01-exercises.zip`](day01-exercises.zip). Then, go to RStudio \> File \> New Project \> Existing Directory and navigate to the unzipped `day01-exercises` folder and create an RStudio project in there and open it.
+-   Download and unzip [`day01-exercises.zip`](day01-exercises.zip). Then, go to RStudio \> File \> New Project \> Existing Directory and navigate to the unzipped `day01-exercises` folder and create an RStudio project[^3] in there and open it.
 
-## Day 2 \[TBC\]
+[^3]: For more about RStudio Projects see this [explainer](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects)
 
--   Download `day02-exercises.zip`
+## Day 2
+
+-   If you're not familar with using git from inside RStudio or the command line, please install the latest version of GitHub Desktop: <https://desktop.github.com>
+
+Optional:
+
+-   Keep adding content to `replication-pkg/`
+-   Check out Quarto websites and see if there are any features you'd particularly like to learn:
+    - See [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#websites-formats) or my website [cynthiahqy.com](https://www.cynthiahqy.com)
 
 ## Day 3 \[TBC\]
+
