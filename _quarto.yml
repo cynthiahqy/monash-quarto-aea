@@ -6,6 +6,7 @@ project:
     - "about.qmd"
     - "00-pre-workshop.qmd"
     - "01*/*.qmd"
+    - "02*/*.qmd"
     - "!exercises-upload/"
   resources:
     - "day01-exercises.zip"
@@ -52,12 +53,15 @@ website:
             text: Articles
           - href: 01d-wrap-up/index.qmd
       - text: "---"
-      - section: "AEA Replication Packages"
+      - section: "AEA Replication in Quarto"
         contents:
-          - text: Replication Packages and READMEs
+          - href: 02a-readmes/index.qmd
+            text: Reproducibility in Social Sciences
           - text: Includes
-          - text: References and Citations
-          - text: Wrap Up
+            href: 02b-includes/index.qmd
+          - text: Websites
+            href: 02c-websites/index.qmd
+          - href: 02d-wrap-up/index.qmd
       - text: "---"
       - section: "Producing and Publishing Websites"
         contents:
