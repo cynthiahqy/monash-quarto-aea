@@ -725,21 +725,21 @@
     "href": "00-pre-workshop.html",
     "title": "Pre-Work",
     "section": "",
-    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project in there and open it."
+    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
   },
   {
     "objectID": "00-pre-workshop.html#day-1",
     "href": "00-pre-workshop.html#day-1",
     "title": "Pre-Work",
     "section": "",
-    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project in there and open it."
+    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
   },
   {
-    "objectID": "00-pre-workshop.html#day-2-tbc",
-    "href": "00-pre-workshop.html#day-2-tbc",
+    "objectID": "00-pre-workshop.html#day-2",
+    "href": "00-pre-workshop.html#day-2",
     "title": "Pre-Work",
-    "section": "Day 2 [TBC]",
-    "text": "Day 2 [TBC]\n\nDownload day02-exercises.zip"
+    "section": "Day 2",
+    "text": "Day 2\n\nIf you’re not familar with using git from inside RStudio or the command line, please install the latest version of GitHub Desktop: https://desktop.github.com\n\nOptional:\n\nKeep adding content to replication-pkg/\nCheck out Quarto websites and see if there are any features you’d particularly like to learn:\n\nSee Awesome Quarto or my website cynthiahqy.com"
   },
   {
     "objectID": "00-pre-workshop.html#day-3-tbc",
@@ -753,7 +753,7 @@
     "href": "00-pre-workshop.html#footnotes",
     "title": "Pre-Work",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nSee this video tutorial for step-by-step instructions↩︎\nFor more detailed instructions see this guide↩︎"
+    "text": "Footnotes\n\n\nSee this video tutorial for step-by-step instructions↩︎\nFor more detailed instructions see this guide↩︎\nFor more about RStudio Projects see this explainer↩︎"
   },
   {
     "objectID": "index.html",
