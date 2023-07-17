@@ -1,12 +1,20 @@
----
-title: "Hello Quarto"
-author: "Cynthia Huang"
-date: 2023-07-19
-footer: "[🔗 cynthiahqy.github.io/monash-quarto-aea](https://cynthiahqy.github.io/monash-quarto-aea)"
-format:
-  revealjs:
-    theme: default
-    transition: fade
-    slide-number: true
-    chalkboard: true
----
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+- `replication_in_parts.qmd` using `inputs/` and `_extensions`
+
+## Resources
+
+Official Quarto Documentation: 
+- [Includes Shortcode](https://quarto.org/docs/authoring/includes.html)
+- [Available Quarto Extensions](https://quarto.org/docs/extensions/)
+
+More:
+- [include-code-files GitHub repo](https://github.com/quarto-ext/include-code-files)

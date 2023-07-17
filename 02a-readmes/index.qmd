@@ -1,14 +1,15 @@
----
-title: "Hello Quarto"
-author: "Cynthia Huang"
-date: 2023-07-19
-footer: "[🔗 cynthiahqy.github.io/monash-quarto-aea](https://cynthiahqy.github.io/monash-quarto-aea)"
-format:
-  revealjs:
-    theme: default
-    transition: fade
-    slide-number: true
-    chalkboard: true
----
+## Slides
 
-<!--- including output from dyntext, texdoc etc. --->
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+There are no exercises for this section.
+
+## Resources
+
+- [Unofficial guidance on various topics by Social Science Data Editors](https://social-science-data-editors.github.io/guidance/)

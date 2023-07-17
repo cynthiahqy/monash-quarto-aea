@@ -1,0 +1,176 @@
+---
+title: "Quarto Includes"
+subtitle: "Session 2: AEA Replication in Quarto"
+author: "Cynthia Huang"
+date: 2023-07-18
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+# Advanced Quarto Features
+
+## Quarto Extensions {.medium}
+
+Extensions are a powerful way to modify and extend the behavior of Quarto. Types of extensions include:
+
+::: incremental
+- Custom Formats
+- Journal Articles
+- Revealjs (presentation) Plug-Ins
+- *Shortcode/Filters*
+:::
+. . .
+
+::: {.callout-warning}
+### Extension Trust
+
+Quarto extensions may execute code when documents are rendered. Therefore, if you do not trust the author of an extension, do not install or use the extension.
+:::
+
+## Quarto Includes
+
+There are a number of ways to include and reuse existing content in Quarto documents:
+
+::: incremental
+- `include-in*` YAML options for including LaTex/HTML in `header`, `before` and `after` the body.
+- the shortcode `{{< include _content.qmd >}}`
+- the Lua filter extension `include-code-files`
+:::
+
+<!-- . . .
+
+::: callout-tip
+Note that these are all advanced Quarto functions, but are worthwhile learning if you are working with multiple softwares or formats.
+::: -->
+
+# Shortcodes: Includes
+
+## Shortcodes
+
+See: [quarto.org \> Guide \> Advanced \> Includes](https://quarto.org/docs/authoring/includes.html)
+
+::: incremental
+- Shortcodes are special markdown directives that generate various types of content.
+- The `{{< include >}}` shortcode allows you to re-use content across documents.
+- Includes are equivalent to copying and pasting the text from the included quarto file into the main quarto file
+:::
+
+## Include more Quarto
+
+Add the shortcode where you want your file to appear:
+
+```{.md code-line-numbers="9"}
+---
+title: "My Document"
+---
+
+## Overview
+
+I have some quarto content I want to reuse right here:
+
+{{< include _basics.qmd >}}
+
+## Another Section
+
+More content here...
+
+```
+. . .
+
+Files prefixed with underscores (e.g. `_basic.qmd`) are ignored when rendering a whole directory of `.qmd` files.
+
+# Extensions: include-code-files
+
+## Lua Filter
+
+The [`include-code-files`](https://github.com/quarto-ext/include-code-files) is an Lua Filter extension developed and maintained by the core Quarto team [(github.com/quarto-ext)](https://github.com/quarto-ext) allows you:
+
+- to read in source files and,
+- display them in code blocks with syntax highlighting.
+
+## Installing Extensions
+
+To install:
+```terminal
+quarto add quarto-ext/include-code-files
+```
+
+To use the extension add this option to either document or project metadata:
+```yaml
+---
+filters:
+   - include-code-files
+---
+```
+. . .
+
+::: {.callout-tip}
+The `include-code-files` extension is already included in the exercises folder.
+:::
+
+## Using Extensions
+
+Each extension will have instructions for how to use it.
+
+To use the `include-code-files` extension, include the following where you want to display `script.do`
+
+````md
+```{.stata include="script.do"}
+```
+````
+
+Which will show the contents of `script.do` with syntax highlighting:
+
+```{.stata code-line-numbers="true"}
+...
+tabulate region                   /* obtain summary statistics */
+summarize marriage_rate divorce_rate median_age if state!="Nevada"
+...
+```
+
+## Code Block Options
+
+You can specify additional options separated by spaces. For example:
+````
+```{.stata include="script.do" code-line-numbers="false" filename="script.do"}
+```
+````
+
+::: {.callout-important}
+Note that not all HTML Code Block options work with the `include-code-files` extension. You may still need to copy and paste code.
+:::
+
+## Our Turn: replication_in_parts.qmd
+
+::: notes
+- render
+- got back and forth between source and output
+:::
+
+## Your Turn: replication_in_parts.qmd
+
+::: task
+Open `replication_in_parts.qmd` in your Rstudio project and follow the instructions.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 15)
+```
+
+## Summary
+
+::: incremental
+- There are multiple ways to generate, combine and re-use content in Quarto
+- Basic reuse includes inserting images, raw Latex, and references from a `.bib` file
+- More advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters
+- New features are always being introduced to Quarto
+:::

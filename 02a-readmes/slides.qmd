@@ -1,0 +1,137 @@
+---
+title: "Reproducibility in Social Sciences"
+subtitle: "Session 2: AEA Replication in Quarto"
+author: "Cynthia Huang"
+date: 2023-07-18
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+<!--- including output from dyntext, texdoc etc. --->
+
+# Standards, guidelines, and policies
+
+## Social Science Data Editors
+
+[🔗 github.com/social-science-data-editors](https://github.com/social-science-data-editors)
+
+- Organisation of Data Editors from leading journals in social sciences
+- Publish various resources, templates and guidelines on reproducibility in social sciences
+
+## DCAS
+
+The [Data and Code Availability Standard](https://datacodestandard.org) is a standard for sharing research code and data, endorsed by leading journals in social sciences.
+
+```{=html}
+<iframe src="https://datacodestandard.org" width="100%" height="550" title="Data and Code Availability Standard"></iframe>
+```
+
+<!-- Koren, M., M. Connolly, J. Llull, and L. Vilhuber. 2022. “Data and Code Availability Standard [Version 1.0].” Website. https://datacodestandard.org https://doi.org/10.5281/zenodo.7436134 -->
+
+
+## Unofficial Guidance
+
+```{=html}
+<iframe src="https://social-science-data-editors.github.io/guidance/" width="100%" height="550" title="Unofficial Guidance"></iframe>
+```
+
+<!-- Social Science Data Editors. 2023. "Unofficial guidance on various topics by Social Science Data Editors". Data and Code Guidance by Data Editors. Accessed at https://social-science-data-editors.github.io/guidance/ on 2023-07-17. -->
+
+
+## AEA Policies and Guidance {.smaller}
+
+Journals which endorse DCAS aim to have polices which are compliant with the standards.[^1] AEA resources include:
+
+- [Data and Code Availability Policy](https://www.aeaweb.org/journals/data/data-code-policy)
+- [Data Legality Policy](https://www.aeaweb.org/journals/data/data-legality-policy)
+- [Replication Package Instructions](https://aeadataeditor.github.io/aea-de-guidance/)
+
+```{=html}
+<iframe src="https://aeadataeditor.github.io/aea-de-guidance/" width="100%" height="300" title="AEA Replication Package Guide"></iframe>
+```
+
+[^1]: See this Blog Post by AEA Data Editor [DCAS v1.0 Compliance Self-Assessment](https://aeadataeditor.github.io/posts/2023-01-25-dcas-compliance)
+
+
+# Replication packages
+
+## Step 0: Read the Guidelines?
+
+Step 1 of the AEA Replication Package involves [Preparing your files for verification](https://aeadataeditor.github.io/aea-de-guidance/preparing-for-data-deposit.html). Again, this is a fairly long and detailed read.
+
+```{=html}
+<iframe src="https://aeadataeditor.github.io/aea-de-guidance/preparing-for-data-deposit.html" width="100%" height="300" title="Preparing your files for verification"></iframe>
+```
+
+## TLDR: Press play and replicate!{.smaller}
+
+A replication package should:
+
+::: incremental
+- reproduce all analysis, figures, tables in the associated paper
+- fully document, cite and license all data used in analysis
+- fully document and license code used in analysis
+- include all data and code subject to confidentiality and licensing restrictions
+- specify computational requirements
+- set-up any packages/tools/modules required to run the analysis
+- run free of manual intervention (as far as possible)
+:::
+
+## Package Components
+
+:::{layout-ncol="2"}
+
+- Code
+- Data
+- Documentation
+    - `README`, `LICENSE`
+- (Output)
+    - figures, tables, etc.
+
+```{.terminal code-line-numbers="6-10|11-14|3-5|15"}
+.
+└── replication-pkg
+    ├── LICENSE.txt
+    ├── README.qmd
+    ├── README.pdf
+    ├── code
+    │   ├── 00_setup
+    │   ├── 01_dataprep
+    │   ├── 02_analysis
+    │   └── 03_appendix
+    ├── data
+    │   ├── analysis
+    │   ├── interim
+    │   └── raw
+    └── (output)
+```
+:::
+
+## README Template{.smaller}
+
+The Social Science Data Editors also maintain a [template README](https://social-science-data-editors.github.io/template_README/) that includes the following components
+
+- Overview
+- Data Availability and Provenance Statements
+- Dataset List
+- Code/Program Descriptions
+- _Computational Requirements_
+- _Instructions to Replicators_
+- References and Acknowledgements
+
+# Quarto for Replication
+
+## So what can Quarto offer?
+
+::: incremental
+- reusability and flexibility
+- combine multiple work streams
+- reuse existing text format outputs
+- citation and references
+- get a website (almost) for free!
+:::
+
+## My Turn: A Template Repository for Replication
+
+[🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)

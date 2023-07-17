@@ -1,0 +1,19 @@
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+- [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
+- [🔗 github.com/cynthiahqy/monash-quarto-aea](https://github.com/cynthiahqy/monash-quarto-aea)
+
+## Resources
+
+Official Quarto Documentation:
+
+- [Website Guide](https://quarto.org/docs/websites/)
+- [Website Options Full Reference](https://quarto.org/docs/reference/projects/websites.html)
