@@ -16,6 +16,7 @@ website:
   description: "Jul 18-20 Workshop on Quarto for Department of Economics, Monash University"
 
   repo-url: https://github.com/cynthiahqy/monash-quarto-aea
+  repo-actions: [edit, issue]
 
   open-graph: true
   twitter-card:
@@ -27,6 +28,12 @@ website:
     style: docked
     search: true
     collapse-level: 2
+
+    tools:
+      - icon: github
+        href: https://github.com/cynthiahqy/monash-quarto-aea
+        text: "GitHub organization"
+
     contents:
       - href: index.qmd
         text: Home

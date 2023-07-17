@@ -22,3 +22,7 @@ See [Pre-work](00-pre-workshop.qmd) for tasks to complete before the workshop.
 | Weds, Jul 19  | 09:00-12:30 | **Session 03: Producing and Publishing Websites**      |
 | Thurs, Jul 20 | 09:00-12:30 | **Session 04: More Quarto for Academics** *(optional)* |
 |               | 13:30-15:30 | Support Hours *(optional)*                             |
+
+------------------------------------------------------------------------
+
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). See repository [README](https://github.com/cynthiahqy/monash-quarto-aea) for more details.
