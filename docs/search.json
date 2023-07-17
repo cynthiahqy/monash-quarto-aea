@@ -4,21 +4,21 @@
     "href": "02d-wrap-up/slides.html#reproducibility-in-social-sciences",
     "title": "Wrap-Up",
     "section": "Reproducibility in Social Sciences",
-    "text": "Reproducibility in Social Sciences\n\nReplication involves both computational requirements and documentation\nQuarto can help with documentation even if you don’t use R/Python"
+    "text": "Reproducibility in Social Sciences\n\n\nReplication involves both computational requirements and documentation\nQuarto can help with documentation even if you don’t use R/Python"
   },
   {
     "objectID": "02d-wrap-up/slides.html#quarto-includes",
     "href": "02d-wrap-up/slides.html#quarto-includes",
     "title": "Wrap-Up",
     "section": "Quarto Includes",
-    "text": "Quarto Includes\n\nQuarto offers a huge variety of features with more coming!\nIncludes are a great way to re-use existing content"
+    "text": "Quarto Includes\n\n\nQuarto offers a huge variety of features with more coming!\nIncludes are a great way to re-use existing content"
   },
   {
     "objectID": "02d-wrap-up/slides.html#quarto-websites",
     "href": "02d-wrap-up/slides.html#quarto-websites",
     "title": "Wrap-Up",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\n\nWebsites are type of Quarto project\nYou can build a website around existing code, data and papers!"
+    "text": "Quarto Websites\n\n\nWebsites are type of Quarto project\nYou can build a website around existing code, data and papers!"
   },
   {
     "objectID": "02d-wrap-up/slides.html#day-2-pre-work",
@@ -207,14 +207,14 @@
     "href": "02b-includes/slides.html#our-turn-replication_in_parts.qmd",
     "title": "Quarto Includes",
     "section": "Our Turn: replication_in_parts.qmd",
-    "text": "Our Turn: replication_in_parts.qmd\n\n\nrender\ngot back and forth between source and output"
+    "text": "Our Turn: replication_in_parts.qmd\n\nOpen replication_in_parts.qmd in Rstudio. Render the document."
   },
   {
     "objectID": "02b-includes/slides.html#your-turn-replication_in_parts.qmd",
     "href": "02b-includes/slides.html#your-turn-replication_in_parts.qmd",
     "title": "Quarto Includes",
     "section": "Your Turn: replication_in_parts.qmd",
-    "text": "Your Turn: replication_in_parts.qmd\n\nOpen replication_in_parts.qmd in your Rstudio project and follow the instructions.\n\n\n\n\n−+\n15:00"
+    "text": "Your Turn: replication_in_parts.qmd\n\nContinue with replication_in_parts.qmd and follow the instructions.\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "02b-includes/slides.html#summary",

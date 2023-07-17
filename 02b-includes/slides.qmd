@@ -149,15 +149,16 @@ Note that not all HTML Code Block options work with the `include-code-files` ext
 
 ## Our Turn: replication_in_parts.qmd
 
-::: notes
-- render
-- got back and forth between source and output
+::: follow
+Open `replication_in_parts.qmd` in Rstudio.
+Render the document.
 :::
+
 
 ## Your Turn: replication_in_parts.qmd
 
 ::: task
-Open `replication_in_parts.qmd` in your Rstudio project and follow the instructions.
+Continue with `replication_in_parts.qmd` and follow the instructions.
 :::
 
 ```{r}

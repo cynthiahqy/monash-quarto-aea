@@ -9,18 +9,27 @@ metadata-files:
 
 ## Reproducibility in Social Sciences
 
+::: incremental
+
 - Replication involves both computational requirements and documentation
 - Quarto can help with documentation even if you don't use R/Python
 
+:::
+
 ## Quarto Includes
 
+::: incremental
 - Quarto offers a huge variety of features with more coming!
 - Includes are a great way to re-use existing content
+:::
 
 ## Quarto Websites
 
+::: incremental
 - Websites are type of Quarto project
 - You can build a website around existing code, data and papers!
+
+:::
 
 ## Day 2 Pre-Work
 
