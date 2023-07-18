@@ -137,8 +137,7 @@ show `my_first_doc.qmd`
 ``` yaml
 ---
 format:
-  pdf:
-    keep-tex: true
+  latex: default
   html: default
 ---
 ```
@@ -160,7 +159,7 @@ Indentation matters!
 format: 
   html:
     toc: true
-    code-fold: true
+    toc-depth: 2
 ---
 ```
 
