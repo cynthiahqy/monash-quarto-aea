@@ -1,0 +1,374 @@
+---
+title: "Websites Pt. 2"
+subtitle: "Session 3: Producing and Publishing Websites"
+author: "Cynthia Huang"
+date: 2023-07-19
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+# Website Projects: Revisited
+
+## Review: Project Config Files
+
+``` {.yaml code-line-numbers="1-7|8-9|10-12" filename="_quarto.yml"}
+project:
+  type: website
+  output-dir: _site
+  render: 
+    - "**/*.qmd" # target these pages!
+  resources:
+    - "paper.pdf" # should be copied across to output-dir
+website:
+  # ... add website features here
+format:
+  # ... format specific options
+# ... global options
+```
+
+## Review: Render and Preview Projects
+
+Websites are collections of Quarto documents
+
+. . .
+
+but the Render button in Rstudio prioritises rendering and previewing the currently open document.
+
+. . . 
+
+To re-render all targets in a project, run this in the **Console**:
+```r
+quarto::quarto_render()
+```
+
+. . .
+
+To re-render AND refresh the preview use:
+
+```r
+quarto::quarto_preview()
+```
+
+
+## Our Turn: Creating a New Website Project
+
+<!--- https://quarto.org/docs/websites/#quick-start --->
+
+::: follow
+- Make a new Website by going to RStudio \> New Project \> New Directory \> Quarto Website.
+- Open `index.qmd` and press `Render`. Where does the output go?
+- Inspect the website and open the Files pane. What pages are included in this template?
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+## Available Website Features
+
+::: incremental
+-   **Navigation**: Top navbars, Sidebars
+-   **Tools**: Search, Social Media, Comments, Google Analytics
+-   **Content**: Listings, About Pages
+:::
+. . .
+
+For a full list of available options see [quarto.org \> Reference \> Projects \> Websites](https://quarto.org/docs/reference/projects/websites.html). Include these options under the `website` field in `_quarto.yml`
+
+## Navigation: Top Navbar
+
+Top Nav bars can have items on the left or right, and include drop-down menus:
+
+```{.yaml filename="_quarto.yml" code-line-numbers="5,10|11-14"}
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - talks.qmd
+      - about.qmd
+    right:
+      - text: "More"
+        menu:
+          - faqs.qmd
+          - jobs.qmd
+
+```
+
+## Navigation: Sidebar
+
+Sidebars are useful for sites with more files and deeper hierarchies, and can be split into sections:
+```{.yaml filename="_quarto.yml" code-line-numbers="1-4|5-15"}
+website:
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Basics"
+        contents:
+          - index.qmd
+          - basics-knitr.qmd
+          - basics-jupyter.qmd
+      - section: "Layout"
+        contents:
+          - layout.qmd
+          - layout-knitr.qmd
+          - layout-jupyter.qmd
+```
+
+## Navigation: Auto Sidebar
+
+Sidebars can also be built automatically using the `title` filed of all documents in the website project:
+
+```{.yaml filename="_quarto.yml"}
+sidebar:
+  contents: auto
+```
+. . .
+
+or for specific folders, to specific depths, or file types:
+
+```{.yaml filename="_quarto.yml" code-line-numbers="1-3|4-6|7-9"}
+## include files and subfolders in reports/
+sidebar:
+  contents: reports
+## OR only top level files in reports/
+sidebar:
+  contents: reports/*
+## OR only jupyter notebooks
+sidebar:
+  contents: "*.ipynb"
+```
+
+## Your Turn: Custom Navigation
+
+::: task
+Open the website we just made.
+
+- add another page to the top navbar
+- add a folder called `posts/` and add `file1.qmd` and `file2.qmd` inside.
+- add titles to `file1.qmd` and `file2.qmd`
+- add an automatically generated sidebar
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+# Sharing YAML Metadata
+
+## Project Level Sharing
+
+Global options can apply to **all formats** or **specific formats**, just like in a YAML header inside a `.qmd` file.
+
+```{.yaml filename="_quarto.yml" code-line-numbers="4-6|8-15"}
+project:
+  output-dir: _output
+
+toc: true
+number-sections: true
+bibliography: references.bib  
+  
+format:
+  html:
+    css: styles.css
+    html-math-method: katex
+  pdf:
+    documentclass: report
+    margin-left: 30mm
+    margin-right: 30mm
+```
+
+## Directory Level Sharing
+
+To reuse YAML options for files within a given folder (i.e. a collection of blog posts), include a `_metadata.yml` file in the folder along with the `.qmd` files:
+
+```{.terminal code-line-numbers="3-8"}
+├── _quarto.yml
+├── index.qmd
+├── posts
+│   ├── _metadata.yml
+│   ├── blog-post-01.qmd
+│   ├── blog-post-02.qmd
+│   ├── blog-post-03.qmd
+│   └── blog-post-04.qmd
+```
+
+## Directory Level Sharing
+
+The format of `_metadata.yml` is the same as `_quarto.yml`.
+
+```{.yml filename="_metadata.yml"}
+## metadata for all formats
+author: "Cynthia Huang"
+image: featured.png
+# card-style: "summary"
+date-modified: last-modified
+
+## format specific options
+format:
+  html:
+    toc: false
+```
+If you comment out an option in `_metadata.yml`, if there is a project level option in `_quarto.yml` it will apply. Otherwise the built in Quarto default applies.
+
+## Metadata Includes
+
+In addition to the previous two options, you might have options you want to use across multiple files or folders but not for the whole project. 
+
+You can include these via the `metadata-files:` option. For example:
+
+```{.md code-line-numbers="3-4"}
+---
+title: "A Special Post with Special Options"
+metadata-files:
+  - "_specialopts.yml"
+---
+
+## Special Section 1
+
+```
+
+## Inheritance of Shared Metadata
+
+Recall that Quarto has built in defaults for YAML metadata fields. These are merged with any options that you provide, with the most specific taking priority:
+
++------------------------+-----------------------------------------------------+
+| File                   | Role                                                |
++========================+=====================================================+
+| `_quarto.yml`          | Project level default options                       |
++------------------------+-----------------------------------------------------+
+| `dir/_metadata.yml`    | Directory level default options (overrides project) |
++------------------------+-----------------------------------------------------+
+| `dir/document.qmd`     | Document options (overrides directory and project)  |
++------------------------+-----------------------------------------------------+
+
+## Learn More
+
+[quarto.org/docs/projects/quarto-projects.html#shared-metadata](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata)
+
+
+```{=html}
+<iframe src="https://quarto.org/docs/projects/quarto-projects.html#shared-metadata" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Projects Shared Metadata"></iframe>
+```
+
+## Your Turn: Shared Options
+
+::: task
+Open your last quarto project.
+
+- Add a `_metadata.yml` file to the `posts/` folder.
+- Add an option for the html format. See [HTML Full Reference](https://quarto.org/docs/reference/formats/html.html) for ideas.
+- Render again.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+# Websites Summary
+
+## Project Config File
+
+The project configuration file `_quarto.yml` contains:
+
+::: incremental
+- project level options under `project:`
+- website feature options under `website:`
+- default options shared by all `.qmd` files targeted for rendering (defaults to all files). These can be for all formats or format specific.
+:::
+
+## Render and Preview
+
+To re-render all targets in a project, run this in the **Console**:
+```r
+quarto::quarto_render()
+```
+
+. . .
+
+To re-render AND refresh the preview use:
+
+```r
+quarto::quarto_preview()
+```
+
+## Website Projects in RStudio
+
+[quarto.org/docs/websites/#quick-start](https://quarto.org/docs/websites/#quick-start)
+
+
+```{=html}
+<iframe src="https://quarto.org/docs/websites/#quick-start" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Projects Shared Metadata"></iframe>
+```
+
+## Config File Schema
+
+Just like in YAML headers, YAML config files contain key-value pairs that must be indented correctly:
+
+```{.yaml filename="_quarto.yml"}
+## project & project type options
+project:
+  type: website
+website:
+  title: "A Cool Site"
+## global options for all documents
+toc: true
+## format specific options
+format:
+  html:
+    toc-depth: 2
+  pdf:
+    toc-depth: 3
+```
+
+## Config File Schema
+
+Just like in YAML headers, YAML config files contain key-value pairs that must be indented correctly:
+
+```{.yaml filename="_quarto.yml"}
+project:
+  type: website
+
+website:
+  title: "A Cool Site"
+
+toc: true # for all formats
+
+format:
+  html:
+    toc-depth: 2 # just for HTML
+  pdf:
+    toc-depth: 3 # just for PDF
+```
+We can add comments to `.yml` files using `#`.
+
+## Sharing Metadata
+
+We can share metadata options using:
+
+::: incremental
+- Project level options in `_quarto.yml`
+- Directory specific options in `_metadata.yml`, which follow the same schema as `_quarto.yml`
+- Metadata Includes via the `metadata-files:` field
+:::
+. . .
+
+The most specific options take priority -- i.e.
+
+`document > directory > project > defaults`
