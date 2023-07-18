@@ -38,20 +38,48 @@
 | 10:20-11:30   | WRAP-UP        |                                         |
 +---------------+----------------+-----------------------------------------+
 
+Notes:
+
+- Ran overtime to 12PM
+- Lots of troubleshooting with PDF rendering:
+    - introduce `latex` format earlier
+    - put render `.qmd` to `.pdf` in prework!
+
+Next time:
+
+- Rtools needed to install tinytex on Windows computers
+- include aside on MathJax in Articles / LaTex
+- FOCUS on PDF/Tex output first!
+    - introduce multi-format rendering earlier!
+- My Turn: A Tour should be more impressive!
+    - go straight for elsivier template!
+- Sign up questions:
+    - markdown?
+    - git/GitHub?
+- Swap Articles and Doc Formats order
+    - show valid YAML = render dropdowns in RStudio
+
+
 ### AEA Replication Package using Quarto (2.5 Hours)
 
 <!--- using quarto to collect bits into documents ----->
 
 | Time | Module                                |
 |------|---------------------------------------|
-|      | Data and Code Availability Guidelines |
+|      | Reproducibility in Social Sciences    |
 |      |                                       |
-|      | Annotating Data                       |
+|      | Replication Package Template          |
 |      |                                       |
-|      | Annotating Scripts                    |
+|      | Websites                              |
 |      |                                       |
-|      | Rendering a Replication Package       |
 |      | Wrap-Up                               |
+
+Notes:
+
+- Put Our Turn: get template at the end 2a
+    - Next time: distribute as starter zip
+- skipped Includes because of issues with rendering
+- wrapped up at 2.30PM
 
 ### Publishing Quarto Websites online (2.5 Hours)
 
@@ -59,8 +87,8 @@
 
 | Time | Module            |
 |------|-------------------|
-|      | Websites          |
-|      |                   |
+|      | Includes          |
+|      | Listings          |
 |      | Publishing Online |
 |      |                   |
 |      | Wrap-Up           |
