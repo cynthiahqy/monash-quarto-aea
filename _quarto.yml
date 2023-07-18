@@ -66,9 +66,10 @@ website:
         contents:
           - text: Websites Cont'd
             href: 03a-websites-pt2/index.qmd
+          - text: Publish
+            href: 03b-publish/index.qmd
           - text: Includes
-          - text: Listings
-          - text: Wrap Up
+          - href: 03d-wrap-up/index.qmd
       - text: "---"
       - section: "More Quarto for Academics"
         contents:

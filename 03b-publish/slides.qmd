@@ -1,0 +1,88 @@
+---
+title: "Publishing and Tools"
+subtitle: "Session 3: Producing and Publishing Websites"
+author: "Cynthia Huang"
+date: 2023-07-19
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+# Publish Now!
+
+## Our Turn: Drag & Drop
+
+Forget GitHub Pages, I was too ambitious.
+. . .
+
+::: follow
+Let's Drag and Drop our `docs` or `_site` folder instead!
+
+[🔗 Netlify Drop](https://app.netlify.com/drop)
+:::
+
+## Netlify Drop
+
+:::{layout-ncol="2"}
+#### Pros
+
+- Easy and straight forward
+- So so quick!
+- Free!
+
+#### Cons
+
+- Link expires in 24 hours if you don't sign up
+- Updating has to be done manually
+- No version control
+
+:::
+
+See also: [Section 6.2 of _Authoring Books with R Markdown_](https://bookdown.org/yihui/bookdown/netlify-drop.html)
+
+## Alternative Methods
+
+[🔗 quarto.org/docs/publishing/](https://quarto.org/docs/publishing/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/publishing/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Publishing Guide"></iframe>
+```
+
+# ASIDE: Revisiting Tools
+
+## Git and GitHub {.medium}
+
+::: incremental
+- Git is version control tool that offers
+    - time-travel with messages not just timestamps
+    - version branching for testing new features (i.e. a new website theme)
+    - file conflict resolutions
+
+- GitHub is an online cloud-based platform for storing and sharing git repositories (i.e. projects). It also offers:
+    - free publishing of websites via GitHub pages
+    - project management tools like Issues, Discussions and Wikis
+:::
+
+## Operating System Issues
+
+::: incremental
+- On Windows [Rtools](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html) is required to compile the R package `tinytex` for the PDF format
+- An alternative to rendering PDFs locally (on your computer) is using the `latex` format instead and uploading the file to [Overleaf](http://overleaf.com/)
+- Quarto might not have permission to create, move or delete files on cloud drives (e.g. Dropbox). This will causes rendering to fail. Move the files to a local non-cloud drive and try again.
+:::
+
+## Quarto vs. RMarkdown, Juypter Notebooks...
+
+Why Quarto?
+
+::: incremental
+- it supports all the other formats you might need!
+- new features are being added all the time
+- upfront investment for time-savings in the long run
+:::

@@ -260,7 +260,6 @@ Recall that Quarto has built in defaults for YAML metadata fields. These are mer
 
 [quarto.org/docs/projects/quarto-projects.html#shared-metadata](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata)
 
-
 ```{=html}
 <iframe src="https://quarto.org/docs/projects/quarto-projects.html#shared-metadata" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Projects Shared Metadata"></iframe>
 ```
