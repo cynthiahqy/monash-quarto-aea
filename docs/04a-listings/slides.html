@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Cynthia Huang">
-  <title>Meeting AEA Replication standards using Quarto and GitHub - Wrap-Up</title>
+  <title>Meeting AEA Replication standards using Quarto and GitHub - Listings</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -321,10 +321,10 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Meeting AEA Replication standards using Quarto and GitHub - Wrap-Up">
+<meta property="og:title" content="Meeting AEA Replication standards using Quarto and GitHub - Listings">
 <meta property="og:description" content="Session 3: Producing and Publishing Websites">
 <meta property="og:site-name" content="Meeting AEA Replication standards using Quarto and GitHub">
-<meta name="twitter:title" content="Meeting AEA Replication standards using Quarto and GitHub - Wrap-Up">
+<meta name="twitter:title" content="Meeting AEA Replication standards using Quarto and GitHub - Listings">
 <meta name="twitter:description" content="Session 3: Producing and Publishing Websites">
 <meta name="twitter:creator" content="@cynthiahqy">
 <meta name="twitter:card" content="summary">
@@ -334,7 +334,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Wrap-Up</h1>
+  <h1 class="title">Listings</h1>
   <p class="subtitle">Session 3: Producing and Publishing Websites</p>
 
 <div class="quarto-title-authors">
@@ -345,56 +345,15 @@ Cynthia Huang
 </div>
 </div>
 
-  <p class="date">Wednesday, July 19, 2023</p>
+  <p class="date">Tuesday, July 18, 2023</p>
 </section>
-<section>
-<section id="summary" class="title-slide slide level1 center">
-<h1>Summary</h1>
+<section class="slide level2">
 
-</section>
-<section id="quarto-websites" class="slide level2">
-<h2>Quarto Websites</h2>
-<div>
-<ul>
-<li class="fragment">Folder of <code>.qmd</code> files + <code>_quarto.yml</code></li>
-<li class="fragment">Project, Website, Format options</li>
-</ul>
-</div>
-</section>
-<section id="publish" class="slide level2">
-<h2>Publish</h2>
-<div>
-<ul>
-<li class="fragment">One click publishing via Netlify Drop</li>
-<li class="fragment">See Quarto Docs for other options with more features</li>
-</ul>
-</div>
-</section>
-<section id="quarto-includes" class="slide level2">
-<h2>Quarto Includes</h2>
-<div>
-<ul>
-<li class="fragment">Quarto offers a huge variety of features with more coming!</li>
-<li class="fragment">Includes are a great way to re-use existing content</li>
-<li class="fragment">The extension <code>include-code-files</code> allows you to include STATA scripts as well!</li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="request-time" class="title-slide slide level1 center">
-<h1>Request time!</h1>
-
-</section>
-<section id="your-turn-to-request" class="slide level2">
-<h2>Your turn to request!</h2>
-<div class="task">
-<p>What other aspects / features of a Quarto website or book would you like to learn about?</p>
-</div>
 
 <div class="footer footer-default">
 <p><a href="https://cynthiahqy.github.io/monash-quarto-aea">🔗 cynthiahqy.github.io/monash-quarto-aea</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -608,6 +567,44 @@ Cynthia Huang
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

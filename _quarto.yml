@@ -8,6 +8,7 @@ project:
     - "01*/*.qmd"
     - "02*/*.qmd"
     - "03*/*.qmd"
+    - "04*/*.qmd"
     - "!exercises-upload/"
   resources:
     - "day01-exercises.zip"
@@ -68,14 +69,15 @@ website:
             href: 03a-websites-pt2/index.qmd
           - text: Publish
             href: 03b-publish/index.qmd
-          - text: Tools and Customisation
-            href: 03c-misc/index.qmd
+          - text: Includes
+            href: 03c-includes/index.qmd
           - href: 03d-wrap-up/index.qmd
       - text: "---"
       - section: "More Quarto for Academics"
         contents:
-          - text: Includes
           - text: (TBC) Listings
+          - text: Tools and Customisation
+            href: 04b-misc/index.qmd
           - text: (TBC) Presentations
           - text: Wrap Up
 

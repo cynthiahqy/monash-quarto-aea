@@ -7,6 +7,30 @@ metadata-files:
   - ../_slides.yml
 ---
 
+# Summary
+
+## Quarto Websites
+
+::: incremental
+- Folder of `.qmd` files + `_quarto.yml`
+- Project, Website, Format options
+:::
+
+## Publish
+
+::: incremental
+- One click publishing via Netlify Drop
+- See Quarto Docs for other options with more features
+:::
+
+## Quarto Includes
+
+::: incremental
+- Quarto offers a huge variety of features with more coming!
+- Includes are a great way to re-use existing content
+- The extension `include-code-files` allows you to include STATA scripts as well!
+:::
+
 # Request time!
 
 ## Your turn to request!
