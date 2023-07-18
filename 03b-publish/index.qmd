@@ -1,12 +1,24 @@
----
-title: "Hello Quarto"
-author: "Cynthia Huang"
-date: 2023-07-19
-footer: "[🔗 cynthiahqy.github.io/monash-quarto-aea](https://cynthiahqy.github.io/monash-quarto-aea)"
-format:
-  revealjs:
-    theme: default
-    transition: fade
-    slide-number: true
-    chalkboard: true
----
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+- [Netlify Drop](https://app.netlify.com/drop/)
+
+## Resources
+
+Monash Data Fluency Trainings (Upcoming):
+
+- [Open Source Science with Git and GitHub](https://www.monash.edu/data-fluency/events/open-source-with-github-science-and-git)
+- [Introduction to Unix shell and command line interface (2x half-day workshops)](https://www.monash.edu/data-fluency/events/open-source-with-github-science-and-git-march)
+- [Unix Shell Workshop Materials](https://monashdatafluency.github.io/shell-novice/)
+
+Extension:
+
+- [Official Quarto Publishing Guide](https://quarto.org/docs/websites/#quick-start)
+
