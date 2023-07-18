@@ -13,22 +13,15 @@ metadata-files:
 
 - Replication involves both computational requirements and documentation
 - Quarto can help with documentation even if you don't use R/Python
-
-:::
-
-## Quarto Includes
-
-::: incremental
-- Quarto offers a huge variety of features with more coming!
-- Includes are a great way to re-use existing content
+- Consider preparing your replication package inside a Quarto website project using [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
 :::
 
 ## Quarto Websites
 
 ::: incremental
 - Websites are type of Quarto project
+- Projects all contain a `_quarto.yml` config file
 - You can build a website around existing code, data and papers!
-
 :::
 
 ## Day 2 Pre-Work

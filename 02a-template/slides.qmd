@@ -1,5 +1,5 @@
 ---
-title: "Reproducibility in Social Sciences"
+title: "Replication Package Template"
 subtitle: "Session 2: AEA Replication in Quarto"
 author: "Cynthia Huang"
 date: 2023-07-18
@@ -7,6 +7,12 @@ format: revealjs
 metadata-files: 
   - ../_slides.yml
 ---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
 
 <!--- including output from dyntext, texdoc etc. --->
 
@@ -53,7 +59,6 @@ Journals which endorse DCAS aim to have polices which are compliant with the sta
 
 [^1]: See this Blog Post by AEA Data Editor [DCAS v1.0 Compliance Self-Assessment](https://aeadataeditor.github.io/posts/2023-01-25-dcas-compliance)
 
-
 # Replication packages
 
 ## Step 0: Read the Guidelines?
@@ -78,7 +83,7 @@ A replication package should:
 - run free of manual intervention (as far as possible)
 :::
 
-## Package Components
+## Recommended Components
 
 :::{layout-ncol="2"}
 
@@ -108,9 +113,10 @@ A replication package should:
 ```
 :::
 
+
 ## README Template{.smaller}
 
-The Social Science Data Editors also maintain a [template README](https://social-science-data-editors.github.io/template_README/) that includes the following components
+The Social Science Data Editors also maintain a [template README](https://social-science-data-editors.github.io/template_README/) that includes the following components:
 
 - Overview
 - Data Availability and Provenance Statements
@@ -119,8 +125,6 @@ The Social Science Data Editors also maintain a [template README](https://social
 - _Computational Requirements_
 - _Instructions to Replicators_
 - References and Acknowledgements
-
-# Quarto for Replication
 
 ## So what can Quarto offer?
 
@@ -132,6 +136,153 @@ The Social Science Data Editors also maintain a [template README](https://social
 - get a website (almost) for free!
 :::
 
-## My Turn: A Template Repository for Replication
+# Quarto Replication Template
 
-[🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
+## Our Turn: Get the Template{.smaller}
+
+::::{layout-ncol="2"}
+
+::: follow
+-   Go to [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
+-   Click "Use this Template"
+-   Make a new repository in your GitHub account
+-   Get the Template on your computer:
+    - Download a copy, 
+    - open with GitHub Desktop,
+    - or clone via Command Line
+-   Make an Rproject in the template
+-   Render the website
+:::
+
+![](images/use-github-template.png)
+
+::::
+
+::: notes
+anything is possible! BUT let's go back to basic requirements
+
+💡 replication package INSIDE a quarto website project.
+:::
+
+<!--- iframe it with a link! --->
+
+## Template: README.qmd
+
+-   AEA does not prescribe a set format for the README file
+-   Different formats are useful for different venues
+    -   `.pdf` --\> into the `.zip` archive
+    -   `.md` --\> GitHub repo
+    -   `.html` --\> showcase website
+-   All are possible with `.qmd`!
+
+## Template: BYO Code and Data
+
+-   Bring your existing projects or workflows as they are.
+-   Add, remove or modify folders as you like!
+-   Maybe even develop your STATA scripts from inside the `replication-pkg` folder
+
+## Template Structure: Replication
+
+:::{layout="[60,40]"}
+- The replication package is contained INSIDE the Quarto website project.
+- `replication-pkg/` contains all code, data and replication documentation.
+- Compress to  to `replication-pkg.zip` for submission
+
+```{.terminal code-line-numbers="5-18"}
+./
+├── _quarto.yml
+├── index.qmd
+├── paper/
+└── replication-pkg/
+    ├── LICENSE.txt
+    ├── README.qmd
+    ├── code/
+    │   ├── 00_setup/
+    │   ├── 01_dataprep/
+    │   ├── 02_analysis/
+    │   └── 03_appendix/
+    ├── data/
+    │   ├── analysis/
+    │   ├── interim/
+    │   └── raw/
+    ├── output/
+    └── references.bib
+```
+:::
+
+## Template Structure: Website
+
+:::{layout="[60,40]"}
+- Place your finished publication in `paper/`
+- Update `_quarto.yml` and `index.qmd`
+- Render and you have a website for your paper!
+- Publish and share with the world
+
+```{.terminal code-line-numbers="2-4"}
+./
+├── _quarto.yml
+├── index.qmd
+├── paper/
+└── replication-pkg/
+    ├── LICENSE.txt
+    ├── README.qmd
+    ├── code/
+    │   ├── 00_setup/
+    │   ├── 01_dataprep/
+    │   ├── 02_analysis/
+    │   └── 03_appendix/
+    ├── data/
+    │   ├── analysis/
+    │   ├── interim/
+    │   └── raw/
+    ├── output/
+    └── references.bib
+```
+:::
+
+## Template: Website Defaults
+
+```{.yaml filename="_quarto.yml" code-line-numbers="5-7|9-19|21-24"}
+project:
+  type: website
+  output-dir: docs 
+
+website:
+  title: "Data and Code for: Matching Mechanisms for Monkey Placement"
+  description: "Supplementary materials and replication package"
+  
+  sidebar:
+    pinned: true
+    align: center
+    style: docked
+    search: false
+    collapse-level: 2
+ 
+    contents:
+      - text: Code
+        href: code.qmd
+      - text: Data
+      - text: Paper
+
+format:
+  html:
+    theme: cosmos
+    toc: true
+```
+
+## Your Turn: replication-pkg/
+
+::: task
+- Add at least one file to these template folders:
+  - code/
+  - data/
+  - paper/
+- Modify at least one section in the README.qmd using a Quarto feature you've learnt today.
+- Render README.qmd
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 15)
+```

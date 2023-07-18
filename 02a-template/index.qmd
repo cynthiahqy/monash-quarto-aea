@@ -1,0 +1,16 @@
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+- `replication-pkg/` from provided Quarto Replication Template
+
+## Resources
+
+- [Unofficial guidance on various topics by Social Science Data Editors](https://social-science-data-editors.github.io/guidance/)
+- [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)

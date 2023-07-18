@@ -8,8 +8,8 @@
 
 ## Exercises
 
-- [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
 - [🔗 github.com/cynthiahqy/monash-quarto-aea](https://github.com/cynthiahqy/monash-quarto-aea)
+- `quarto-replication-template/`
 
 ## Resources
 

@@ -1,5 +1,5 @@
 ---
-title: "Websites"
+title: "Websites Pt. 1"
 subtitle: "Session 2: AEA Replication in Quarto"
 author: "Cynthia Huang"
 date: 2023-07-18
@@ -139,6 +139,27 @@ project:
     - "day01-exercises.zip"
 ```
 
+See [Render Targets](https://quarto.org/docs/websites/#render-targets) and [Site Resources](https://quarto.org/docs/websites/website-tools.html#site-resources) in the Quarto Website Guide for more details.
+
+## Comments in `.yml` files
+
+Use `#` to add comments.
+
+``` {.yaml filename="_quarto.yml"}
+project:
+  type: website
+  output-dir: docs
+  ## which pages to include in the website
+  render:
+    - "index.qmd"
+    - "about.qmd"
+    - "00-pre-workshop.qmd"
+    - "01*/*.qmd"
+  ## non-page resources for your website
+  resources:
+    - "day01-exercises.zip"
+```
+
 ## Rendering Websites
 
 [🔗 github.com/cynthiahqy/monash-quarto-aea](https://github.com/cynthiahqy/monash-quarto-aea)
@@ -178,16 +199,21 @@ project:
 ```
 :::
 
-# Websites and Documents
+<!--- below are revisited in Session 3 ---->
+
+# Website Options
 
 ## Available Features
 
-For a full list of available options see [quarto.org \> Reference \> Projects \> Websites](https://quarto.org/docs/reference/projects/websites.html). Highlights include:
+::: incremental
+-   **Navigation**: Top navbars, Sidebars
+-   **Tools**: Search, Social Media, Comments, Google Analytics
+-   **Content**: Listings, About Pages
+:::
 
--   Navigation
--   Sidebars
--   Search
--   Listings
+. . .
+
+For a full list of available options see [quarto.org \> Reference \> Projects \> Websites](https://quarto.org/docs/reference/projects/websites.html). Include these options under the `website:` field.
 
 ## Your Turn: Website Options {.smaller}
 
@@ -239,170 +265,29 @@ website:
             text: Hello Quarto!
 ```
 
-## Shared Document Options
-
-``` {.yaml filename="_quarto.yml" code-line-numbers="1|2-6|7-13"}
-format:
-  html:
-    theme: cosmos
-    toc: true
-    code-copy: true
-    code-overflow: wrap
-  revealjs:
-    theme: [default, style/slides.scss]
-    transition: fade
-    slide-number: true
-    chalkboard: true
-    date-format: full
-```
-
-# Back to Code, Data and READMEs
-
-## Our Turn: Get the Template{.smaller}
-
-::::{layout-ncol="2"}
+## Our Turn: Rendering Quarto Replication Website
 
 ::: follow
--   Go to [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
--   Click "Use this Template"
--   Make a new repository in your GitHub account
--   Get the Template on your computer:
-    - Download a copy, 
-    - open with GitHub Desktop,
-    - or clone via Command Line
--   Make an Rproject in the template
--   Render the website
+- Open up the `quarto-replication` template project again.
+- Render and preview the website using `quarto::quarto_render()` and `quarto::quarto_preview()`
+- Add the file `replication-pkg/README.qmd` as a page the sidebar. You will need:
+  - to change the file format from `gfm` to `html`
+  - make sure the file is targeted when the projec renders (add to `render` if not)
+  - add a `href` link to the file in the `contents` option of `sidebar`
 :::
 
-![](images/use-github-template.png)
+<!--- 15 mins --->
 
-::::
-
-::: notes
-anything is possible! BUT let's go back to basic requirements
-
-💡 replication package INSIDE a quarto website project.
-:::
-
-<!--- iframe it with a link! --->
-
-## Template Structure: Replication
-
-:::{layout="[60,40]"}
-- The replication package is contained INSIDE the Quarto website project.
-- `replication-pkg/` contains all code, data and replication documentation.
-- Compress to  to `replication-pkg.zip` for submission
-
-```{.terminal code-line-numbers="5-18"}
-./
-├── _quarto.yml
-├── index.qmd
-├── paper/
-└── replication-pkg/
-    ├── LICENSE.txt
-    ├── README.qmd
-    ├── code/
-    │   ├── 00_setup/
-    │   ├── 01_dataprep/
-    │   ├── 02_analysis/
-    │   └── 03_appendix/
-    ├── data/
-    │   ├── analysis/
-    │   ├── interim/
-    │   └── raw/
-    ├── output/
-    └── references.bib
-```
-:::
-
-## Template Structure: Website
-
-:::{layout="[60,40]"}
-- Place your finished publication in `paper/`
-- Update `_quarto.yml` and `index.qmd`
-- Render and you have a website for your paper!
-- Publish and share with the world
-
-```{.terminal code-line-numbers="2-4"}
-./
-├── _quarto.yml
-├── index.qmd
-├── paper/
-└── replication-pkg/
-    ├── LICENSE.txt
-    ├── README.qmd
-    ├── code/
-    │   ├── 00_setup/
-    │   ├── 01_dataprep/
-    │   ├── 02_analysis/
-    │   └── 03_appendix/
-    ├── data/
-    │   ├── analysis/
-    │   ├── interim/
-    │   └── raw/
-    ├── output/
-    └── references.bib
-```
-:::
-
-## Template: Website Defaults
-
-```{.yaml filename="_quarto.yml" code-line-numbers="5-7|9-19|21-24"}
-project:
-  type: website
-  output-dir: docs 
-
-website:
-  title: "Data and Code for: Matching Mechanisms for Monkey Placement"
-  description: "Supplementary materials and replication package"
-  
-  sidebar:
-    pinned: true
-    align: center
-    style: docked
-    search: false
-    collapse-level: 2
- 
-    contents:
-      - text: Code
-      - text: Data
-      - text: Paper
-
-format:
-  html:
-    theme: cosmos
-    toc: true
-```
-
-## Template: README.qmd
-
--   AEA does not prescribe a set format for the README file
--   Different formats are useful for different venues
-    -   `.pdf` --\> into the `.zip` archive
-    -   `.md` --\> GitHub repo
-    -   `.html` --\> showcase website
--   All are possible with `.qmd`!
-
-## Template: BYO Code and Data
-
--   Bring your existing projects or workflows as they are.
--   Add, remove or modify folders as you like!
--   Maybe even develop your STATA scripts from inside the `replication-pkg` folder
-
-## Your Turn: replication-pkg/
+## Your Turn: Customising your Replication Website
 
 ::: task
-- Add at least one file to these template folders:
-  - code/
-  - data/
-  - paper/
-- Modify at least one section in the README.qmd using a Quarto feature you've learnt today.
-- Render README.qmd
+- What happens if you add `href` link to the sidebar without specifying `text`?
+- How can we change the title of the sidebar?
+- What features or content would you like to add to the website?
 :::
-
 
 ```{r}
 #| echo: false
 
-countdown(minutes = 15)
+countdown(minutes = 10)
 ```

@@ -18,3 +18,7 @@ Official Quarto Documentation:
 - [Scholarly Writing Guide \> Front Matter](https://quarto.org/docs/authoring/front-matter.html)
 - [PDF Reference \> Figures](https://quarto.org/docs/reference/formats/pdf.html#figures)
 
+Quarto Extensions:
+
+- [Elsevier Journal Template](https://github.com/quarto-journals/elsevier)
+
