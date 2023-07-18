@@ -175,3 +175,10 @@ countdown(minutes = 15)
 - More advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters
 - New features are always being introduced to Quarto
 :::
+
+## Quarto Includes
+
+::: incremental
+- Quarto offers a huge variety of features with more coming!
+- Includes are a great way to re-use existing content
+:::

@@ -1,5 +1,5 @@
 ---
-title: "Publishing and Tools"
+title: "Publish Now!"
 subtitle: "Session 3: Producing and Publishing Websites"
 author: "Cynthia Huang"
 date: 2023-07-19

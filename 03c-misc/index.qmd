@@ -1,0 +1,19 @@
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+There are no starter files. We will use an existing Quarto website project.
+
+## Resources
+
+Official Quarto Documentation:
+
+- [Website Tools Guide](https://quarto.org/docs/websites/website-tools.html)
+- [About Pages Guide](https://quarto.org/docs/websites/website-about.html)
+- [HTML Themes](ttps://quarto.org/docs/output-formats/html-themes.html)

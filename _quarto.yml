@@ -68,15 +68,15 @@ website:
             href: 03a-websites-pt2/index.qmd
           - text: Publish
             href: 03b-publish/index.qmd
-          - text: Includes
-            href: 03c-includes/index.qmd
+          - text: Tools and Customisation
+            href: 03c-misc/index.qmd
           - href: 03d-wrap-up/index.qmd
       - text: "---"
       - section: "More Quarto for Academics"
         contents:
-          - text: Personal Websites
-          - text: Presentations
-          - text: Miscellaneous
+          - text: Includes
+          - text: (TBC) Listings
+          - text: (TBC) Presentations
           - text: Wrap Up
 
   page-footer:
