@@ -77,7 +77,8 @@ Next time:
 Notes:
 
 - Put Our Turn: get template at the end 2a
-    - Next time: distribute as starter zip
+    - Next time: distribute template as starter zip
+
 - skipped Includes because of issues with rendering
 - wrapped up at 2.30PM
 
@@ -92,6 +93,21 @@ Notes:
 |      | Publishing Online |
 |      |                   |
 |      | Wrap-Up           |
+
+- Next time:
+    - starter site with more docs for listings
+
+```zsh
+quarto create-project listings-web
+cd listings-web
+mkdir events
+for i in {1..3}; do touch events/event-0$i.qmd; done
+for i in {1..3}; do echo "---\ntitle:\"Event ${i}\"\n---" >> events/event-0$i.qmd; done
+mkdir posts
+for i in {1..9}; do touch posts/article-0$i.qmd; done
+for i in {1..9}; do echo "---\ntitle:\"Article ${i}\"\n---" >> posts/article-0$i.qmd; done
+touch people.yml
+```
 
 ### More Quarto for Academics (2.5 Hours)
 
