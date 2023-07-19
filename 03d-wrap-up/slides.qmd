@@ -9,32 +9,16 @@ metadata-files:
 
 # Summary
 
-## Quarto Websites
+{{< include ../03a-websites-pt2/_wrap-up.qmd >}}
 
-::: incremental
-- Folder of `.qmd` files + `_quarto.yml`
-- Project, Website, Format options
-:::
+{{< include ../03b-publish/_wrap-up.qmd >}}
 
-## Publish
-
-::: incremental
-- One click publishing via Netlify Drop
-- See Quarto Docs for other options with more features
-:::
-
-## Quarto Includes
-
-::: incremental
-- Quarto offers a huge variety of features with more coming!
-- Includes are a great way to re-use existing content
-- The extension `include-code-files` allows you to include STATA scripts as well!
-:::
+{{< include ../03c-misc/_wrap-up.qmd >}}
 
 # Request time!
 
 ## Your turn to request!
 
 ::: task
-What other aspects / features of a Quarto website or book would you like to learn about?
+What other aspects / features of a Quarto website would you like to learn about?
 :::

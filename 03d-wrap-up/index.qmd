@@ -9,3 +9,8 @@ title: Wrap-Up
 ```{=html}
 <iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
+
+## Exercises
+
+- `fresh-web` navigation, icons, about page and themes
+- drag & drop publishing via [Netlify Drop](https://app.netlify.com/drop)
