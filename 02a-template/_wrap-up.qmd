@@ -1,0 +1,9 @@
+# Replication Template
+
+## Reproducibility in Social Sciences
+
+::: incremental
+- Replication involves both computational requirements and documentation
+- Quarto can help with documentation even if you don't use R/Python
+- Consider preparing your replication package inside a Quarto website project using [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
+:::

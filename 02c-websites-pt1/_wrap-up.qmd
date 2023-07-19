@@ -1,0 +1,19 @@
+# Websites
+
+## Quarto Websites
+
+::: incremental
+- Websites are type of Quarto project
+- Projects all contain a `_quarto.yml` config file
+- You can build a website around existing code, data and papers!
+:::
+
+## Learn more
+
+::: learn-more
+[quarto.org/docs/websites](https://quarto.org/docs/websites/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/websites" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
+```
+:::

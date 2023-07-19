@@ -7,22 +7,9 @@ metadata-files:
   - ../_slides.yml
 ---
 
-## Reproducibility in Social Sciences
+{{< include ../02a-template/_wrap-up.qmd >}}
 
-::: incremental
-
-- Replication involves both computational requirements and documentation
-- Quarto can help with documentation even if you don't use R/Python
-- Consider preparing your replication package inside a Quarto website project using [🔗 github.com/cynthiahqy/quarto-replication-template](https://github.com/cynthiahqy/quarto-replication-template)
-:::
-
-## Quarto Websites
-
-::: incremental
-- Websites are type of Quarto project
-- Projects all contain a `_quarto.yml` config file
-- You can build a website around existing code, data and papers!
-:::
+{{< include ../02c-websites-pt1/_wrap-up.qmd >}}
 
 ## Day 2 Pre-Work
 
