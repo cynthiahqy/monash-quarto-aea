@@ -69,17 +69,18 @@ website:
             href: 03a-websites-pt2/index.qmd
           - text: Publish
             href: 03b-publish/index.qmd
-          - text: Includes
-            href: 03c-includes/index.qmd
+          - text: Tools and Customisation
+            href: 03c-misc/index.qmd
           - href: 03d-wrap-up/index.qmd
       - text: "---"
       - section: "More Quarto for Academics"
         contents:
-          - text: (TBC) Listings
-          - text: Tools and Customisation
-            href: 04b-misc/index.qmd
-          - text: (TBC) Presentations
+          - text: Listings
+            href: 04a-listings/index.qmd
+          - text: Includes
+            href: 04b-includes/index.qmd
           - text: Wrap Up
+            href: 04c-wrap-up/index.qmd
 
   page-footer:
     right: "This page is built with 💚 and [Quarto](https://quarto.org/)."
