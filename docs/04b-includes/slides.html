@@ -389,10 +389,10 @@
   <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 <meta property="og:title" content="Meeting AEA Replication standards using Quarto and GitHub - Quarto Includes">
-<meta property="og:description" content="Session 2: AEA Replication in Quarto">
+<meta property="og:description" content="Session 4: More Quarto for Academics">
 <meta property="og:site-name" content="Meeting AEA Replication standards using Quarto and GitHub">
 <meta name="twitter:title" content="Meeting AEA Replication standards using Quarto and GitHub - Quarto Includes">
-<meta name="twitter:description" content="Session 2: AEA Replication in Quarto">
+<meta name="twitter:description" content="Session 4: More Quarto for Academics">
 <meta name="twitter:creator" content="@cynthiahqy">
 <meta name="twitter:card" content="summary">
 </head>
@@ -402,7 +402,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Quarto Includes</h1>
-  <p class="subtitle">Session 2: AEA Replication in Quarto</p>
+  <p class="subtitle">Session 4: More Quarto for Academics</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -415,11 +415,11 @@ Cynthia Huang
   <p class="date">Tuesday, July 18, 2023</p>
 </section>
 <section>
-<section id="advanced-quarto-features" class="title-slide slide level1 center">
-<h1>Advanced Quarto Features</h1>
+<section id="advanced-quarto" class="title-slide slide level1 center">
+<h1>Advanced Quarto</h1>
 
 </section>
-<section id="quarto-extensions" class="slide level2 medium">
+<section id="quarto-extensions" class="slide level2">
 <h2>Quarto Extensions</h2>
 <p>Extensions are a powerful way to modify and extend the behavior of Quarto. Types of extensions include:</p>
 <div>
@@ -430,7 +430,9 @@ Cynthia Huang
 <li class="fragment"><em>Shortcode/Filters</em></li>
 </ul>
 </div>
-<div class="fragment">
+</section>
+<section id="quarto-extensions-1" class="slide level2">
+<h2>Quarto Extensions</h2>
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -444,14 +446,27 @@ Cynthia Huang
 </div>
 </div>
 </div>
+<div class="fragment">
+<p>Generally safe:</p>
+<ul>
+<li>extensions maintained by the core Quarto team, or</li>
+<li>developed by someone you know</li>
+</ul>
 </div>
 </section>
 <section id="quarto-includes" class="slide level2">
 <h2>Quarto Includes</h2>
-<p>There are a number of ways to include and reuse existing content in Quarto documents:</p>
+<p>There are a number of ways to include and reuse existing content in Quarto documents. We’ve already covered:</p>
 <div>
 <ul>
 <li class="fragment"><code>include-in*</code> YAML options for including LaTex/HTML in <code>header</code>, <code>before</code> and <code>after</code> the body.</li>
+<li class="fragment"><code>metadata-files</code> YAML option for reusing config files</li>
+</ul>
+</div>
+<div class="fragment">
+<p>There’s also:</p>
+<div>
+<ul>
 <li class="fragment">the shortcode <code>{{&lt; include _content.qmd &gt;}}</code></li>
 <li class="fragment">the Lua filter extension <code>include-code-files</code></li>
 </ul>
@@ -461,20 +476,21 @@ Cynthia Huang
 ::: callout-tip
 Note that these are all advanced Quarto functions, but are worthwhile learning if you are working with multiple softwares or formats.
 ::: -->
+</div>
 </section></section>
 <section>
-<section id="shortcodes-includes" class="title-slide slide level1 center">
-<h1>Shortcodes: Includes</h1>
+<section id="reusing-content" class="title-slide slide level1 center">
+<h1>Reusing content</h1>
 
 </section>
-<section id="shortcodes" class="slide level2">
-<h2>Shortcodes</h2>
+<section id="shortcodes-includes" class="slide level2">
+<h2>Shortcodes: Includes</h2>
 <p>See: <a href="https://quarto.org/docs/authoring/includes.html">quarto.org &gt; Guide &gt; Advanced &gt; Includes</a></p>
 <div>
 <ul>
 <li class="fragment">Shortcodes are special markdown directives that generate various types of content.</li>
 <li class="fragment">The <code>{{&lt; include &gt;}}</code> shortcode allows you to re-use content across documents.</li>
-<li class="fragment">Includes are equivalent to copying and pasting the text from the included quarto file into the main quarto file</li>
+<li class="fragment"><code>{{&lt; include _snippet.qmd &gt;}}</code> is equivalent to copying and pasting the text from the <code>_snippet.qmd</code> file into the main quarto file.</li>
 </ul>
 </div>
 </section>
@@ -497,14 +513,114 @@ Note that these are all advanced Quarto functions, but are worthwhile learning i
 <div class="fragment">
 <p>Files prefixed with underscores (e.g.&nbsp;<code>_basic.qmd</code>) are ignored when rendering a whole directory of <code>.qmd</code> files.</p>
 </div>
+</section>
+<section id="include-text-formats" class="slide level2">
+<h2>Include Text Formats</h2>
+<p>Recall that Includes are equivalent to copy and pasting text. Therefore we can also use it to include content from other text based formats (e.g.&nbsp;<code>.txt</code>, <code>.tex</code>, <code>.html</code>, <code>.md</code>):</p>
+<div class="sourceCode" id="cb2" data-code-line-numbers="9,13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="an">title:</span><span class="co"> "My Analysis"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">---</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">## Results</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a>I have some markdown content that was generated by STATA:</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a>{{&lt; include _stata-output.md &gt;}}</span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="fu">## Acknowledgements</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a></span>
+<span id="cb2-13"><a href="#cb2-13"></a>{{&lt; include acknowledgements.txt &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
-<section id="extensions-include-code-files" class="title-slide slide level1 center">
-<h1>Extensions: include-code-files</h1>
+<section id="what-about-stata-scripts" class="title-slide slide level1 center">
+<h1>What about STATA scripts?</h1>
 
 </section>
-<section id="lua-filter" class="slide level2">
-<h2>Lua Filter</h2>
+<section id="syntax-highlighting" class="slide level2">
+<h2>Syntax Highlighting</h2>
+<p>Pandoc (and thus Quarto) offers syntax hightlighting in code blocks for over 140 languages, including STATA:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>script.do</strong></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource stata number-lines code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">use</span> <span class="st">"C:\data\data-sets\GSS2016.dta"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">tab</span> postlife</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">tab</span> postlife sex,column </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>or R:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>or command line (zsh):</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="syntax-highlighting-stata" class="slide level2">
+<h2>Syntax Highlighting: STATA</h2>
+<div>
+<ul>
+<li class="fragment">Copy your STATA code into a code block</li>
+<li class="fragment">Add <code>.stata</code> to the top fence:</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb6" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="in">```{.stata filename="script.do"}</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="in">use "C:\data\data-sets\GSS2016.dta"</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="in">tab postlife</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="in">tab postlife sex,column </span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li><code>filename</code> specifies a name to display above the code lines as shown on the previous slide. This is useful to showing parts of a longer script.</li>
+</ul>
+</div>
+</section>
+<section id="aside-executable-code-chunks" class="slide level2">
+<h2>Aside: Executable Code Chunks</h2>
+<p>Executable R/python code chunks also have syntax highlighting, but don’t have a leading dot:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#| eval: false</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">print</span>(<span class="st">"Hello World"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>VS display only code-blocks</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a><span class="in">```{.r}</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">print</span>(<span class="st">"Hello World"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section>
+<section id="include-code-files" class="title-slide slide level1 center">
+<h1>include-code-files</h1>
+
+</section>
+<section id="syntax-highlighting-for-included-files" class="slide level2">
+<h2>Syntax Highlighting for Included Files</h2>
+<div>
+<ul>
+<li class="fragment">Copy and pasting code is both tedious and error prone.</li>
+<li class="fragment">Unfortunately you cannot put Includes shortcodes inside code blocks:</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a>This will not work!</span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="in">```{.stata}</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="in">{{&lt; include myjob.do &gt;}}</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>BUT we can include external code and use syntax highlighting with the <code>include-code-files</code> extension</li>
+</ul>
+</div>
+</section>
+<section id="lua-filter-extension" class="slide level2">
+<h2>Lua Filter Extension</h2>
 <p>The <a href="https://github.com/quarto-ext/include-code-files"><code>include-code-files</code></a> is an Lua Filter extension developed and maintained by the core Quarto team <a href="https://github.com/quarto-ext">(github.com/quarto-ext)</a> allows you:</p>
 <ul>
 <li>to read in source files and,</li>
@@ -514,12 +630,12 @@ Note that these are all advanced Quarto functions, but are worthwhile learning i
 <section id="installing-extensions" class="slide level2">
 <h2>Installing Extensions</h2>
 <p>To install:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource terminal number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>quarto add quarto-ext/include-code-files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource terminal number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>quarto add quarto-ext/include-code-files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>To use the extension add this option to either document or project metadata:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">filters</span><span class="kw">:</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="at">   </span><span class="kw">-</span><span class="at"> include-code-files</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1"></a><span class="pp">---</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="at">   </span><span class="kw">-</span><span class="at"> include-code-files</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -538,31 +654,30 @@ Note that these are all advanced Quarto functions, but are worthwhile learning i
 </section>
 <section id="using-extensions" class="slide level2">
 <h2>Using Extensions</h2>
-<p>Each extension will have instructions for how to use it.</p>
 <p>To use the <code>include-code-files</code> extension, include the following where you want to display <code>script.do</code></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="in">```{.stata include="script.do"}</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="in">```{.stata include="script.do"}</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Which will show the contents of <code>script.do</code> with syntax highlighting:</p>
-<div class="sourceCode" id="cb5" data-code-line-numbers="true"><pre class="sourceCode numberSource stata number-lines code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1"></a>...</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">tabulate</span> region                   <span class="co">/* obtain summary statistics */</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">summarize</span> marriage_rate divorce_rate median_age <span class="kw">if</span> state!=<span class="st">"Nevada"</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13" data-code-line-numbers="true"><pre class="sourceCode numberSource stata number-lines code-with-copy"><code class="sourceCode stata"><span id="cb13-1"><a href="#cb13-1"></a>...</span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="kw">tabulate</span> region                   <span class="co">/* obtain summary statistics */</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="kw">summarize</span> marriage_rate divorce_rate median_age <span class="kw">if</span> state!=<span class="st">"Nevada"</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="code-block-options" class="slide level2">
 <h2>Code Block Options</h2>
 <p>You can specify additional options separated by spaces. For example:</p>
 <pre><code>```{.stata include="script.do" code-line-numbers="false" filename="script.do"}
 ```</code></pre>
-<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>Note that not all HTML Code Block options work with the <code>include-code-files</code> extension. You may still need to copy and paste code.</p>
+<p>Currently, not all HTML Code Block options work with the <code>include-code-files</code> extension (e.g.&nbsp;<code>code-fold</code>). You may still need to copy and paste code.</p>
 </div>
 </div>
 </div>
@@ -570,32 +685,25 @@ Note that these are all advanced Quarto functions, but are worthwhile learning i
 <section id="our-turn-replication_in_parts.qmd" class="slide level2">
 <h2>Our Turn: replication_in_parts.qmd</h2>
 <div class="follow">
-<p>Open <code>replication_in_parts.qmd</code> in Rstudio. Render the document.</p>
+<ul>
+<li>Open the <code>day01-exercises</code> project in Rstudio.</li>
+<li>Open <code>replication_in_parts.qmd</code>.</li>
+<li>Render the document.</li>
+</ul>
 </div>
 </section>
 <section id="your-turn-replication_in_parts.qmd" class="slide level2">
 <h2>Your Turn: replication_in_parts.qmd</h2>
 <div class="task">
-<p>Continue with <code>replication_in_parts.qmd</code> and follow the instructions.</p>
+<p>Continue with exercises in <code>replication_in_parts.qmd</code></p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_2b918f06" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_3451fa7f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
-</div>
-</section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<div>
-<ul>
-<li class="fragment">There are multiple ways to generate, combine and re-use content in Quarto</li>
-<li class="fragment">Basic reuse includes inserting images, raw Latex, and references from a <code>.bib</code> file</li>
-<li class="fragment">More advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters</li>
-<li class="fragment">New features are always being introduced to Quarto</li>
-</ul>
 </div>
 
 <div class="footer footer-default">

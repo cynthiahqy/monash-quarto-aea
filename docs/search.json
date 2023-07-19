@@ -1,122 +1,290 @@
 [
   {
-    "objectID": "04b-misc/slides.html#logos",
-    "href": "04b-misc/slides.html#logos",
-    "title": "Website Tools and Customisation",
-    "section": "Logos",
-    "text": "Logos\nPlaces the logo on top of the sidebar and a small version in the browser tab.\nwebsite:\n  sidebar:\n    logo: \"images/logo.png\"\n  favicon: \"images/logo.png\""
+    "objectID": "04c-wrap-up/slides.html#listings-1",
+    "href": "04c-wrap-up/slides.html#listings-1",
+    "title": "Quarto Includes",
+    "section": "Listings…",
+    "text": "Listings…\n\n\ngenerate summaries using metadata from:\n\nexisting documents and/or\nitems specified in YAML files\n\nhave 3 built-in types:\n\ndefault\ngrid\ntable\n\ncan sort, filter and categorise your content"
   },
   {
-    "objectID": "04b-misc/slides.html#icons",
-    "href": "04b-misc/slides.html#icons",
-    "title": "Website Tools and Customisation",
-    "section": "Icons",
-    "text": "Icons\nwebsite:\n  sidebar:\n    logo: \"images/logo.png\"\n    tools:\n      - icon: github\n        href: https://github.com/quart-cli\n        text: \"GitHub organization\"\n      - icon: code-square\n        href: https://posit.cloud\n        text: \"Posit Cloud\""
+    "objectID": "04c-wrap-up/slides.html#yaml-quick-ref",
+    "href": "04c-wrap-up/slides.html#yaml-quick-ref",
+    "title": "Quarto Includes",
+    "section": "YAML Quick Ref",
+    "text": "YAML Quick Ref\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  type: table\n  contents: \n    - posts\n    - archived-items.yml\n  categories: true\n  sort: \"date desc\"\n  filter-ui: false\n---"
   },
   {
-    "objectID": "04b-misc/slides.html#socials",
-    "href": "04b-misc/slides.html#socials",
-    "title": "Website Tools and Customisation",
-    "section": "Socials",
-    "text": "Socials\nSome examples include:\n\nTwitter Cards provide an enhanced appearance when someone links to your site on Twitter.\nThe Open Graph protocol enables richer sharing of links to articles on the web, e.g., with preview images.\n\nwebsite:\n  twitter-card: true\n  open-graph: true"
-  },
-  {
-    "objectID": "04b-misc/slides.html#learn-more",
-    "href": "04b-misc/slides.html#learn-more",
-    "title": "Website Tools and Customisation",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/websites/website-tools.html"
-  },
-  {
-    "objectID": "04b-misc/slides.html#your-turn",
-    "href": "04b-misc/slides.html#your-turn",
-    "title": "Website Tools and Customisation",
-    "section": "Your turn",
-    "text": "Your turn\n\nPick up where we left off and\n\nAdd a link with a bootstrap icon.\nReview https://quarto.org/docs/websites/website-tools.html and implement one new tool we haven’t introduced.\n\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "04b-misc/slides.html#about-pages",
-    "href": "04b-misc/slides.html#about-pages",
-    "title": "Website Tools and Customisation",
-    "section": "About Pages",
-    "text": "About Pages\nQuarto includes 5 built in templates for About pages that can be created from metadata specified in the about YAML option:\n\n\nabout.qmd\n\n---\ntitle: \"Finley Malloc\"\nabout:\n  template: jolla # OR trestles, solana, marquee, broadside #\n  image: profile.jpg\n  links:\n    - icon: twitter\n      text: twitter\n      href: https://twitter.com\n    - icon: github\n      text: Github\n      href: https://github.com\n---\n\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana."
-  },
-  {
-    "objectID": "04b-misc/slides.html#learn-more-1",
-    "href": "04b-misc/slides.html#learn-more-1",
-    "title": "Website Tools and Customisation",
+    "objectID": "04c-wrap-up/slides.html#learn-more",
+    "href": "04c-wrap-up/slides.html#learn-more",
+    "title": "Quarto Includes",
     "section": "Learn More",
-    "text": "Learn More\n\nquarto.org/docs/websites/website-about.html"
+    "text": "Learn More\n\nquarto.org/docs/websites/website-listings.html"
   },
   {
-    "objectID": "04b-misc/slides.html#your-turn-about-page",
-    "href": "04b-misc/slides.html#your-turn-about-page",
-    "title": "Website Tools and Customisation",
-    "section": "Your Turn: About Page",
-    "text": "Your Turn: About Page\n\nPick up where we left off and\n\nAdd an about page.\nTry a different theme.\nUpdate the image\nAdd or update a Social Media link\n\n\n\n\n\n−+\n10:00"
+    "objectID": "04c-wrap-up/slides.html#reusing-content",
+    "href": "04c-wrap-up/slides.html#reusing-content",
+    "title": "Quarto Includes",
+    "section": "Reusing Content",
+    "text": "Reusing Content\n\n\nThere are multiple ways to generate, combine and re-use content in Quarto\nBasic reuse includes inserting images, raw Latex, and references from a .bib file\nMore advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters\nNew features are always being introduced to Quarto"
   },
   {
-    "objectID": "04b-misc/slides.html#theme-options",
-    "href": "04b-misc/slides.html#theme-options",
-    "title": "Website Tools and Customisation",
-    "section": "Theme options",
-    "text": "Theme options\n\nOne of 25 Bootswatch themes\nCustom themes\nA combination of the two"
+    "objectID": "04c-wrap-up/slides.html#syntax-highlighting",
+    "href": "04c-wrap-up/slides.html#syntax-highlighting",
+    "title": "Quarto Includes",
+    "section": "Syntax Highlighting",
+    "text": "Syntax Highlighting\nAdd .stata to code-blocks to activate syntax highlighting:\n```{.stata}\nuse \"C:\\data\\data-sets\\GSS2016.dta\"\ntab postlife\ntab postlife sex,column \n```"
   },
   {
-    "objectID": "04b-misc/slides.html#setting-the-theme",
-    "href": "04b-misc/slides.html#setting-the-theme",
-    "title": "Website Tools and Customisation",
-    "section": "Setting the theme",
-    "text": "Setting the theme\nIn _quarto.yml:\nformat:\n  html:\n    theme: default"
+    "objectID": "04c-wrap-up/slides.html#shortcodes-and-filters",
+    "href": "04c-wrap-up/slides.html#shortcodes-and-filters",
+    "title": "Quarto Includes",
+    "section": "Shortcodes and Filters",
+    "text": "Shortcodes and Filters\n\n\nQuarto offers a huge variety of features with more coming!\nIncludes are a great way to re-use existing content\nThe shortcode {{&lt; include &gt;}} copy and pastes text for you\nThe extension include-code-files allows you to scripts with syntax highlighting"
   },
   {
-    "objectID": "04b-misc/slides.html#dark-mode",
-    "href": "04b-misc/slides.html#dark-mode",
-    "title": "Website Tools and Customisation",
-    "section": "Dark mode",
-    "text": "Dark mode\nSetting a light and dark theme makes both available with a toggle automatically added to your website:\nformat:\n  html:\n    theme:\n      light: flatly\n      dark: darkly"
+    "objectID": "04c-wrap-up/slides.html#your-turn-to-request",
+    "href": "04c-wrap-up/slides.html#your-turn-to-request",
+    "title": "Quarto Includes",
+    "section": "Your turn to request!",
+    "text": "Your turn to request!\n\nWhat other aspects / features of a Quarto website would you like to learn about?\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
   },
   {
-    "objectID": "04b-misc/slides.html#customizing-themes",
-    "href": "04b-misc/slides.html#customizing-themes",
-    "title": "Website Tools and Customisation",
-    "section": "Customizing themes",
-    "text": "Customizing themes\nTo customize a theme, add a custom .scss file that is then called in _quarto.yml, e.g.:\nformat:\n  html:\n    theme:\n      light: [flatly, custom.scss]\n      dark: darkly"
+    "objectID": "04b-includes/slides.html#quarto-extensions",
+    "href": "04b-includes/slides.html#quarto-extensions",
+    "title": "Quarto Includes",
+    "section": "Quarto Extensions",
+    "text": "Quarto Extensions\nExtensions are a powerful way to modify and extend the behavior of Quarto. Types of extensions include:\n\n\nCustom Formats\nJournal Articles\nRevealjs (presentation) Plug-Ins\nShortcode/Filters"
   },
   {
-    "objectID": "04b-misc/slides.html#scss-files",
-    "href": "04b-misc/slides.html#scss-files",
-    "title": "Website Tools and Customisation",
-    "section": "SCSS files",
-    "text": "SCSS files\nSCSS files have the following form:\n/*-- scss:defaults --*/\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$body-color:            $gray-700 !default;\n\n/*-- scss:rules --*/\nh1, h2, h3, h4, h5, h6 {\n  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);\n}\n\nThe defaults section is where you list variables\nThe rules section is where you list (CSS) rules"
+    "objectID": "04b-includes/slides.html#quarto-extensions-1",
+    "href": "04b-includes/slides.html#quarto-extensions-1",
+    "title": "Quarto Includes",
+    "section": "Quarto Extensions",
+    "text": "Quarto Extensions\n\n\n\n\n\n\nExtension Trust\n\n\nQuarto extensions may execute code when documents are rendered. Therefore, if you do not trust the author of an extension, do not install or use the extension.\n\n\n\n\nGenerally safe:\n\nextensions maintained by the core Quarto team, or\ndeveloped by someone you know"
   },
   {
-    "objectID": "04b-misc/slides.html#sass-variables",
-    "href": "04b-misc/slides.html#sass-variables",
-    "title": "Website Tools and Customisation",
-    "section": "SASS variables",
-    "text": "SASS variables\n\nSome examples include:\n\n$body-bg: The page background color.\n$link-color: The link color.\n$font-family-monospace: The monospace font family for the page.\n$callout-color-&lt;type&gt;: The colors for the various types of callouts.\n\nSee the full list at https://quarto.org/docs/output-formats/html-themes.html#sass-variables."
+    "objectID": "04b-includes/slides.html#quarto-includes",
+    "href": "04b-includes/slides.html#quarto-includes",
+    "title": "Quarto Includes",
+    "section": "Quarto Includes",
+    "text": "Quarto Includes\nThere are a number of ways to include and reuse existing content in Quarto documents. We’ve already covered:\n\n\ninclude-in* YAML options for including LaTex/HTML in header, before and after the body.\nmetadata-files YAML option for reusing config files\n\n\n\nThere’s also:\n\n\nthe shortcode {{&lt; include _content.qmd &gt;}}\nthe Lua filter extension include-code-files"
   },
   {
-    "objectID": "04b-misc/slides.html#learn-more-2",
-    "href": "04b-misc/slides.html#learn-more-2",
-    "title": "Website Tools and Customisation",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/output-formats/html-themes.html"
+    "objectID": "04b-includes/slides.html#shortcodes-includes",
+    "href": "04b-includes/slides.html#shortcodes-includes",
+    "title": "Quarto Includes",
+    "section": "Shortcodes: Includes",
+    "text": "Shortcodes: Includes\nSee: quarto.org &gt; Guide &gt; Advanced &gt; Includes\n\n\nShortcodes are special markdown directives that generate various types of content.\nThe {{&lt; include &gt;}} shortcode allows you to re-use content across documents.\n{{&lt; include _snippet.qmd &gt;}} is equivalent to copying and pasting the text from the _snippet.qmd file into the main quarto file."
   },
   {
-    "objectID": "04b-misc/slides.html#tip",
-    "href": "04b-misc/slides.html#tip",
-    "title": "Website Tools and Customisation",
-    "section": "Tip",
-    "text": "Tip\n\n\n\n\n\n\nFiguring out what to style\n\n\n\nUse your browser’s developer tools.\nRefer to the default values for SASS variables and set to something absurd (red and bold or giant size) while testing. Once you have the correct variable or rule identified, set the style values to what you want them to be."
+    "objectID": "04b-includes/slides.html#include-more-quarto",
+    "href": "04b-includes/slides.html#include-more-quarto",
+    "title": "Quarto Includes",
+    "section": "Include more Quarto",
+    "text": "Include more Quarto\nAdd the shortcode where you want your file to appear:\n---\ntitle: \"My Document\"\n---\n\n## Overview\n\nI have some quarto content I want to reuse right here:\n\n{{&lt; include _basics.qmd &gt;}}\n\n## Another Section\n\nMore content here...\n\nFiles prefixed with underscores (e.g. _basic.qmd) are ignored when rendering a whole directory of .qmd files."
   },
   {
-    "objectID": "04b-misc/slides.html#your-turn-1",
-    "href": "04b-misc/slides.html#your-turn-1",
-    "title": "Website Tools and Customisation",
-    "section": "Your turn",
-    "text": "Your turn\n\nPick up where we left off and\n\nChange the theme of your project to one of the Bootswatch themes.\nAdd light / dark mode toggle, experimenting with different light and dark themes.\nStretch goal: Customize 1-2 elements of your theme.\n\n\n\n\n\n−+\n10:00\n\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+    "objectID": "04b-includes/slides.html#include-text-formats",
+    "href": "04b-includes/slides.html#include-text-formats",
+    "title": "Quarto Includes",
+    "section": "Include Text Formats",
+    "text": "Include Text Formats\nRecall that Includes are equivalent to copy and pasting text. Therefore we can also use it to include content from other text based formats (e.g. .txt, .tex, .html, .md):\n---\ntitle: \"My Analysis\"\n---\n\n## Results\n\nI have some markdown content that was generated by STATA:\n\n{{&lt; include _stata-output.md &gt;}}\n\n## Acknowledgements\n\n{{&lt; include acknowledgements.txt &gt;}}"
+  },
+  {
+    "objectID": "04b-includes/slides.html#syntax-highlighting",
+    "href": "04b-includes/slides.html#syntax-highlighting",
+    "title": "Quarto Includes",
+    "section": "Syntax Highlighting",
+    "text": "Syntax Highlighting\nPandoc (and thus Quarto) offers syntax hightlighting in code blocks for over 140 languages, including STATA:\n\n\nscript.do\n\nuse \"C:\\data\\data-sets\\GSS2016.dta\"\ntab postlife\ntab postlife sex,column \n\n\nor R:\nprint(\"Hello World\")\n\n\nor command line (zsh):\nquarto render document.qmd --to pdf"
+  },
+  {
+    "objectID": "04b-includes/slides.html#syntax-highlighting-stata",
+    "href": "04b-includes/slides.html#syntax-highlighting-stata",
+    "title": "Quarto Includes",
+    "section": "Syntax Highlighting: STATA",
+    "text": "Syntax Highlighting: STATA\n\n\nCopy your STATA code into a code block\nAdd .stata to the top fence:\n\n\n\n```{.stata filename=\"script.do\"}\nuse \"C:\\data\\data-sets\\GSS2016.dta\"\ntab postlife\ntab postlife sex,column \n```\n\n\n\nfilename specifies a name to display above the code lines as shown on the previous slide. This is useful to showing parts of a longer script."
+  },
+  {
+    "objectID": "04b-includes/slides.html#aside-executable-code-chunks",
+    "href": "04b-includes/slides.html#aside-executable-code-chunks",
+    "title": "Quarto Includes",
+    "section": "Aside: Executable Code Chunks",
+    "text": "Aside: Executable Code Chunks\nExecutable R/python code chunks also have syntax highlighting, but don’t have a leading dot:\n\n```{r}\n#| eval: false\nprint(\"Hello World\")\n```\n\n\nVS display only code-blocks\n```{.r}\nprint(\"Hello World\")\n```"
+  },
+  {
+    "objectID": "04b-includes/slides.html#syntax-highlighting-for-included-files",
+    "href": "04b-includes/slides.html#syntax-highlighting-for-included-files",
+    "title": "Quarto Includes",
+    "section": "Syntax Highlighting for Included Files",
+    "text": "Syntax Highlighting for Included Files\n\n\nCopy and pasting code is both tedious and error prone.\nUnfortunately you cannot put Includes shortcodes inside code blocks:\n\n\n\nThis will not work!\n\n```{.stata}\n{{&lt; include myjob.do &gt;}}\n```\n\n\n\nBUT we can include external code and use syntax highlighting with the include-code-files extension"
+  },
+  {
+    "objectID": "04b-includes/slides.html#lua-filter-extension",
+    "href": "04b-includes/slides.html#lua-filter-extension",
+    "title": "Quarto Includes",
+    "section": "Lua Filter Extension",
+    "text": "Lua Filter Extension\nThe include-code-files is an Lua Filter extension developed and maintained by the core Quarto team (github.com/quarto-ext) allows you:\n\nto read in source files and,\ndisplay them in code blocks with syntax highlighting."
+  },
+  {
+    "objectID": "04b-includes/slides.html#installing-extensions",
+    "href": "04b-includes/slides.html#installing-extensions",
+    "title": "Quarto Includes",
+    "section": "Installing Extensions",
+    "text": "Installing Extensions\nTo install:\nquarto add quarto-ext/include-code-files\nTo use the extension add this option to either document or project metadata:\n---\nfilters:\n   - include-code-files\n---\n\n\n\n\n\n\n\nTip\n\n\nThe include-code-files extension is already included in the exercises folder."
+  },
+  {
+    "objectID": "04b-includes/slides.html#using-extensions",
+    "href": "04b-includes/slides.html#using-extensions",
+    "title": "Quarto Includes",
+    "section": "Using Extensions",
+    "text": "Using Extensions\nTo use the include-code-files extension, include the following where you want to display script.do\n```{.stata include=\"script.do\"}\n```\nWhich will show the contents of script.do with syntax highlighting:\n...\ntabulate region                   /* obtain summary statistics */\nsummarize marriage_rate divorce_rate median_age if state!=\"Nevada\"\n..."
+  },
+  {
+    "objectID": "04b-includes/slides.html#code-block-options",
+    "href": "04b-includes/slides.html#code-block-options",
+    "title": "Quarto Includes",
+    "section": "Code Block Options",
+    "text": "Code Block Options\nYou can specify additional options separated by spaces. For example:\n```{.stata include=\"script.do\" code-line-numbers=\"false\" filename=\"script.do\"}\n```\n\n\n\n\n\n\nNote\n\n\nCurrently, not all HTML Code Block options work with the include-code-files extension (e.g. code-fold). You may still need to copy and paste code."
+  },
+  {
+    "objectID": "04b-includes/slides.html#our-turn-replication_in_parts.qmd",
+    "href": "04b-includes/slides.html#our-turn-replication_in_parts.qmd",
+    "title": "Quarto Includes",
+    "section": "Our Turn: replication_in_parts.qmd",
+    "text": "Our Turn: replication_in_parts.qmd\n\n\nOpen the day01-exercises project in Rstudio.\nOpen replication_in_parts.qmd.\nRender the document."
+  },
+  {
+    "objectID": "04b-includes/slides.html#your-turn-replication_in_parts.qmd",
+    "href": "04b-includes/slides.html#your-turn-replication_in_parts.qmd",
+    "title": "Quarto Includes",
+    "section": "Your Turn: replication_in_parts.qmd",
+    "text": "Your Turn: replication_in_parts.qmd\n\nContinue with exercises in replication_in_parts.qmd\n\n\n\n\n−+\n15:00\n\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+  },
+  {
+    "objectID": "04a-listings/slides.html#quarto-listings",
+    "href": "04a-listings/slides.html#quarto-listings",
+    "title": "Listings",
+    "section": "Quarto Listings…",
+    "text": "Quarto Listings…\n\n\ngenerate summary ‘lists’ which display YAML metadata\ncan collect metadata from multiple .qmd files or a YAML listings\noffer sorting, filtering and categorisation of list items\nhave three built-in display types with customisation options\ncan be placed in different locations on a page and alongside other listings"
+  },
+  {
+    "objectID": "04a-listings/slides.html#use-cases",
+    "href": "04a-listings/slides.html#use-cases",
+    "title": "Listings",
+    "section": "Use Cases",
+    "text": "Use Cases\n\nevent listings\nblog posts\nglossary\nteam profiles\n…"
+  },
+  {
+    "objectID": "04a-listings/slides.html#basic-listings-yaml",
+    "href": "04a-listings/slides.html#basic-listings-yaml",
+    "title": "Listings",
+    "section": "Basic Listings YAML",
+    "text": "Basic Listings YAML\nA listing can be included on any page by adding the listing key into the YAML header:\n---\ntitle: \"A page with a Listing\"\nlisting:\n  contents: # ADD items #\n  type:     # PICK default / grid / table #\n---\n\n\ncontents controls what items appear in the listing\ntype controls how the listing is displayed"
+  },
+  {
+    "objectID": "04a-listings/slides.html#more-yaml-more-features",
+    "href": "04a-listings/slides.html#more-yaml-more-features",
+    "title": "Listings",
+    "section": "More YAML, more Features!",
+    "text": "More YAML, more Features!\nIn addition to contents and type, other listings options include:\n\n\nsort, filter\ncategories\ninclude/exclude\nsort-ui, filter-ui\nid\n\n\n\nSee Website Reference &gt; Listings for all options."
+  },
+  {
+    "objectID": "04a-listings/slides.html#listing-contents",
+    "href": "04a-listings/slides.html#listing-contents",
+    "title": "Listings",
+    "section": "Listing Contents",
+    "text": "Listing Contents\nItems for listings can be created using metadata from:\n\n\nother .qmd files in the same folder as the listing page\na YAML file\nfiles across multiple folders"
+  },
+  {
+    "objectID": "04a-listings/slides.html#listing-types",
+    "href": "04a-listings/slides.html#listing-types",
+    "title": "Listings",
+    "section": "Listing Types",
+    "text": "Listing Types\nQuarto offers 3 built-in display types for listings:\n\n\ndefault: blog style with featured image\ngrid: card style with featured image\ntable: table style\n\n\n\nSee also:\n\n\nListing Options Guide for options which modify each display type.\nCustom Listings Guide for even more customisation via EJS templates."
+  },
+  {
+    "objectID": "04a-listings/slides.html#listing-fields",
+    "href": "04a-listings/slides.html#listing-fields",
+    "title": "Listings",
+    "section": "Listing Fields",
+    "text": "Listing Fields\nTo populate listings, Quarto uses metadata or content from targeted documents. Each listing types displays some fields by default:\n\n\n\n\n\n\n\n\n\nField\nDefault\nTable\nGrid\n\n\n\n\ntitle\nx\nx\nx\n\n\nsubtitle\nx\n\n\n\n\nauthor\nx\nx\nx\n\n\ndescription\nx\n\nx\n\n\ndate\nx\nx\nx\n\n\nimage\nx\n\nx"
+  },
+  {
+    "objectID": "04a-listings/slides.html#listing-fields-1",
+    "href": "04a-listings/slides.html#listing-fields-1",
+    "title": "Listings",
+    "section": "Listing Fields",
+    "text": "Listing Fields\nTo display fields which are not shown by default, specify additional fields in the fields option:\nlisting:\n  type: table\n  contents: posts\n  fields: [image, date, title, author, reading-time]"
+  },
+  {
+    "objectID": "04a-listings/slides.html#our-turn-listings-inside-a-folder",
+    "href": "04a-listings/slides.html#our-turn-listings-inside-a-folder",
+    "title": "Listings",
+    "section": "Our Turn: Listings Inside a Folder",
+    "text": "Our Turn: Listings Inside a Folder\n\n\n\nReopen the fresh-web website project.\nAdd a listing page for contents in the folder posts/:\n\n\n\nposts/index.qmd\n\n---\ntitle: \"Page with Listing\"\nlisting: default\n---\n\n\nWhich files show up in the listing?\n\n\n\n\n\n\n\n\nImportant\n\n\nDon’t forget to add posts/index.qmd to your website navigation!\n\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "04a-listings/slides.html#listings-from-yaml",
+    "href": "04a-listings/slides.html#listings-from-yaml",
+    "title": "Listings",
+    "section": "Listings from YAML",
+    "text": "Listings from YAML\nWe can also list items from a YAML file:\n\n\npeople.yml\n\n- title: \"John Smith\"\n  email: \"john.smith@example.com\"\n  image: images/john.jpg\n- title: \"Kate Jones\"\n  email: \"kate.jones@example.com\"\n  image: images/kate.jpg\n\n\nJust like with navbar items, listing items must be properly indented"
+  },
+  {
+    "objectID": "04a-listings/slides.html#listings-from-multiple-sources",
+    "href": "04a-listings/slides.html#listings-from-multiple-sources",
+    "title": "Listings",
+    "section": "Listings from Multiple Sources",
+    "text": "Listings from Multiple Sources\nWe can created a listing from multiple sources of metadata:\n\n\nwritings.qmd\n\ntitle: \"Writings\"\nlisting:\n  contents:         # e.g.\n    - posts         # .qmd files\n    - articles      # in posts/ and articles/\n    - old-posts.yml # AND items from other websites"
+  },
+  {
+    "objectID": "04a-listings/slides.html#listing-location",
+    "href": "04a-listings/slides.html#listing-location",
+    "title": "Listings",
+    "section": "Listing Location",
+    "text": "Listing Location\nTo specify the position of a listing use the id option:\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: posts\n  sort: \"date desc\"\n  type: table\n---\n\nYou can review the following documents for additional information:\n\n::: {#sample-listings}\n:::\n\nLearn more about Quarto [here](https://www.quarto.com)."
+  },
+  {
+    "objectID": "04a-listings/slides.html#your-turn-yaml-listings",
+    "href": "04a-listings/slides.html#your-turn-yaml-listings",
+    "title": "Listings",
+    "section": "Your Turn: YAML Listings",
+    "text": "Your Turn: YAML Listings\n\n\nAdd a yaml file with at least 3 items (e.g. people.yml or definitions.yml)\nInclude title, description and one custom field (e.g. email or definition)\nAdd a listing on the home page of the website index.qmd with a suitable type.\nStretch: Change the location of the listing with the id option\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "04a-listings/slides.html#categories",
+    "href": "04a-listings/slides.html#categories",
+    "title": "Listings",
+    "section": "Categories",
+    "text": "Categories\nThe categories feature allows website users to filter items.\n\n\nWhen a user presses a category on the right, the listing will update to show only items which match that category."
+  },
+  {
+    "objectID": "04a-listings/slides.html#categories-1",
+    "href": "04a-listings/slides.html#categories-1",
+    "title": "Listings",
+    "section": "Categories",
+    "text": "Categories\n\nTurn on categories in your listing:\n\nlistings:\n  type: default\n  categories: true\n\n\nAdding category values to each item or document listed:\n\n- title: \"Kate Jones\"\n  email: kate.jones@example.com\n  categories: \n    - alumni"
+  },
+  {
+    "objectID": "04a-listings/slides.html#sorting",
+    "href": "04a-listings/slides.html#sorting",
+    "title": "Listings",
+    "section": "Sorting",
+    "text": "Sorting\nBy default, items will be sorted by title. To modify this use the sort option.\nlisting:\n  contents: posts\n  sort:\n    - \"date\"\n    - \"title desc\"\n\nThis listing sorts items first by date in ascending order then by descending title"
+  },
+  {
+    "objectID": "04a-listings/slides.html#interactive-ui",
+    "href": "04a-listings/slides.html#interactive-ui",
+    "title": "Listings",
+    "section": "Interactive UI",
+    "text": "Interactive UI\nBy default, users can:\n\nsort by title, date and author\nfilter/search all metadata fields\n\n\nWe can disable these features or limit the fields they apply to:\nlisting:\n  sort-ui: false     # no sorting\n  filter-ui: [title] # only search the title field\n\nuseful for defintion glossary"
+  },
+  {
+    "objectID": "04a-listings/slides.html#your-turn-listing-tools",
+    "href": "04a-listings/slides.html#your-turn-listing-tools",
+    "title": "Listings",
+    "section": "Your Turn: Listing Tools",
+    "text": "Your Turn: Listing Tools\n\nContinue with the YAML listing you created before.\n\nAdd categories to each item\nTurn on categories in your listing\nModify the sort-ui and/or filter-ui\n\n\n\n\n\n−+\n10:00\n\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
   },
   {
     "objectID": "03d-wrap-up/slides.html#quarto-websites",
@@ -133,95 +301,137 @@
     "text": "Publish\n\n\nOne click publishing via Netlify Drop\nSee Quarto Docs for other options with more features"
   },
   {
-    "objectID": "03d-wrap-up/slides.html#quarto-includes",
-    "href": "03d-wrap-up/slides.html#quarto-includes",
+    "objectID": "03d-wrap-up/slides.html#more-website-features",
+    "href": "03d-wrap-up/slides.html#more-website-features",
     "title": "Wrap-Up",
-    "section": "Quarto Includes",
-    "text": "Quarto Includes\n\n\nQuarto offers a huge variety of features with more coming!\nIncludes are a great way to re-use existing content\nThe extension include-code-files allows you to include STATA scripts as well!"
+    "section": "More Website Features",
+    "text": "More Website Features\n\n\nTools\nAbout pages\nThemes"
   },
   {
     "objectID": "03d-wrap-up/slides.html#your-turn-to-request",
     "href": "03d-wrap-up/slides.html#your-turn-to-request",
     "title": "Wrap-Up",
     "section": "Your turn to request!",
-    "text": "Your turn to request!\n\nWhat other aspects / features of a Quarto website or book would you like to learn about?\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+    "text": "Your turn to request!\n\nWhat other aspects / features of a Quarto website would you like to learn about?\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
   },
   {
-    "objectID": "03c-includes/slides.html#quarto-extensions",
-    "href": "03c-includes/slides.html#quarto-extensions",
-    "title": "Quarto Includes",
-    "section": "Quarto Extensions",
-    "text": "Quarto Extensions\nExtensions are a powerful way to modify and extend the behavior of Quarto. Types of extensions include:\n\n\nCustom Formats\nJournal Articles\nRevealjs (presentation) Plug-Ins\nShortcode/Filters\n\n\n\n\n\n\n\n\n\nExtension Trust\n\n\nQuarto extensions may execute code when documents are rendered. Therefore, if you do not trust the author of an extension, do not install or use the extension."
+    "objectID": "03c-misc/slides.html#logos",
+    "href": "03c-misc/slides.html#logos",
+    "title": "Website Tools and Customisation",
+    "section": "Logos",
+    "text": "Logos\nPlaces the logo on top of the sidebar and a small version in the browser tab.\nwebsite:\n  sidebar:\n    logo: \"images/logo.png\"\n  favicon: \"images/logo.png\""
   },
   {
-    "objectID": "03c-includes/slides.html#quarto-includes",
-    "href": "03c-includes/slides.html#quarto-includes",
-    "title": "Quarto Includes",
-    "section": "Quarto Includes",
-    "text": "Quarto Includes\nThere are a number of ways to include and reuse existing content in Quarto documents:\n\n\ninclude-in* YAML options for including LaTex/HTML in header, before and after the body.\nthe shortcode {{&lt; include _content.qmd &gt;}}\nthe Lua filter extension include-code-files"
+    "objectID": "03c-misc/slides.html#icons",
+    "href": "03c-misc/slides.html#icons",
+    "title": "Website Tools and Customisation",
+    "section": "Icons",
+    "text": "Icons\nwebsite:\n  sidebar:\n    logo: \"images/logo.png\"\n    tools:\n      - icon: github\n        href: https://github.com/quart-cli\n        text: \"GitHub organization\"\n      - icon: code-square\n        href: https://posit.cloud\n        text: \"Posit Cloud\""
   },
   {
-    "objectID": "03c-includes/slides.html#shortcodes",
-    "href": "03c-includes/slides.html#shortcodes",
-    "title": "Quarto Includes",
-    "section": "Shortcodes",
-    "text": "Shortcodes\nSee: quarto.org &gt; Guide &gt; Advanced &gt; Includes\n\n\nShortcodes are special markdown directives that generate various types of content.\nThe {{&lt; include &gt;}} shortcode allows you to re-use content across documents.\nIncludes are equivalent to copying and pasting the text from the included quarto file into the main quarto file"
+    "objectID": "03c-misc/slides.html#socials",
+    "href": "03c-misc/slides.html#socials",
+    "title": "Website Tools and Customisation",
+    "section": "Socials",
+    "text": "Socials\nSome examples include:\n\nTwitter Cards provide an enhanced appearance when someone links to your site on Twitter.\nThe Open Graph protocol enables richer sharing of links to articles on the web, e.g., with preview images.\n\nwebsite:\n  twitter-card: true\n  open-graph: true"
   },
   {
-    "objectID": "03c-includes/slides.html#include-more-quarto",
-    "href": "03c-includes/slides.html#include-more-quarto",
-    "title": "Quarto Includes",
-    "section": "Include more Quarto",
-    "text": "Include more Quarto\nAdd the shortcode where you want your file to appear:\n---\ntitle: \"My Document\"\n---\n\n## Overview\n\nI have some quarto content I want to reuse right here:\n\n{{&lt; include _basics.qmd &gt;}}\n\n## Another Section\n\nMore content here...\n\nFiles prefixed with underscores (e.g. _basic.qmd) are ignored when rendering a whole directory of .qmd files."
+    "objectID": "03c-misc/slides.html#learn-more",
+    "href": "03c-misc/slides.html#learn-more",
+    "title": "Website Tools and Customisation",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/websites/website-tools.html"
   },
   {
-    "objectID": "03c-includes/slides.html#lua-filter",
-    "href": "03c-includes/slides.html#lua-filter",
-    "title": "Quarto Includes",
-    "section": "Lua Filter",
-    "text": "Lua Filter\nThe include-code-files is an Lua Filter extension developed and maintained by the core Quarto team (github.com/quarto-ext) allows you:\n\nto read in source files and,\ndisplay them in code blocks with syntax highlighting."
+    "objectID": "03c-misc/slides.html#your-turn",
+    "href": "03c-misc/slides.html#your-turn",
+    "title": "Website Tools and Customisation",
+    "section": "Your turn",
+    "text": "Your turn\n\nPick up where we left off and\n\nAdd a link with a bootstrap icon.\nReview https://quarto.org/docs/websites/website-tools.html and implement one new tool we haven’t introduced.\n\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "03c-includes/slides.html#installing-extensions",
-    "href": "03c-includes/slides.html#installing-extensions",
-    "title": "Quarto Includes",
-    "section": "Installing Extensions",
-    "text": "Installing Extensions\nTo install:\nquarto add quarto-ext/include-code-files\nTo use the extension add this option to either document or project metadata:\n---\nfilters:\n   - include-code-files\n---\n\n\n\n\n\n\n\nTip\n\n\nThe include-code-files extension is already included in the exercises folder."
+    "objectID": "03c-misc/slides.html#about-pages",
+    "href": "03c-misc/slides.html#about-pages",
+    "title": "Website Tools and Customisation",
+    "section": "About Pages",
+    "text": "About Pages\nQuarto includes 5 built in templates for About pages that can be created from metadata specified in the about YAML option:\n\n\nabout.qmd\n\n---\ntitle: \"Finley Malloc\"\nabout:\n  template: jolla # OR trestles, solana, marquee, broadside #\n  image: profile.jpg\n  links:\n    - icon: twitter\n      text: twitter\n      href: https://twitter.com\n    - icon: github\n      text: Github\n      href: https://github.com\n---\n\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana."
   },
   {
-    "objectID": "03c-includes/slides.html#using-extensions",
-    "href": "03c-includes/slides.html#using-extensions",
-    "title": "Quarto Includes",
-    "section": "Using Extensions",
-    "text": "Using Extensions\nEach extension will have instructions for how to use it.\nTo use the include-code-files extension, include the following where you want to display script.do\n```{.stata include=\"script.do\"}\n```\nWhich will show the contents of script.do with syntax highlighting:\n...\ntabulate region                   /* obtain summary statistics */\nsummarize marriage_rate divorce_rate median_age if state!=\"Nevada\"\n..."
+    "objectID": "03c-misc/slides.html#learn-more-1",
+    "href": "03c-misc/slides.html#learn-more-1",
+    "title": "Website Tools and Customisation",
+    "section": "Learn More",
+    "text": "Learn More\n\nquarto.org/docs/websites/website-about.html"
   },
   {
-    "objectID": "03c-includes/slides.html#code-block-options",
-    "href": "03c-includes/slides.html#code-block-options",
-    "title": "Quarto Includes",
-    "section": "Code Block Options",
-    "text": "Code Block Options\nYou can specify additional options separated by spaces. For example:\n```{.stata include=\"script.do\" code-line-numbers=\"false\" filename=\"script.do\"}\n```\n\n\n\n\n\n\nImportant\n\n\nNote that not all HTML Code Block options work with the include-code-files extension. You may still need to copy and paste code."
+    "objectID": "03c-misc/slides.html#your-turn-about-page",
+    "href": "03c-misc/slides.html#your-turn-about-page",
+    "title": "Website Tools and Customisation",
+    "section": "Your Turn: About Page",
+    "text": "Your Turn: About Page\n\nPick up where we left off and\n\nAdd an about page.\nTry a different theme.\nUpdate the image\nAdd or update a Social Media link\n\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "03c-includes/slides.html#our-turn-replication_in_parts.qmd",
-    "href": "03c-includes/slides.html#our-turn-replication_in_parts.qmd",
-    "title": "Quarto Includes",
-    "section": "Our Turn: replication_in_parts.qmd",
-    "text": "Our Turn: replication_in_parts.qmd\n\nOpen replication_in_parts.qmd in Rstudio. Render the document."
+    "objectID": "03c-misc/slides.html#theme-options",
+    "href": "03c-misc/slides.html#theme-options",
+    "title": "Website Tools and Customisation",
+    "section": "Theme options",
+    "text": "Theme options\n\nOne of 25 Bootswatch themes\nCustom themes\nA combination of the two"
   },
   {
-    "objectID": "03c-includes/slides.html#your-turn-replication_in_parts.qmd",
-    "href": "03c-includes/slides.html#your-turn-replication_in_parts.qmd",
-    "title": "Quarto Includes",
-    "section": "Your Turn: replication_in_parts.qmd",
-    "text": "Your Turn: replication_in_parts.qmd\n\nContinue with replication_in_parts.qmd and follow the instructions.\n\n\n\n\n−+\n15:00"
+    "objectID": "03c-misc/slides.html#setting-the-theme",
+    "href": "03c-misc/slides.html#setting-the-theme",
+    "title": "Website Tools and Customisation",
+    "section": "Setting the theme",
+    "text": "Setting the theme\nIn _quarto.yml:\nformat:\n  html:\n    theme: default"
   },
   {
-    "objectID": "03c-includes/slides.html#summary",
-    "href": "03c-includes/slides.html#summary",
-    "title": "Quarto Includes",
-    "section": "Summary",
-    "text": "Summary\n\n\nThere are multiple ways to generate, combine and re-use content in Quarto\nBasic reuse includes inserting images, raw Latex, and references from a .bib file\nMore advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters\nNew features are always being introduced to Quarto\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
+    "objectID": "03c-misc/slides.html#dark-mode",
+    "href": "03c-misc/slides.html#dark-mode",
+    "title": "Website Tools and Customisation",
+    "section": "Dark mode",
+    "text": "Dark mode\nSetting a light and dark theme makes both available with a toggle automatically added to your website:\nformat:\n  html:\n    theme:\n      light: flatly\n      dark: darkly"
+  },
+  {
+    "objectID": "03c-misc/slides.html#customizing-themes",
+    "href": "03c-misc/slides.html#customizing-themes",
+    "title": "Website Tools and Customisation",
+    "section": "Customizing themes",
+    "text": "Customizing themes\nTo customize a theme, add a custom .scss file that is then called in _quarto.yml, e.g.:\nformat:\n  html:\n    theme:\n      light: [flatly, custom.scss]\n      dark: darkly"
+  },
+  {
+    "objectID": "03c-misc/slides.html#scss-files",
+    "href": "03c-misc/slides.html#scss-files",
+    "title": "Website Tools and Customisation",
+    "section": "SCSS files",
+    "text": "SCSS files\nSCSS files have the following form:\n/*-- scss:defaults --*/\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$body-color:            $gray-700 !default;\n\n/*-- scss:rules --*/\nh1, h2, h3, h4, h5, h6 {\n  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);\n}\n\nThe defaults section is where you list variables\nThe rules section is where you list (CSS) rules"
+  },
+  {
+    "objectID": "03c-misc/slides.html#sass-variables",
+    "href": "03c-misc/slides.html#sass-variables",
+    "title": "Website Tools and Customisation",
+    "section": "SASS variables",
+    "text": "SASS variables\n\nSome examples include:\n\n$body-bg: The page background color.\n$link-color: The link color.\n$font-family-monospace: The monospace font family for the page.\n$callout-color-&lt;type&gt;: The colors for the various types of callouts.\n\nSee the full list at https://quarto.org/docs/output-formats/html-themes.html#sass-variables."
+  },
+  {
+    "objectID": "03c-misc/slides.html#learn-more-2",
+    "href": "03c-misc/slides.html#learn-more-2",
+    "title": "Website Tools and Customisation",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "03c-misc/slides.html#tip",
+    "href": "03c-misc/slides.html#tip",
+    "title": "Website Tools and Customisation",
+    "section": "Tip",
+    "text": "Tip\n\n\n\n\n\n\nFiguring out what to style\n\n\n\nUse your browser’s developer tools.\nRefer to the default values for SASS variables and set to something absurd (red and bold or giant size) while testing. Once you have the correct variable or rule identified, set the style values to what you want them to be."
+  },
+  {
+    "objectID": "03c-misc/slides.html#your-turn-1",
+    "href": "03c-misc/slides.html#your-turn-1",
+    "title": "Website Tools and Customisation",
+    "section": "Your turn",
+    "text": "Your turn\n\nPick up where we left off and\n\nChange the theme of your project to one of the Bootswatch themes.\nAdd light / dark mode toggle, experimenting with different light and dark themes.\nStretch goal: Customize 1-2 elements of your theme.\n\n\n\n\n\n−+\n10:00\n\n\n\n\n\n🔗 cynthiahqy.github.io/monash-quarto-aea"
   },
   {
     "objectID": "03b-publish/slides.html#our-turn-drag-drop",
@@ -425,6 +635,13 @@
     "title": "Wrap-Up",
     "section": "Quarto Websites",
     "text": "Quarto Websites\n\n\nWebsites are type of Quarto project\nProjects all contain a _quarto.yml config file\nYou can build a website around existing code, data and papers!"
+  },
+  {
+    "objectID": "02d-wrap-up/slides.html#learn-more",
+    "href": "02d-wrap-up/slides.html#learn-more",
+    "title": "Wrap-Up",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/websites"
   },
   {
     "objectID": "02d-wrap-up/slides.html#day-2-pre-work",
@@ -1061,21 +1278,21 @@
     "href": "00-pre-workshop.html",
     "title": "Pre-Work",
     "section": "",
-    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
+    "text": "Download or update the latest versions of R, RStudio, Quarto:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
   },
   {
     "objectID": "00-pre-workshop.html#day-1",
     "href": "00-pre-workshop.html#day-1",
     "title": "Pre-Work",
     "section": "",
-    "text": "Download or update the latest versions of R, RStudio, Quarto and git:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\nGit 2.37.1 or above: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
+    "text": "Download or update the latest versions of R, RStudio, Quarto:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
   },
   {
     "objectID": "00-pre-workshop.html#day-2",
     "href": "00-pre-workshop.html#day-2",
     "title": "Pre-Work",
     "section": "Day 2",
-    "text": "Day 2\n\nIf you’re not familar with using git from inside RStudio or the command line, please install the latest version of GitHub Desktop: https://desktop.github.com\n\nOptional:\n\nKeep adding content to replication-pkg/\nCheck out Quarto websites and see if there are any features you’d particularly like to learn:\n\nSee Awesome Quarto or my website cynthiahqy.com"
+    "text": "Day 2\n\nKeep adding content to replication-pkg/\nCheck out Quarto websites and see if there are any features you’d particularly like to learn:\n\nSee Awesome Quarto or my website cynthiahqy.com"
   },
   {
     "objectID": "00-pre-workshop.html#day-3-tbc",
@@ -1094,21 +1311,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Meeting AEA Replication Standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication Standards using Quarto",
     "section": "",
     "text": "See Pre-work for tasks to complete before the workshop."
   },
   {
     "objectID": "index.html#pre-workshop-tasks",
     "href": "index.html#pre-workshop-tasks",
-    "title": "Meeting AEA Replication Standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication Standards using Quarto",
     "section": "",
     "text": "See Pre-work for tasks to complete before the workshop."
   },
   {
     "objectID": "index.html#workshop-details",
     "href": "index.html#workshop-details",
-    "title": "Meeting AEA Replication Standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication Standards using Quarto",
     "section": "Workshop Details",
     "text": "Workshop Details\nLocation: Caulfield Campus, Building H, room H4.87\nSession Schedule:\n\n\n\n\n\n\n\n\nDay\nTime\nActivity\n\n\n\n\nTues, Jul 18\n09:00-11:30\nSession 01: Getting to Know Quarto\n\n\n\n11:30-12:30\nLunch (BYO)\n\n\n\n12:30-15:00\nSession 02: AEA Replication Packages\n\n\n\n15:00-16:00\nSupport Hours (optional)\n\n\nWeds, Jul 19\n09:00-12:30\nSession 03: Producing and Publishing Websites\n\n\nThurs, Jul 20\n09:00-12:30\nSession 04: More Quarto for Academics (optional)\n\n\n\n13:30-15:30\nSupport Hours (optional)\n\n\n\n\n This work is licensed under a Creative Commons Attribution 4.0 International License. See repository README for more details."
   },
@@ -1334,7 +1551,7 @@
     "href": "03a-websites-pt2/index.html#exercises",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Exercises",
-    "text": "Exercises\nThere are starter files for this section. We create a new Website Project in Rstudio."
+    "text": "Exercises\nThere are starter files for this section. We create a new Website Project in Rstudio called fresh-web."
   },
   {
     "objectID": "03a-websites-pt2/index.html#resources",
@@ -1372,32 +1589,32 @@
     "text": "Resources\nNetlify Drop Guide:\n\nSection 6.2 of Authoring Books with R Markdown\n\nMonash Data Fluency Trainings (Upcoming):\n\nOpen Source Science with Git and GitHub\nIntroduction to Unix shell and command line interface (2x half-day workshops)\nUnix Shell Workshop Materials\n\nExtension:\n\nOfficial Quarto Publishing Guide"
   },
   {
-    "objectID": "03c-includes/index.html",
-    "href": "03c-includes/index.html",
+    "objectID": "03c-misc/index.html",
+    "href": "03c-misc/index.html",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "",
     "text": "View slides in full screen"
   },
   {
-    "objectID": "03c-includes/index.html#slides",
-    "href": "03c-includes/index.html#slides",
+    "objectID": "03c-misc/index.html#slides",
+    "href": "03c-misc/index.html#slides",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "",
     "text": "View slides in full screen"
   },
   {
-    "objectID": "03c-includes/index.html#exercises",
-    "href": "03c-includes/index.html#exercises",
+    "objectID": "03c-misc/index.html#exercises",
+    "href": "03c-misc/index.html#exercises",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Exercises",
-    "text": "Exercises\n\nreplication_in_parts.qmd using inputs/ and _extensions"
+    "text": "Exercises\nThere are no starter files. We will use an existing Quarto website project."
   },
   {
-    "objectID": "03c-includes/index.html#resources",
-    "href": "03c-includes/index.html#resources",
+    "objectID": "03c-misc/index.html#resources",
+    "href": "03c-misc/index.html#resources",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Resources",
-    "text": "Resources\nOfficial Quarto Documentation: - Includes Shortcode - Available Quarto Extensions\nMore: - include-code-files GitHub repo"
+    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Tools Guide\nAbout Pages Guide\nHTML Themes"
   },
   {
     "objectID": "03d-wrap-up/index.html",
@@ -1412,6 +1629,13 @@
     "title": "Wrap-Up",
     "section": "",
     "text": "View slides in full screen"
+  },
+  {
+    "objectID": "03d-wrap-up/index.html#exercises",
+    "href": "03d-wrap-up/index.html#exercises",
+    "title": "Wrap-Up",
+    "section": "Exercises",
+    "text": "Exercises\n\nfresh-web navigation, icons, about page and themes\ndrag & drop publishing via Netlify Drop"
   },
   {
     "objectID": "04a-listings/index.html",
@@ -1432,41 +1656,62 @@
     "href": "04a-listings/index.html#exercises",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Exercises",
-    "text": "Exercises"
+    "text": "Exercises\n\nfresh-web continued"
   },
   {
     "objectID": "04a-listings/index.html#resources",
     "href": "04a-listings/index.html#resources",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Resources",
-    "text": "Resources"
+    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Listings Guide\n\nMore:\n\nListing Contents, A Quarto Tip a Day"
   },
   {
-    "objectID": "04b-misc/index.html",
-    "href": "04b-misc/index.html",
+    "objectID": "04b-includes/index.html",
+    "href": "04b-includes/index.html",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "",
     "text": "View slides in full screen"
   },
   {
-    "objectID": "04b-misc/index.html#slides",
-    "href": "04b-misc/index.html#slides",
+    "objectID": "04b-includes/index.html#slides",
+    "href": "04b-includes/index.html#slides",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "",
     "text": "View slides in full screen"
   },
   {
-    "objectID": "04b-misc/index.html#exercises",
-    "href": "04b-misc/index.html#exercises",
+    "objectID": "04b-includes/index.html#exercises",
+    "href": "04b-includes/index.html#exercises",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Exercises",
-    "text": "Exercises\nThere are no starter files. We will use an existing Quarto website project."
+    "text": "Exercises\n\nreplication_in_parts.qmd using inputs/ and _extensions"
   },
   {
-    "objectID": "04b-misc/index.html#resources",
-    "href": "04b-misc/index.html#resources",
+    "objectID": "04b-includes/index.html#resources",
+    "href": "04b-includes/index.html#resources",
     "title": "Meeting AEA Replication standards using Quarto and GitHub",
     "section": "Resources",
-    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Tools Guide\nAbout Pages Guide\nHTML Themes"
+    "text": "Resources\nOfficial Quarto Documentation:\n\nIncludes Shortcode\nAvailable Quarto Extensions\n\nMore:\n\ninclude-code-files GitHub repo"
+  },
+  {
+    "objectID": "04c-wrap-up/index.html",
+    "href": "04c-wrap-up/index.html",
+    "title": "Wrap-Up",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "04c-wrap-up/index.html#slides",
+    "href": "04c-wrap-up/index.html#slides",
+    "title": "Wrap-Up",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "04c-wrap-up/index.html#exercises",
+    "href": "04c-wrap-up/index.html#exercises",
+    "title": "Wrap-Up",
+    "section": "Exercises",
+    "text": "Exercises\n\nfresh-web\nreplication-in-parts.qmd\nLodge a request at 🔗 github.com/cynthiahqy/monash-quarto-aea/issues/"
   }
 ]

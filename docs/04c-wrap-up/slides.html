@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Cynthia Huang">
-  <title>Meeting AEA Replication standards using Quarto and GitHub - Wrap-Up</title>
+  <title>Meeting AEA Replication standards using Quarto and GitHub - Quarto Includes</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -321,11 +386,11 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Meeting AEA Replication standards using Quarto and GitHub - Wrap-Up">
-<meta property="og:description" content="Session 2: AEA Replication in Quarto">
+<meta property="og:title" content="Meeting AEA Replication standards using Quarto and GitHub - Quarto Includes">
+<meta property="og:description" content="Session 4: More Quarto for Academics">
 <meta property="og:site-name" content="Meeting AEA Replication standards using Quarto and GitHub">
-<meta name="twitter:title" content="Meeting AEA Replication standards using Quarto and GitHub - Wrap-Up">
-<meta name="twitter:description" content="Session 2: AEA Replication in Quarto">
+<meta name="twitter:title" content="Meeting AEA Replication standards using Quarto and GitHub - Quarto Includes">
+<meta name="twitter:description" content="Session 4: More Quarto for Academics">
 <meta name="twitter:creator" content="@cynthiahqy">
 <meta name="twitter:card" content="summary">
 </head>
@@ -334,8 +399,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Wrap-Up</h1>
-  <p class="subtitle">Session 2: AEA Replication in Quarto</p>
+  <h1 class="title">Quarto Includes</h1>
+  <p class="subtitle">Session 4: More Quarto for Academics</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -348,63 +413,96 @@ Cynthia Huang
   <p class="date">Tuesday, July 18, 2023</p>
 </section>
 <section>
-<section id="replication-template" class="title-slide slide level1 center">
-<h1>Replication Template</h1>
+<section id="listings" class="title-slide slide level1 center">
+<h1>Listings</h1>
 
 </section>
-<section id="reproducibility-in-social-sciences" class="slide level2">
-<h2>Reproducibility in Social Sciences</h2>
+<section id="listings-1" class="slide level2">
+<h2>Listings…</h2>
 <div>
 <ul>
-<li class="fragment">Replication involves both computational requirements and documentation</li>
-<li class="fragment">Quarto can help with documentation even if you don’t use R/Python</li>
-<li class="fragment">Consider preparing your replication package inside a Quarto website project using <a href="https://github.com/cynthiahqy/quarto-replication-template">🔗 github.com/cynthiahqy/quarto-replication-template</a></li>
+<li class="fragment">generate summaries using metadata from:
+<ul>
+<li class="fragment">existing documents and/or</li>
+<li class="fragment">items specified in YAML files</li>
+</ul></li>
+<li class="fragment">have 3 built-in types:
+<ul>
+<li class="fragment">default</li>
+<li class="fragment">grid</li>
+<li class="fragment">table</li>
+</ul></li>
+<li class="fragment">can sort, filter and categorise your content</li>
+</ul>
+</div>
+</section>
+<section id="yaml-quick-ref" class="slide level2">
+<h2>YAML Quick Ref</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Listing Example"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> sample-listings</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="at">    </span><span class="kw">-</span><span class="at"> posts</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="at">    </span><span class="kw">-</span><span class="at"> archived-items.yml</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="learn-more" class="slide level2">
+<h2>Learn More</h2>
+<div class="learn-more">
+<p><a href="https://quarto.org/docs/websites/website-listings.html">quarto.org/docs/websites/website-listings.html</a></p>
+<iframe src="https://quarto.org/docs/websites/website-listings.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Website Listings"></iframe>
+</div>
+</section></section>
+<section>
+<section id="includes" class="title-slide slide level1 center">
+<h1>Includes</h1>
+
+</section>
+<section id="reusing-content" class="slide level2">
+<h2>Reusing Content</h2>
+<div>
+<ul>
+<li class="fragment">There are multiple ways to generate, combine and re-use content in Quarto</li>
+<li class="fragment">Basic reuse includes inserting images, raw Latex, and references from a <code>.bib</code> file</li>
+<li class="fragment">More advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters</li>
+<li class="fragment">New features are always being introduced to Quarto</li>
+</ul>
+</div>
+</section>
+<section id="syntax-highlighting" class="slide level2">
+<h2>Syntax Highlighting</h2>
+<p>Add <code>.stata</code> to code-blocks to activate syntax highlighting:</p>
+<div class="sourceCode" id="cb2" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="in">```{.stata}</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="in">use "C:\data\data-sets\GSS2016.dta"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="in">tab postlife</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="in">tab postlife sex,column </span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="shortcodes-and-filters" class="slide level2">
+<h2>Shortcodes and Filters</h2>
+<div>
+<ul>
+<li class="fragment">Quarto offers a huge variety of features with more coming!</li>
+<li class="fragment">Includes are a great way to re-use existing content</li>
+<li class="fragment">The shortcode <code>{{&lt; include &gt;}}</code> copy and pastes text for you</li>
+<li class="fragment">The extension <code>include-code-files</code> allows you to scripts with syntax highlighting</li>
 </ul>
 </div>
 </section></section>
 <section>
-<section id="websites" class="title-slide slide level1 center">
-<h1>Websites</h1>
+<section id="request-time" class="title-slide slide level1 center">
+<h1>Request time!</h1>
 
 </section>
-<section id="quarto-websites" class="slide level2">
-<h2>Quarto Websites</h2>
-<div>
-<ul>
-<li class="fragment">Websites are type of Quarto project</li>
-<li class="fragment">Projects all contain a <code>_quarto.yml</code> config file</li>
-<li class="fragment">You can build a website around existing code, data and papers!</li>
-</ul>
-</div>
-</section>
-<section id="learn-more" class="slide level2">
-<h2>Learn more</h2>
-<div class="learn-more">
-<p><a href="https://quarto.org/docs/websites/">quarto.org/docs/websites</a></p>
-<iframe src="https://quarto.org/docs/websites" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
-</div>
-</section>
-<section id="day-2-pre-work" class="slide level2">
-<h2>Day 2 Pre-Work</h2>
-<ul>
-<li>If you’re not familar with using git from inside RStudio or the command line, please install the latest version of GitHub Desktop: <a href="https://desktop.github.com" class="uri">https://desktop.github.com</a></li>
-</ul>
-<p>Optional:</p>
-<ul>
-<li>Keep adding content to <code>replication-pkg/</code></li>
-<li>Check out Quarto websites and see if there are any features you’d particularly like to learn:
-<ul>
-<li>See <a href="https://github.com/mcanouil/awesome-quarto#websites-formats">Awesome Quarto</a> or my website <a href="https://www.cynthiahqy.com">cynthiahqy.com</a></li>
-</ul></li>
-</ul>
-</section>
-<section id="questions" class="slide level2">
-<h2>Questions</h2>
+<section id="your-turn-to-request" class="slide level2">
+<h2>Your turn to request!</h2>
 <div class="task">
-<p>Any questions / anything you’d like to review or learn before we wrap up the workshop?</p>
-</div>
-<div class="task">
-<p>Suggestions / requests for things to cover in Thursday’s session?</p>
+<p>What other aspects / features of a Quarto website would you like to learn about?</p>
 </div>
 
 <div class="footer footer-default">
@@ -624,6 +722,44 @@ Cynthia Huang
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
