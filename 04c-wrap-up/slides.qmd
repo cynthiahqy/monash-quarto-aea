@@ -1,0 +1,27 @@
+---
+title: "Quarto Includes"
+subtitle: "Session 4: More Quarto for Academics"
+author: "Cynthia Huang"
+date: 2023-07-18
+format: revealjs
+metadata-files: 
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+{{< include ../04a-listings/_wrap-up.qmd >}}
+
+{{< include ../04b-includes/_wrap-up.qmd >}}
+
+# Request time!
+
+## Your turn to request!
+
+::: task
+What other aspects / features of a Quarto website would you like to learn about?
+:::

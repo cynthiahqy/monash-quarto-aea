@@ -1,0 +1,31 @@
+# Includes
+
+## Reusing Content
+
+::: incremental
+- There are multiple ways to generate, combine and re-use content in Quarto
+- Basic reuse includes inserting images, raw Latex, and references from a `.bib` file
+- More advanced features allow you to reuse existing text content through YAML options, shortcodes, and filters
+- New features are always being introduced to Quarto
+:::
+
+## Syntax Highlighting
+
+Add `.stata` to code-blocks to activate syntax highlighting:
+
+````{.md code-line-numbers="1"}
+```{.stata}
+use "C:\data\data-sets\GSS2016.dta"
+tab postlife
+tab postlife sex,column 
+```
+````
+
+## Shortcodes and Filters
+
+::: incremental
+- Quarto offers a huge variety of features with more coming!
+- Includes are a great way to re-use existing content
+- The shortcode `{{< include >}}` copy and pastes text for you
+- The extension `include-code-files` allows you to scripts with syntax highlighting
+:::

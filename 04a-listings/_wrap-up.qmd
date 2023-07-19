@@ -1,0 +1,42 @@
+# Listings
+
+## Listings...
+
+::: incremental
+- generate summaries using metadata from: 
+    - existing documents and/or 
+    - items specified in YAML files
+- have 3 built-in types: 
+    - default
+    - grid
+    - table
+- can sort, filter and categorise your content
+:::
+
+## YAML Quick Ref
+
+```yaml
+---
+title: "Listing Example"
+listing:
+  id: sample-listings
+  type: table
+  contents: 
+    - posts
+    - archived-items.yml
+  categories: true
+  sort: "date desc"
+  filter-ui: false
+---
+```
+
+## Learn More
+
+::: learn-more
+[quarto.org/docs/websites/website-listings.html](https://quarto.org/docs/websites/website-listings.html)
+
+```{=html}
+<iframe src="https://quarto.org/docs/websites/website-listings.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Website Listings"></iframe>
+```
+:::
+

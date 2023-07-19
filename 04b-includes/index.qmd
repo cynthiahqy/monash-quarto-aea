@@ -13,8 +13,10 @@
 ## Resources
 
 Official Quarto Documentation: 
+
 - [Includes Shortcode](https://quarto.org/docs/authoring/includes.html)
 - [Available Quarto Extensions](https://quarto.org/docs/extensions/)
 
 More:
+
 - [include-code-files GitHub repo](https://github.com/quarto-ext/include-code-files)

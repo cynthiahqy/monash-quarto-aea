@@ -8,4 +8,14 @@
 
 ## Exercises
 
+- `fresh-web` continued
+
 ## Resources
+
+Official Quarto Documentation:
+
+- [Website Listings Guide](https://quarto.org/docs/websites/website-listings.html)
+
+More:
+
+- [Listing Contents, A Quarto Tip a Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/)
