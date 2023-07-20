@@ -1,6 +1,0 @@
-## Quarto Websites
-
-::: incremental
-- Folder of `.qmd` files + `_quarto.yml`
-- Project, Website, Format options
-:::

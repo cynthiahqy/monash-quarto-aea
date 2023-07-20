@@ -1,7 +1,0 @@
-## More Website Features
-
-::: incremental
-- Tools
-- About pages
-- Themes
-:::

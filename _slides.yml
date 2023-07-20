@@ -1,9 +1,0 @@
-author: "Cynthia Huang"
-footer: "[🔗 cynthiahqy.github.io/monash-quarto-aea](https://cynthiahqy.github.io/monash-quarto-aea)"
-format:
-  revealjs:
-    theme: [default, ../style/slides.scss]
-    transition: fade
-    slide-number: true
-    chalkboard: true
-    date-format: full

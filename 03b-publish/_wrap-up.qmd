@@ -1,6 +1,0 @@
-## Publish
-
-::: incremental
-- One click publishing via Netlify Drop
-- See Quarto Docs for other options with more features
-:::

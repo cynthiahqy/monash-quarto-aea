@@ -1,1 +1,0 @@
-This snippet of text comes from the file `_snippet.qmd`.

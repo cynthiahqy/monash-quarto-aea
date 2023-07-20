@@ -1,7 +1,0 @@
-{{< include 01d-wrap-up/_session-plan.qmd >}}
-
-{{< include 02d-wrap-up/_session-plan.qmd >}}
-
-{{< include 03d-wrap-up/_session-plan.qmd >}}
-
-{{< include 04c-wrap-up/_session-plan.qmd >}}

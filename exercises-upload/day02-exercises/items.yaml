@@ -1,6 +1,0 @@
-- title: "Item 1"
-  date: 2023-06-10
-  description: "This is an item in a listing"
-- title: "Item 2"
-  date: today
-  description: "This item uses the Quarto [date keyword](https://quarto.org/docs/reference/dates.html): `today`"
