@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Cynthia Huang">
-  <title>Meeting AEA Replication standards using Quarto and GitHub - Listings</title>
+  <title>Meeting AEA Replication standards using Quarto - Listings</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -388,10 +388,10 @@
   </style>
   <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
-<meta property="og:title" content="Meeting AEA Replication standards using Quarto and GitHub - Listings">
+<meta property="og:title" content="Meeting AEA Replication standards using Quarto - Listings">
 <meta property="og:description" content="Session 4: More Quarto for Academics">
-<meta property="og:site-name" content="Meeting AEA Replication standards using Quarto and GitHub">
-<meta name="twitter:title" content="Meeting AEA Replication standards using Quarto and GitHub - Listings">
+<meta property="og:site-name" content="Meeting AEA Replication standards using Quarto">
+<meta name="twitter:title" content="Meeting AEA Replication standards using Quarto - Listings">
 <meta name="twitter:description" content="Session 4: More Quarto for Academics">
 <meta name="twitter:creator" content="@cynthiahqy">
 <meta name="twitter:card" content="summary">
@@ -569,6 +569,10 @@ Cynthia Huang
 <span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
 <span id="cb2-4"><a href="#cb2-4"></a><span class="at">  </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">image</span><span class="kw">,</span><span class="at"> date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">,</span><span class="at"> author</span><span class="kw">,</span><span class="at"> reading-time</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To modify the display name of fields, provide a mapping from the field key:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="at">  </span><span class="fu">field-display-names</span><span class="kw">:</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Report"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
 <section id="listing-pages" class="title-slide slide level1 center">
@@ -587,10 +591,10 @@ Cynthia Huang
 <div class="code-with-filename-file">
 <pre><strong>posts/index.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Page with Listing"</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">listing</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Page with Listing"</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">listing</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Which files show up in the listing?</li>
@@ -611,7 +615,7 @@ Cynthia Huang
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_a4d55d50" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_890755d8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -625,12 +629,12 @@ Cynthia Huang
 <div class="code-with-filename-file">
 <pre><strong>people.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"John Smith"</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"john.smith@example.com"</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> images/john.jpg</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Kate Jones"</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"kate.jones@example.com"</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> images/kate.jpg</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"John Smith"</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"john.smith@example.com"</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> images/john.jpg</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Kate Jones"</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"kate.jones@example.com"</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> images/kate.jpg</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <p>Just like with navbar items, listing items must be properly indented</p>
@@ -643,32 +647,32 @@ Cynthia Huang
 <div class="code-with-filename-file">
 <pre><strong>writings.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Writings"</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="co">         # e.g.</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> posts</span><span class="co">         # .qmd files</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> articles</span><span class="co">      # in posts/ and articles/</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="at">    </span><span class="kw">-</span><span class="at"> old-posts.yml</span><span class="co"> # AND items from other websites</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Writings"</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="co">         # e.g.</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> posts</span><span class="co">         # .qmd files</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> articles</span><span class="co">      # in posts/ and articles/</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="at">    </span><span class="kw">-</span><span class="at"> old-posts.yml</span><span class="co"> # AND items from other websites</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="listing-location" class="slide level2">
 <h2>Listing Location</h2>
 <p>To specify the position of a listing use the <code>id</code> option:</p>
-<div class="sourceCode" id="cb6" data-code-line-numbers="4,12,13"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="pp">---</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Listing Example"</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> sample-listings</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
-<span id="cb6-8"><a href="#cb6-8"></a><span class="pp">---</span></span>
-<span id="cb6-9"><a href="#cb6-9"></a></span>
-<span id="cb6-10"><a href="#cb6-10"></a><span class="fu">You can review the following documents for additional information</span><span class="kw">:</span></span>
-<span id="cb6-11"><a href="#cb6-11"></a></span>
-<span id="cb6-12"><a href="#cb6-12"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="co">#sample-listings}</span></span>
-<span id="cb6-13"><a href="#cb6-13"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span></span>
-<span id="cb6-14"><a href="#cb6-14"></a></span>
-<span id="cb6-15"><a href="#cb6-15"></a><span class="at">Learn more about Quarto [here](https://www.quarto.com).</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7" data-code-line-numbers="4,12,13"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Listing Example"</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> sample-listings</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="pp">---</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a></span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="fu">You can review the following documents for additional information</span><span class="kw">:</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a></span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="co">#sample-listings}</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a></span>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="at">Learn more about Quarto [here](https://www.quarto.com).</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="your-turn-yaml-listings" class="slide level2">
 <h2>Your Turn: YAML Listings</h2>
@@ -682,7 +686,7 @@ Cynthia Huang
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0aee390a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ee9dce5e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -707,27 +711,27 @@ Cynthia Huang
 <ol type="1">
 <li>Turn on categories in your listing:</li>
 </ol>
-<div class="sourceCode" id="cb7" data-code-line-numbers="3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">listings</span><span class="kw">:</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8" data-code-line-numbers="3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">listings</span><span class="kw">:</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <ol start="2" type="1">
 <li>Adding category values to each item or document listed:</li>
 </ol>
-<div class="sourceCode" id="cb8" data-code-line-numbers="3,4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Kate Jones"</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> kate.jones@example.com</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> alumni</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9" data-code-line-numbers="3,4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Kate Jones"</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> kate.jones@example.com</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> alumni</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="sorting" class="slide level2">
 <h2>Sorting</h2>
 <p>By default, items will be sorted by <code>title</code>. To modify this use the <code>sort</code> option.</p>
-<div class="sourceCode" id="cb9" data-code-line-numbers="6-7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"date"</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"title desc"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10" data-code-line-numbers="6-7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"date"</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"title desc"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <p>This listing sorts items first by <code>date</code> in ascending order then by descending <code>title</code></p>
 </div>
@@ -741,9 +745,9 @@ Cynthia Huang
 </ul>
 <div class="fragment">
 <p>We can disable these features or limit the fields they apply to:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">     # no sorting</span></span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">title</span><span class="kw">]</span><span class="co"> # only search the title field</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">     # no sorting</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">title</span><span class="kw">]</span><span class="co"> # only search the title field</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
 <p>useful for defintion glossary</p>
 <style type="text/css">
@@ -771,7 +775,7 @@ Cynthia Huang
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_8952e480" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_df5c1688" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -995,44 +999,6 @@ Cynthia Huang
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

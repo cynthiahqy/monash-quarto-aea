@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Meeting AEA Replication standards using Quarto and GitHub – about</title>
+<title>Meeting AEA Replication standards using Quarto – about</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -88,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Meeting AEA Replication standards using Quarto and GitHub</a> 
+      <a href="./">Meeting AEA Replication standards using Quarto</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/cynthiahqy/monash-quarto-aea" rel="" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
 </div>
@@ -273,25 +292,43 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="workshop-abstract" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-abstract">Workshop Abstract</h2>
-<p>This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] <span class="citation" data-cites="koren2022">[@koren2022]</span>, and how to publish a companion website via GitHub Pages.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Post-Workshop Update
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Git and GitHub were not used in this workshop. The abstract below has been updated to reflect this change.</p>
+</div>
+</div>
+<p>This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] <span class="citation" data-cites="koren2022">(<a href="#ref-koren2022" role="doc-biblioref">Koren et al. 2022</a>)</span>, and how to publish a companion website.</p>
 <p>In this workshop, participants will:</p>
 <ul>
 <li><p>improve their understanding of AEA replication standards</p></li>
 <li><p>learn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents</p></li>
 <li><p>produce a replication package and website using a provided Quarto template</p></li>
-<li><p>learn how to publish a replication website online using GitHub Pages</p></li>
+<li><p>learn how to publish a replication website online using Netlify Drop</p></li>
 <li><p><em>(optional)</em> learn about additional Quarto features such as presentation slides and custom document styling</p></li>
 </ul>
-<p>Quarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more. GitHub Pages is a free, lightweight solution for publishing websites online.</p>
+<p>Quarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more.</p>
 </section>
 <section id="instructor-cynthia-huang-phd-student" class="level2">
 <h2 class="anchored" data-anchor-id="instructor-cynthia-huang-phd-student">Instructor: Cynthia Huang, PhD student</h2>
-<p>Cynthia is a second year PhD student in Econometrics and Business Statistics at Monash University working on principles and methods for data preparation. She completed honours in Economics at the University of Melboure and has extensive experience preparing data for empirical economics research. She uses Quarto and GitHub to document R and python code, write papers and presentation slides, and to publish her personal website. Her CV can be viewed here: https://www.cynthiahqy.com/cv.</p>
+<p>Cynthia is a second year PhD student in Econometrics and Business Statistics at Monash University working on principles and methods for data preparation. She completed honours in Economics at the University of Melboure and has extensive experience preparing data for empirical economics research. She uses Quarto and GitHub to document R and python code, write papers and presentation slides, and to publish her personal website. Her CV can be viewed on her website (built with Quarto): <a href="https://www.cynthiahqy.com/cv" class="uri">https://www.cynthiahqy.com/cv</a></p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-koren2022" class="csl-entry" role="listitem">
+Koren, Miklós, Marie Connolly, Joan Lull, and Lars Vilhuber. 2022. <span>“Data and Code Availability Standard.”</span> <em>Zenodo</em>, December. <a href="https://doi.org/10.5281/ZENODO.7436134">https://doi.org/10.5281/ZENODO.7436134</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

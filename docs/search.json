@@ -214,7 +214,7 @@
     "href": "04a-listings/slides.html#listing-fields-1",
     "title": "Listings",
     "section": "Listing Fields",
-    "text": "Listing Fields\nTo display fields which are not shown by default, specify additional fields in the fields option:\nlisting:\n  type: table\n  contents: posts\n  fields: [image, date, title, author, reading-time]"
+    "text": "Listing Fields\nTo display fields which are not shown by default, specify additional fields in the fields option:\nlisting:\n  type: table\n  contents: posts\n  fields: [image, date, title, author, reading-time]\nTo modify the display name of fields, provide a mapping from the field key:\nlisting:\n  field-display-names:\n    title: \"Report\""
   },
   {
     "objectID": "04a-listings/slides.html#our-turn-listings-inside-a-folder",
@@ -1278,14 +1278,14 @@
     "href": "00-pre-workshop.html",
     "title": "Pre-Work",
     "section": "",
-    "text": "Download or update the latest versions of R, RStudio, Quarto:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
+    "text": "Post-Workshop Update\n\n\n\nGit and GitHub were not used in this workshop. The Website modules were updated to use Netlify Drop instead of Git and GitHub."
   },
   {
     "objectID": "00-pre-workshop.html#day-1",
     "href": "00-pre-workshop.html#day-1",
     "title": "Pre-Work",
-    "section": "",
-    "text": "Download or update the latest versions of R, RStudio, Quarto:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with GitHub2: https://github.com/\n\n\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project3 in there and open it."
+    "section": "Day 1",
+    "text": "Day 1\n\nDownload or update the latest versions of R, RStudio, Quarto:\n\nR 4.3 (or 4.2 or above): https://cran.r-project.org\nRStudio 2023.06.0+421 or above: https://posit.co/download/rstudio-desktop\nQuarto 1.3.433 or above: https://quarto.org/docs/get-started\n\nInstall the following R packages by opening RStudio and typing the following in the Console 1\n\n\npkg_list &lt;- c(\n  \"tinytex\", \"quarto\", \"knitr\", \"here\", \"yaml\"\n)\ninstall.packages(pkg_list)\n\n\nRegister an account with Quarto Pub[^2]: https://quartopub.com\nDownload and unzip day01-exercises.zip. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped day01-exercises folder and create an RStudio project2 in there and open it."
   },
   {
     "objectID": "00-pre-workshop.html#day-2",
@@ -1295,32 +1295,32 @@
     "text": "Day 2\n\nKeep adding content to replication-pkg/\nCheck out Quarto websites and see if there are any features you’d particularly like to learn:\n\nSee Awesome Quarto or my website cynthiahqy.com"
   },
   {
-    "objectID": "00-pre-workshop.html#day-3-tbc",
-    "href": "00-pre-workshop.html#day-3-tbc",
-    "title": "Pre-Work",
-    "section": "Day 3 [TBC]",
-    "text": "Day 3 [TBC]"
-  },
-  {
     "objectID": "00-pre-workshop.html#footnotes",
     "href": "00-pre-workshop.html#footnotes",
     "title": "Pre-Work",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nSee this video tutorial for step-by-step instructions↩︎\nFor more detailed instructions see this guide↩︎\nFor more about RStudio Projects see this explainer↩︎"
+    "text": "Footnotes\n\n\nSee this video tutorial for step-by-step instructions↩︎\nFor more about RStudio Projects see this explainer↩︎"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Meeting AEA Replication Standards using Quarto",
     "section": "",
-    "text": "See Pre-work for tasks to complete before the workshop."
+    "text": "Feedback form\n\n\n\nThank you for attending the workshop. Please take 5 minutes to fill out a short survey to help me improve in the future: https://forms.gle/6EfKWSMjYpgycXgC9"
   },
   {
-    "objectID": "index.html#pre-workshop-tasks",
-    "href": "index.html#pre-workshop-tasks",
+    "objectID": "index.html#post-workshop-feedback",
+    "href": "index.html#post-workshop-feedback",
     "title": "Meeting AEA Replication Standards using Quarto",
     "section": "",
-    "text": "See Pre-work for tasks to complete before the workshop."
+    "text": "Feedback form\n\n\n\nThank you for attending the workshop. Please take 5 minutes to fill out a short survey to help me improve in the future: https://forms.gle/6EfKWSMjYpgycXgC9"
+  },
+  {
+    "objectID": "index.html#follow-up-session",
+    "href": "index.html#follow-up-session",
+    "title": "Meeting AEA Replication Standards using Quarto",
+    "section": "Follow Up Session",
+    "text": "Follow Up Session\n\nDate and Time: 1-2PM, Friday, Aug 11 2023\nLocation: Caulfield Campus, Room TBC"
   },
   {
     "objectID": "index.html#workshop-details",
@@ -1330,107 +1330,114 @@
     "text": "Workshop Details\nLocation: Caulfield Campus, Building H, room H4.87\nSession Schedule:\n\n\n\n\n\n\n\n\nDay\nTime\nActivity\n\n\n\n\nTues, Jul 18\n09:00-11:30\nSession 01: Getting to Know Quarto\n\n\n\n11:30-12:30\nLunch (BYO)\n\n\n\n12:30-15:00\nSession 02: AEA Replication Packages\n\n\n\n15:00-16:00\nSupport Hours (optional)\n\n\nWeds, Jul 19\n09:00-12:30\nSession 03: Producing and Publishing Websites\n\n\nThurs, Jul 20\n09:00-12:30\nSession 04: More Quarto for Academics (optional)\n\n\n\n13:30-15:30\nSupport Hours (optional)\n\n\n\n\n This work is licensed under a Creative Commons Attribution 4.0 International License. See repository README for more details."
   },
   {
+    "objectID": "index.html#pre-workshop-tasks",
+    "href": "index.html#pre-workshop-tasks",
+    "title": "Meeting AEA Replication Standards using Quarto",
+    "section": "Pre-Workshop Tasks",
+    "text": "Pre-Workshop Tasks\nSee Pre-work for tasks to complete before the workshop.\n\n\n\n\n\n\nPost-Workshop Update\n\n\n\nGit and GitHub were not used in this workshop. The Website modules were updated to use Netlify Drop instead of Git and GitHub."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
-    "text": "This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] [@koren2022], and how to publish a companion website via GitHub Pages.\nIn this workshop, participants will:\n\nimprove their understanding of AEA replication standards\nlearn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents\nproduce a replication package and website using a provided Quarto template\nlearn how to publish a replication website online using GitHub Pages\n(optional) learn about additional Quarto features such as presentation slides and custom document styling\n\nQuarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more. GitHub Pages is a free, lightweight solution for publishing websites online."
+    "text": "Post-Workshop Update\n\n\n\nGit and GitHub were not used in this workshop. The abstract below has been updated to reflect this change.\n\n\nThis workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] (Koren et al. 2022), and how to publish a companion website.\nIn this workshop, participants will:\n\nimprove their understanding of AEA replication standards\nlearn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents\nproduce a replication package and website using a provided Quarto template\nlearn how to publish a replication website online using Netlify Drop\n(optional) learn about additional Quarto features such as presentation slides and custom document styling\n\nQuarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more."
   },
   {
     "objectID": "about.html#workshop-abstract",
     "href": "about.html#workshop-abstract",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
-    "text": "This workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] [@koren2022], and how to publish a companion website via GitHub Pages.\nIn this workshop, participants will:\n\nimprove their understanding of AEA replication standards\nlearn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents\nproduce a replication package and website using a provided Quarto template\nlearn how to publish a replication website online using GitHub Pages\n(optional) learn about additional Quarto features such as presentation slides and custom document styling\n\nQuarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more. GitHub Pages is a free, lightweight solution for publishing websites online."
+    "text": "Post-Workshop Update\n\n\n\nGit and GitHub were not used in this workshop. The abstract below has been updated to reflect this change.\n\n\nThis workshop aims to enable participants to adapt existing projects and workflows to meet AEA Replication standards. Participants will learn how to use features from Quarto markdown to organise code scripts and data analysis according to the Data and Code Availability Standard [Version 1.0] (Koren et al. 2022), and how to publish a companion website.\nIn this workshop, participants will:\n\nimprove their understanding of AEA replication standards\nlearn to include coding scripts (STATA, MATLAB, R, Python etc.), tables, figures, citations and mathematical equations in Quarto documents\nproduce a replication package and website using a provided Quarto template\nlearn how to publish a replication website online using Netlify Drop\n(optional) learn about additional Quarto features such as presentation slides and custom document styling\n\nQuarto is an open-source framework for authoring scientific and technical documents in formats such as HTML, PDF, MS Word, and more."
   },
   {
     "objectID": "about.html#instructor-cynthia-huang-phd-student",
     "href": "about.html#instructor-cynthia-huang-phd-student",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Instructor: Cynthia Huang, PhD student",
-    "text": "Instructor: Cynthia Huang, PhD student\nCynthia is a second year PhD student in Econometrics and Business Statistics at Monash University working on principles and methods for data preparation. She completed honours in Economics at the University of Melboure and has extensive experience preparing data for empirical economics research. She uses Quarto and GitHub to document R and python code, write papers and presentation slides, and to publish her personal website. Her CV can be viewed here: https://www.cynthiahqy.com/cv."
+    "text": "Instructor: Cynthia Huang, PhD student\nCynthia is a second year PhD student in Econometrics and Business Statistics at Monash University working on principles and methods for data preparation. She completed honours in Economics at the University of Melboure and has extensive experience preparing data for empirical economics research. She uses Quarto and GitHub to document R and python code, write papers and presentation slides, and to publish her personal website. Her CV can be viewed on her website (built with Quarto): https://www.cynthiahqy.com/cv"
   },
   {
     "objectID": "01a-hello-quarto/index.html",
     "href": "01a-hello-quarto/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "Post-Workshop Update\n\n\n\nNetlify Drop was used instead of GitHub Pages to publish websites during this workshop. These slides have not been updated to reflect this change.\n\n\nView slides in full screen"
   },
   {
     "objectID": "01a-hello-quarto/index.html#slides",
     "href": "01a-hello-quarto/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "Post-Workshop Update\n\n\n\nNetlify Drop was used instead of GitHub Pages to publish websites during this workshop. These slides have not been updated to reflect this change.\n\n\nView slides in full screen"
   },
   {
     "objectID": "01a-hello-quarto/index.html#exercises",
     "href": "01a-hello-quarto/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\n\nmy_first_doc.qmd"
   },
   {
     "objectID": "01a-hello-quarto/index.html#resources",
     "href": "01a-hello-quarto/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nMarkdown Basics\nVisual Editing in Rstudio Guide\nRendering in Rstudio\n\nMore:\n\nChapter 29: Quarto, R for Data Science"
   },
   {
     "objectID": "01b-formats/index.html",
     "href": "01b-formats/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "01b-formats/index.html#slides",
     "href": "01b-formats/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "01b-formats/index.html#exercises",
     "href": "01b-formats/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\n\nmy_first_doc.qmd"
   },
   {
     "objectID": "01b-formats/index.html#resources",
     "href": "01b-formats/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nHTML Format Guide\nHTML Full Reference\nPDF Format Guide\nPDF Full Reference"
   },
   {
     "objectID": "01c-articles/index.html",
     "href": "01c-articles/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "01c-articles/index.html#slides",
     "href": "01c-articles/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "01c-articles/index.html#exercises",
     "href": "01c-articles/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\n\nmy_first_article.qmd\nelsevier-article/"
   },
   {
     "objectID": "01c-articles/index.html#resources",
     "href": "01c-articles/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nScholarly Writing Guide &gt; Front Matter\nPDF Reference &gt; Figures\n\nQuarto Extensions:\n\nElsevier Journal Template"
   },
@@ -1458,58 +1465,58 @@
   {
     "objectID": "02a-template/index.html",
     "href": "02a-template/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "02a-template/index.html#slides",
     "href": "02a-template/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "02a-template/index.html#exercises",
     "href": "02a-template/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\n\nreplication-pkg/ from provided Quarto Replication Template"
   },
   {
     "objectID": "02a-template/index.html#resources",
     "href": "02a-template/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\n\nUnofficial guidance on various topics by Social Science Data Editors\n🔗 github.com/cynthiahqy/quarto-replication-template"
   },
   {
     "objectID": "02c-websites-pt1/index.html",
     "href": "02c-websites-pt1/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "02c-websites-pt1/index.html#slides",
     "href": "02c-websites-pt1/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "02c-websites-pt1/index.html#exercises",
     "href": "02c-websites-pt1/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\n\n🔗 github.com/cynthiahqy/monash-quarto-aea\nquarto-replication-template/"
   },
   {
     "objectID": "02c-websites-pt1/index.html#resources",
     "href": "02c-websites-pt1/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
-    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Guide\nWebsite Options Full Reference"
+    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Guide\nWebsite Options Full Reference\n\nExamples:\n\nQuarto Website Gallery: https://quarto.org/docs/gallery/#websites\nAwesome Quarto: https://github.com/mcanouil/awesome-quarto#websites-formats"
   },
   {
     "objectID": "02d-wrap-up/index.html",
@@ -1535,84 +1542,84 @@
   {
     "objectID": "03a-websites-pt2/index.html",
     "href": "03a-websites-pt2/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "03a-websites-pt2/index.html#slides",
     "href": "03a-websites-pt2/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "03a-websites-pt2/index.html#exercises",
     "href": "03a-websites-pt2/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
-    "text": "Exercises\nThere are starter files for this section. We create a new Website Project in Rstudio called fresh-web."
+    "text": "Exercises\nThere are no starter files for this section. We create a new Website Project in Rstudio called fresh-web."
   },
   {
     "objectID": "03a-websites-pt2/index.html#resources",
     "href": "03a-websites-pt2/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Quick Start\nWebsite Options Full Reference"
   },
   {
     "objectID": "03b-publish/index.html",
     "href": "03b-publish/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "03b-publish/index.html#slides",
     "href": "03b-publish/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "03b-publish/index.html#exercises",
     "href": "03b-publish/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
-    "text": "Exercises\n\nNetlify Drop"
+    "text": "Exercises\n\nPublish fresh-web using Netlify Drop"
   },
   {
     "objectID": "03b-publish/index.html#resources",
     "href": "03b-publish/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nNetlify Drop Guide:\n\nSection 6.2 of Authoring Books with R Markdown\n\nMonash Data Fluency Trainings (Upcoming):\n\nOpen Source Science with Git and GitHub\nIntroduction to Unix shell and command line interface (2x half-day workshops)\nUnix Shell Workshop Materials\n\nExtension:\n\nOfficial Quarto Publishing Guide"
   },
   {
     "objectID": "03c-misc/index.html",
     "href": "03c-misc/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "03c-misc/index.html#slides",
     "href": "03c-misc/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "03c-misc/index.html#exercises",
     "href": "03c-misc/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\nThere are no starter files. We will use an existing Quarto website project."
   },
   {
     "objectID": "03c-misc/index.html#resources",
     "href": "03c-misc/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Tools Guide\nAbout Pages Guide\nHTML Themes"
   },
@@ -1640,56 +1647,56 @@
   {
     "objectID": "04a-listings/index.html",
     "href": "04a-listings/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "04a-listings/index.html#slides",
     "href": "04a-listings/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "04a-listings/index.html#exercises",
     "href": "04a-listings/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
     "text": "Exercises\n\nfresh-web continued"
   },
   {
     "objectID": "04a-listings/index.html#resources",
     "href": "04a-listings/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
-    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Listings Guide\n\nMore:\n\nListing Contents, A Quarto Tip a Day"
+    "text": "Resources\nOfficial Quarto Documentation:\n\nWebsite Listings Guide\n\nMore:\n\nListing Contents, A Quarto Tip a Day\n\nExamples:\n\nBlog Aggregator: https://github.com/hamelsmu/minimal-site\nPeople listing: https://github.com/jmgirard/affcomlab"
   },
   {
     "objectID": "04b-includes/index.html",
     "href": "04b-includes/index.html",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "04b-includes/index.html#slides",
     "href": "04b-includes/index.html#slides",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "",
     "text": "View slides in full screen"
   },
   {
     "objectID": "04b-includes/index.html#exercises",
     "href": "04b-includes/index.html#exercises",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Exercises",
-    "text": "Exercises\n\nreplication_in_parts.qmd using inputs/ and _extensions"
+    "text": "Exercises\n\nday01-exercises/replication_in_parts.qmd"
   },
   {
     "objectID": "04b-includes/index.html#resources",
     "href": "04b-includes/index.html#resources",
-    "title": "Meeting AEA Replication standards using Quarto and GitHub",
+    "title": "Meeting AEA Replication standards using Quarto",
     "section": "Resources",
     "text": "Resources\nOfficial Quarto Documentation:\n\nIncludes Shortcode\nAvailable Quarto Extensions\n\nMore:\n\ninclude-code-files GitHub repo"
   },
@@ -1712,6 +1719,6 @@
     "href": "04c-wrap-up/index.html#exercises",
     "title": "Wrap-Up",
     "section": "Exercises",
-    "text": "Exercises\n\nfresh-web\nreplication-in-parts.qmd\nLodge a request at 🔗 github.com/cynthiahqy/monash-quarto-aea/issues/"
+    "text": "Exercises\n\nfresh-web\nday01-exercises/replication-in-parts.qmd"
   }
 ]
