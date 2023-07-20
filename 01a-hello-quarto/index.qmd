@@ -1,5 +1,10 @@
 ## Slides
 
+::: callout-tip
+## Post-Workshop Update
+Netlify Drop was used instead of GitHub Pages to publish websites during this workshop. These slides have not been updated to reflect this change.
+:::
+
 [View slides in full screen](slides.html)
 
 ```{=html}

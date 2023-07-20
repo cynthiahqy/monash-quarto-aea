@@ -8,7 +8,7 @@
 
 ## Exercises
 
-- [Netlify Drop](https://app.netlify.com/drop/)
+- Publish `fresh-web` using [Netlify Drop](https://app.netlify.com/drop/)
 
 ## Resources
 

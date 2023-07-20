@@ -8,7 +8,7 @@
 
 ## Exercises
 
-There are starter files for this section. We create a new Website Project in Rstudio called `fresh-web`.
+There are no starter files for this section. We create a new Website Project in Rstudio called `fresh-web`.
 
 ## Resources
 

@@ -2,6 +2,11 @@
 title: "Pre-Work"
 ---
 
+::: callout-tip
+## Post-Workshop Update
+Git and GitHub were not used in this workshop. The Website modules were updated to use Netlify Drop instead of Git and GitHub.
+:::
+
 ## Day 1
 
 -   Download or update the latest versions of R, RStudio, Quarto:
@@ -25,9 +30,7 @@ install.packages(pkg_list)
 
 [^1]: See this [video tutorial](https://www.youtube.com/watch?v=u1r5XTqrCTQ) for step-by-step instructions
 
--   Register an account with GitHub[^2]: <https://github.com/>
-
-[^2]: For more detailed instructions see this [guide](https://happygitwithr.com/github-acct.html)
+-   Register an account with Quarto Pub[^2]: <https://quartopub.com>
 
 -   Download and unzip [`day01-exercises.zip`](day01-exercises.zip). Then, go to RStudio \> File \> New Project \> Existing Directory and navigate to the unzipped `day01-exercises` folder and create an RStudio project[^3] in there and open it.
 
@@ -38,6 +41,4 @@ install.packages(pkg_list)
 -   Keep adding content to `replication-pkg/`
 -   Check out Quarto websites and see if there are any features you'd particularly like to learn:
     - See [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#websites-formats) or my website [cynthiahqy.com](https://www.cynthiahqy.com)
-
-## Day 3 \[TBC\]
 

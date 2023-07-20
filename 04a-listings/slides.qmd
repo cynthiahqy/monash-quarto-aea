@@ -125,6 +125,14 @@ listing:
   fields: [image, date, title, author, reading-time]
 ```
 
+To modify the display name of fields, provide a mapping from the field key:
+
+```yaml
+listing:
+  field-display-names:
+    title: "Report"
+```
+
 # Listing Pages
 
 ## Our Turn: Listings Inside a Folder {.medium}

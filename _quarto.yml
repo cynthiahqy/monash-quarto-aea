@@ -13,9 +13,12 @@ project:
   resources:
     - "day01-exercises.zip"
 
+execute:
+  freeze: auto
+
 website:
   page-navigation: true
-  title: "Meeting AEA Replication standards using Quarto and GitHub"
+  title: "Meeting AEA Replication standards using Quarto"
   description: "Jul 18-20 Workshop on Quarto for Department of Economics, Monash University"
 
   repo-url: https://github.com/cynthiahqy/monash-quarto-aea
@@ -86,14 +89,11 @@ website:
     right: "This page is built with 💚 and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, Cynthia Huang"
 
+bibliography: references.bib
+
 format:
   html:
     theme: cosmos
     toc: true
     code-copy: true
     code-overflow: wrap
-
-execute:
-  freeze: auto
-
-editor: visual

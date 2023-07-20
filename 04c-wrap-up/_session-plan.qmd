@@ -1,0 +1,19 @@
+### More Quarto for Academics (2.5 Hours)
+
+| Time | Module                                 |
+|------|----------------------------------------|
+|      | Personal Websites and Blogs            |
+|      |                                        |
+|      | Presentations and Teaching with Quarto |
+|      |                                        |
+|      | Miscellaneous                          |
+|      | Wrap-Up                                |
+
+Notes:
+
+- Only ran until 10.45AM with 2 students
+- Probably enough time to add in Presentations
+
+Next time:
+
+- check yaml code chunks all have `filename` indicating if they should go in `.yml` or `.qmd` header
