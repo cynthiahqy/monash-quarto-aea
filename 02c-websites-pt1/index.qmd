@@ -17,3 +17,8 @@ Official Quarto Documentation:
 
 - [Website Guide](https://quarto.org/docs/websites/)
 - [Website Options Full Reference](https://quarto.org/docs/reference/projects/websites.html)
+
+Examples:
+
+- Quarto Website Gallery: <https://quarto.org/docs/gallery/#websites>
+- Awesome Quarto: <https://github.com/mcanouil/awesome-quarto#websites-formats>

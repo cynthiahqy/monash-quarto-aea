@@ -13,5 +13,4 @@ title: Wrap-Up
 ## Exercises
 
 - `fresh-web`
-- `replication-in-parts.qmd`
-- Lodge a request at [🔗 github.com/cynthiahqy/monash-quarto-aea/issues/](https://github.com/cynthiahqy/monash-quarto-aea/issues/)
+- `day01-exercises/replication-in-parts.qmd`

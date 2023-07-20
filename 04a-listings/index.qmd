@@ -19,3 +19,8 @@ Official Quarto Documentation:
 More:
 
 - [Listing Contents, A Quarto Tip a Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/)
+
+Examples:
+
+- Blog Aggregator: <https://github.com/hamelsmu/minimal-site>
+- People listing: <https://github.com/jmgirard/affcomlab>

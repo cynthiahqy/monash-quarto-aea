@@ -8,7 +8,7 @@
 
 ## Exercises
 
-- `replication_in_parts.qmd` using `inputs/` and `_extensions`
+- `day01-exercises/replication_in_parts.qmd`
 
 ## Resources
 
